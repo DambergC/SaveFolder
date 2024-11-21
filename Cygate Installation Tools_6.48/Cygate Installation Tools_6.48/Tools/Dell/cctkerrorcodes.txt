@@ -1,0 +1,164 @@
+0. Success.
+1. Attempt to read write-only parameter '%s'. 
+2. Clear SEL cannot be accompanied with any other option. 
+3. racreset cannot be accompanied with any other option. 
+4. Cannot execute command '%s'. Command, or request parameter(s), not supported in present state. 
+5. Invalid sub net mask. 
+6. Load defaults cannot be accompanied with any other option. 
+7. Parameter out of range. One or more parameters in the data field of the Request are out of range. 
+8. Attempt to write read-only parameter '%s'. 
+9. Option '%s' requires an argument. 
+10. The Asset Tag for this system is not available. 
+11. The Asset Tag cannot be more than %s characters long. 
+12. The required BIOS interfaces cannot be found on this system. 
+13. The BIOS version information is not available. 
+14. There was a problem getting the state byte. 
+15. The state byte is not available on this system. 
+16. There was a problem setting the state byte. 
+17. The state byte must be a value between 0 and 255 decimal. 
+18. The CPU information is not available. 
+19. The dependent option '%s' required for this subcommand is missing in the command line. 
+20. Duplicate sub command '%s' has been entered. 
+21. The script file does contain not a valid DTK environment script signature.  (%s) 
+22. The format of the environment variable is incorrect. 
+23. The --envar/-s option can only be used for a single option. 
+24. The --envar/-s option can only be used for report operations. 
+25. There was an error opening the file %s. 
+26. File '%s' does not have write permission. 
+27. The file contains invalid option '%s'. 
+28. There can only be one section in the input file. 
+29. Bad ini file, the required section [%s] cannot be found. 
+30. Report operations and set operations must be separate. 
+31. Help is not available for the option '%s'. 
+32. The -x (--hex) option can only be used with -b or -r. 
+33. Input file '%s' not found. 
+34. Input file '%s' cannot be read. 
+35. Invalid argument for the provided option '%s'. 
+36. The machine ID was not found in the file '%s'. 
+37. The system memory information is not available. 
+38. The output file '%s' could not be opened. Please make sure the path exists and the media is not write protected. 
+39. Could not write to output file, disk may be full. 
+40. The old password must be provided to set a new password using --ValSysPwd. 
+41. The old password must be provided to set a new password using --ValSetupPwd. 
+42. The option '%s' is not available or cannot be configured through this tool. 
+43. There was an error setting the option '%s'. 
+44. The -n (--namefile) option can only be used with --pci. 
+45. The set operation, '%s', requires sub commands. 
+46. The service tag for this system is not available. 
+47. The system ID value is not available. 
+48. The system information string is not available. 
+49. A system error has occured. 
+50. Usage error. 
+51. The uuid information is not present on this system. 
+52. The manufacturing/first-power-on date information is not present on this system. 
+53. Version cannot be accompanied with any other option. 
+54. Cannot start /etc/omreg.cfg file. Please ensure /etc/omreg.cfg file is present and is valid for your environment. You can copy this file from the DTK iso. 
+55. HAPI Driver Load Error. 
+56. Password is not required for retrieving the TPM options. 
+57. There was an error setting the TPM option. 
+58. The setup password provided is incorrect. Please try again. 
+59. Unsupported device. Re-try with supported device 
+60. Password not changed, new password does not meet criteria. %s
+61. Error in Validation. 
+62. Error in Setting the Value. 
+63. The password length should not exceed the maximum value %s. 
+64. This is not a Dell machine. DCC supports only Dell machines. 
+65. Setup Password is required to change the setting. Use --ValSetupPwd to provide password. 
+66. System Password is required to change the setting. Use --ValSysPwd to provide password. 
+67. The system password provided is incorrect. Please try again. 
+68. The Sequence list must be a comma-separated list of valid unique device names (ex: hdd,cdrom). 
+69. The system revision information is not available for this system. 
+70. The completion code information is not available for this system. 
+71. Please use 64-bit version of this application. 
+72. %s cannot be modified when TPM is OFF. 
+73. adddevice option not supported by this machine's BIOS 
+74. usb device already present in this machine. 
+75. %s - Error : Unable to store BIOS information. 
+76. Duplicate entry found in the input list : %s , Operation Aborted. 
+77. Typo found in the input list : %s , Operation Aborted. 
+78. Asset tag can have only printable ASCII characters. 
+79. Multiple inputs will not be accepted. 
+80. Invalid Hex format. 
+81. Hex value range should be 0x0 to 0xffff. 
+82. %s - Only positive numeric values are acceptable. 
+83. %s - Length cannot exceed two characters. 
+84. Range for autoon hour value should be 0 to 23(24 hour format). 
+85. Range for autoon minute value should be 0 to 59. 
+86. This option Not supported on UEFI Bios. 
+87. Unable to Set Bootorder. 
+88. Invalid Arguments. Unable to Set Bootorder. 
+89.  The provided command %s should not combine with other suboptions. 
+90. The property ownership tag for this system is not available. 
+91. The property ownership tag cannot be more than 80 characters for non portable machines. 
+92. The property ownership tag is limited to 48 characters for portable systems. 
+93. Property ownership tag can have only printable ASCII characters. 
+94. Error in Setting the Value. Note : In some machines, If Hdd password or System password is set, you can't set Setup password. 
+95. 'admin/root' privileges required to execute this application. 
+96. The option related BIOS information is not available in this machine. 
+97. Improper Output from Bios. Please try again. 
+98. ;Error in Bootorder. 
+99. Not Applicable. 
+100. ;Uefi bootlisttype is not supported in this Machine. 
+101. Unable to get information specific to machine. 
+102. The input file is invalid. 
+103. No Status Present. 
+104. File Do not have configurable Options. 
+105. Please provide the days to enable. 
+106. Password is not Installed. Please try again without providing --Val%s 
+107. Please provide the old password to set the new password using --ValOwnerPwd. 
+108. The owner password is incorrect. Please try again. 
+109. Error in setting the value. Note : Setup or system password might be set on the system. Clear the password(s) and try again. 
+110. Owner password is not supported in file operations. 
+111. Password operation is not supported on the system. 
+112.  The owner of the system has enabled the Owner Access feature. To set the Bios configuration, create setup or system password. 
+113. Either the system hardware or the BIOS version does not support the option. To resolve the BIOS version issue, upgrade the BIOS to the latest version. 
+114.  Unable to get password information. 
+115. Please provide the start and stop values. Example: Custom:start-end. 
+116. The start and stop values should be in the range '%s'. 
+117. The stop value should be greater than the start value by 5 percentage. 
+118. The option '%s' is not supported in this machine. 
+119. Unable to set '%s'. Note: To set this Option Legacy Option rom(LegacyOrom) should be enable and SecureBoot should be disable. 
+120. Unable to set '%s'. Note: To set this Option bootmode(activebootlist) should be uefi and legacy option rom (LegacyOrom) should be disable. 
+121. Unable to set '%s'. Note: To enable this Option SecureBoot should be disable. To disable this Option SecureBoot should be disable and bootmode(ActiveBootList) should be uefi. 
+122. The allowed value for the option in the system are in between %s. 
+123. The option '%s' is not enabled. 
+124. Invalid argument! The possible values are: 0, 1-15, and 255. 
+125. Invalid argument. The arguments must be set in such a way that [Start time] less than or equal [End time] less than or equal [Charge Start time]. 
+126. Unable to set the Non critical Threshold values. 
+127. Cannot set the passed value as it is not within the range. The value should be less than or equal to 'Upper Threshold Critical' and greater than or equal to 'Minimum value' 
+128. Error in Setting the Value. Note: To set TPM - 1. Admin Password must be set , 2. TPM must not be owned and 3. TPM must be deactivated. 
+129. Invalid format! Enter the value in the 'R,G,B' format. 
+130. Invalid value! Expected values are 'White', 'Red', 'Green', 'Blue', 'CustomColor1', 'CustomColor2' and 'None' 
+131. Invalid value! Expected values are 'White', 'Red', 'Green', 'Blue', 'CustomColor1' and 'CustomColor2' 
+132. Invalid format! Enter only one value. 
+133. Invalid format! No other value is allowed with 'none' 
+134. Invalid format! Duplicate entry found in the input list:'%s' 
+135. Invalid operation! Set operation for '%s' attribute is not allowed using file mode 
+136. Invalid format! String for '%s' attribute should contain maximum 4 characters. Supported characters are 0-9, A-F and a-f. 
+137. Invalid format! String for '%s' attribute should contain maximum 8 characters. Supported characters are 0-9, A-F and a-f. 
+138. Invalid set operation! '%s' attribute is read-only attribute. 
+139. The option '%s' is not disabled. 
+140. This system does not have a WMI-ACPI compliant BIOS. Update the BIOS with a compatible version, if available. 
+141. Couldn't get WMI-ACPI Buffer Size!! 
+142. Unable to get BIOS tables or Unknown type encountered!!. 
+143. The dependent file is not loaded from the appropriate path, repair or reinstall to fix the issue. 
+144. %s cannot be modified when the current value is set to PermanentlyDisabled. 
+145. Legacy option is not supported on this machine. 
+146. Importing ini file is failing for some features. For more information, check log. 
+147. This value is not supported on the system. For more information, enter help cctk -h %s in CLI. 
+148. The old password must be provided to set a new password using --ValHddPwd. 
+149. Profile Invalid Memory 
+150. Profile Not Present 
+151. Profile Read Error 
+152. Profile Buffer Signature Error 
+153. Profile Not Supported 
+154. Profile HMAC Error 
+155. Profile Write Error 
+156. Profile Delete Error 
+157. some or all fields missing 
+158. profile file does not exist 
+159. --Category sub option without arguments is used as a filter. 
+160. --Feature sub option without arguments is used as a filter. 
+161. Use double Hyphen with full name of suboption or Single Hyphen with Shortcut of Subpotion. Example --readonly or -R(-r), --category or -C(-c), --feature or -F(-f). 
+162. PassPhrase is required to decrypt. 
+163. Correct PassPhrase is required to decrypt 

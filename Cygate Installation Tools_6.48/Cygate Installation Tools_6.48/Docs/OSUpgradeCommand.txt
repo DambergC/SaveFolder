@@ -1,0 +1,1 @@
+Command line of Windows setup upgrade: '"D:\SETUP.EXE" /ImageIndex 9 /auto Upgrade /quiet /noreboot /postoobe "C:\WINDOWS\SMSTSPostUpgrade\SetupComplete.cmd" /postrollback "C:\WINDOWS\SMSTSPostUpgrade\SetupRollback.cmd" /postrollbackcontext system /installdrivers "C:\Drivers" /DynamicUpdate Disable /compat IgnoreWarning '

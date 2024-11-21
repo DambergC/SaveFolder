@@ -1,0 +1,308 @@
+[5.01]
+20190712	New scripts: OSDeployment-CCMExec_Automatic.ps1 setting ccmexec service to automatic to avoid crash during application installation
+		OSDeployment-CCMExec_Restore.ps1 - Restoring ccmexec service to automatic delayed
+
+[5.02]
+20190813	Change script: OSDeployment-PreFlightCheck.ps1 add logic to remove duplicate rows for found applications in TS. 
+		This will affect not longer doubling applications in success/failure in OSD status.
+
+[5.03]
+20190815	Change script: OSDeployment-SetComputerName.ps1 adjusted when name change occur  if TSname (based on existing SCCM object
+		when reusing same MAc adress - fx dockingstation) is different from calculated - then force name change
+
+[5.04]
+20190816	Change script: OSDeployment-SetComputerName.ps1 added new logic to prevent name change for tablets (name starts with TP) 
+		this requires TS version 5.04 with added TS variable config
+
+[5.1]
+20190904	Added script OSDeployment-RemoveComputerFromDomain.ps1 for removing computer object from domain. This is useful when installing workgroup computers.
+		Adjusted SCCM registration script SCCMClientRegistration.ps1 to check for functional MP
+
+[5.2]
+20190911	Changed script OSDeployment-GetBIOS.ps1 to include check of embedded controller BIOS version - Lenovo introduced upgrade
+		of this to support silent main BIOS upgrade. This requires TS change (5.2) - 2 BIOS upgrades with restarts.
+20190918	Bug in OSDeployment-GetIntelMEinformation.ps1 for Intel detection tool Intel-SA-00125-console.exe switches - removed -f
+
+[5.3]
+20190930	Bug: when using freenumber script would keep calculated name even if old name was according to name standard resulting in PCS reinstalled changed name always.
+
+[5.31]
+20191001	Changed OSDeployment-RemoveComputerFromDomain.ps1 creating task which will remove computer from domain using netdom tool
+		Added functionality in OSDeployment-CopyLogs.ps1 to copy BIOS errors to root of log share to find out if fx BIOS is missing for a certain model
+
+[5.4]
+20191002	Add version (OSDeployment-PreFlightCheck.ps1) from Task sequence into and getting Installation tools information from folder - adding to Installation.log
+		Added tatto of registry in OSDeployment-CleanUpOldObjects.ps1 with info of OS build, install date, ts version and tools version
+		Added writing to global log in root of log share if failing preflight check (OSDeployment-CopyLogs.ps1)
+
+[5.5]
+201910018	Bug in removing reservation file if computer name contains string after number ex LT-123456-CITP
+		Add creation of Logs folder c:\Windows\Logs\Software if not already exist in script InPlaceUpgrade-PreReq.ps1
+		Add creation of Logs folder c:\Windows\Logs\Software if not already exist in script InPlaceUpgrade-ReadyTool
+
+[5.6]
+20191022	Add logging for Upgrade TS (requires Upgrade TS ver 5.3)
+		Add run SetupDiag if Upgrade fails - log created c:\Windows\Logs\Software\SetupDiag_WindowsUpgrade.log
+		Add step to run compatibility test before upgrade.
+
+[5.7]
+20191028	Debugged scripts for Windows Upgrade
+		New scripts - requires Upgrade TS ver 5.7
+				
+[5.9]		
+20200220	Add VM check for VirtualBox
+		Add script for Compliance check - logs stored in global logfolder %LogServer%\%ComputerName%\WindowsUpgrade
+		Set time stamp on central log folder to visualize new content
+		Upgrade image using multi-indexed ISO
+		Dynamic driver download and installation
+		If failing mounting ISO as drive, use extraction to disk
+
+[5.91]
+20200325	Add possibility to compress driver in Drivers.zip to speed up deployment. Driver installation script will extract zip and dism into driver store
+
+[5.92]
+20200402	Changed to enable dynamic update in InPlaceUpgrade-UpgradeOS.ps1
+
+[5.93]
+20200403	Changed in-place upgrade using setup.exe instead of OSDUpgradeOS.exe (SCCM agent executable used by TS)
+		Add logging for missing BIOS upgrade files - global log file on central share
+		New TS added windows repair package before starting upgrade - repair includes ISO which must match source OS
+
+[5.94]
+20200407	Returned using OSDUpgradeOS.exe to upgrade OS since TS would not continue with stability when using setup.exe
+		Added high performance to upgrade process OSDSetupAdditionalUpgradeOptions = "/Priority High" in InPlaceUpgrade-UpgradeOS.ps1
+		Dynamic update set to disable to reduce upgrade time
+		Add variable MANUAL to computer naming in OSDeployment-SetComputerName.ps1 for setting computername in a wizard for example
+		Adjusted logic to find Laptop/Desktop sub OU - narrow down to only Laptop/Laptops or Desktop/Desktops to avoid mistaken by similar sub folder name.
+
+[5.95]
+20200507	Adding Product Key to variables for upgrade in InPlaceUpgrade-UpgradeOS.ps1 - getting 0xC1900204 MOSETUP_E_COMPAT_MIGCHOICE_BLOCK during upgrade
+		Add checking NLS Language key in registry to make sure it matches detected default OS language - otherwise registry decides (InPlaceUpgrade-DetectMUI.ps1)
+
+[5.96]
+20200508	Adding ability to set Description attribute in computer object if TS variable OSDCompDescription is set (OSDeployment-AddGroups.ps1)
+
+[5.97]
+20200539	Add cleaning up download variables (reset to null) for OsdDownloadContent.exe in OSDeployment-DriverInstall.ps1 and InPlaceUpgrade-DriverDownload.ps1
+		avoid old package number used to download wrong package later in TS.
+20200602	Add new WLAN and WWAN autoswitching variables for Dell (WlanAutoSense & WwanAutoSense)
+		Add logic to find cuurent OS disk for DISM driver command in OSDeployment-DriverInstall.ps1
+		Add enumeration of extracted drivers and logging to DriverInformation.log in OSDeployment-DriverInstall.ps1 to make sure drivers are available
+		Add enumeration of extracted drivers and logging to DriverInformation.log in InPlaceUpgrade-DriverDownload.ps1 to make sure drivers are available
+
+[5.98]
+20200701	Add ability to change short for Laptop/Desktop during naming. Adding OSDComputerNamingDesktop and OSDComputerNamingLaptop in TS and OSDeployment-SetComputerName.ps1
+20200703	Add Package ID if driver was found in OSDeployment-PreFlightCheck.ps1
+20200709	Add user full name connecting to log share ex DOMAIN\LOGUSER and wait for mapping before next step in OSDeployment-CopyLogs.ps1, OSDeployment-SetComputerName.ps1 and 		OSDeployment-PreFlightCheck.ps1
+
+[5.99]
+20200910	Add tatto of Log Server in registry OSDeployment-CleanUpOldObjects.ps1
+20200928	Add check if BIOS upgrade happened as expected - otherwise log event in global installation errors log file
+		Add check status of TPM chip just before enabling Bitlocker - For now no actions are done if problems - only logging
+
+[6.00]		
+20201007	Add logic to except virtual machines from reporting problems upgrading BIOS in OSDeployment-GetBIOS.ps1
+		Add time/date reporting problems to BIOS error central log in OSDeployment-SetBIOS.ps1
+		Add Xen, Parallels and Innotek as possible virtual machines in OSDeployment-SetBIOS.ps1
+20201008	Add timezones for some US cities in OSDeployment-SetRegionalSettings.ps1 if using Sites for regional settings but not basing placement of computer objects
+		Add languages to OSDeployment-SetRegionalSettings.ps1 Czechoslovakia, Chile, Mexico, Switzerland, Hungary, India, Japan, Latvia, Belgium, Poland, Romania, Russia
+
+[6.01]
+20201105	New version of Dell cctk tool to configure BIOS
+20201110	Add logic to reset TPM owner. Certain models fail Pre-provisioning Bitlocker. This requires TS version 6.01 with the extra steps needed
+20201116	Corrected bug in OSDeployment-SetComputerName.ps1 where computername was not changed using serial if matching format only (when serial actually did not match number from TS computer name)
+
+[6.02]
+20201120	Add regional settings for fr-be in OSDeployment-SetRegionalSettings.ps1
+20201120	Add comprehensive logging and new logic to identify smallest disk in TS step to set active OS disk.
+
+[6.03]
+20201124	Remove writing variable OSDDownloadContinueDownloadOnError in InPlaceUpgrade-DriverDownload.ps1 to avoid red lines in log
+		Fix spell error in InPlaceUpgrade-GetOSBuild.ps1
+		Add 7z.dll in Tools section
+		Add copying 7z.dll to WINDIR in InPlaceUpgrade-PreReq.ps1
+		Add logic to dismount ISO before mounting - change made in function for all scripts in OS upgrade (InplaceUpgrade-....)
+
+[6.04]
+20201126	Add chkdsk /f and sfc /scannow if mount ISO fails in function Mount-ISO for all scripts in OS upgrade (InplaceUpgrade-....)
+
+[6.05]
+20121203	Add extensive logging when removing OS upgrade image folder
+		Add copy 7z.dll to windir in InPlaceUpgrade-UpgradeOS.ps1
+		Change download image in TS (6.05) in cache instead of C:\OSUpgradeImage + adding use of path variable OSDOSImagePath
+		Add OSDOSImagePath to find ISO in cache + C:\OSUpgradeImage (depending on TS version) in InPlaceUpgrade-UpgradeOS.ps1
+20201209	Add logic to handle OS image location variable OSDOSImagePath in InPlaceUpgrade-GetOSBuild.ps1
+		Add copy 7z.dll to windir in InPlaceUpgrade-GetOSBuild.ps1
+		Change TS variable OSDOSImagePath to OSDOSImagePath01 since every row number in downloaded content must be part of variable
+ 
+[6.06]
+20201210	Add getting InstallO365.xml to OSDeployment-CopyLogs.ps1
+		Add logic to handle OS image location variable OSDOSImagePath in InPlaceUpgrade-PreReq.ps1
+
+[6.07]
+20201222	Change search string for VMware from VMWare Virtual* to VMware* otherwise missing new VMware version 7 as virtual machine in OSDeployment-GetBIOS.ps1
+20201230	Add information about NIC in OSDeployment-PreFlightCheck.ps1
+		Add pause in TS before join domain "ping localhost -n 10". TS version bumped to 6.07
+
+[6.08]
+20210111	Add check for *.iso additional to a "not null" value for ISO path in InPlaceUpgrade-GetOSBuild.ps1
+
+[6.09]
+20210112	Add filtering for BIOS version - some models reporting fx "Ver. xx.xx.xx" in OSDeployment-GetBIOS.ps1 and OSDeployment-SetComputerName.ps1
+
+[6.10]
+20210113	Fixed bug in InPlaceUpgrade-DetectMUI.ps1 - missing searching for upgrade is in ccmcache
+		Changed logging in InPlaceUpgrade-GetReturnCode.ps1 - some findinds not neccessary logged as error - now only informal.
+		Changed copying of "error messages" to "messages" to avoid red line in log.
+
+[6.11]		
+20210113	Add ImDisk tool to mount ISO if failing native command + configure Mount ISO function in all scripts for Upgrade (ex. InPlaceUpgrade-GetOSBuild.ps1)
+		Update Dell CCTK tool from 4.2 to 4.4
+
+[6.12]		
+20210118	Removed using chkdsk to fix failed mount ISO - trying restart instead in InPlaceUpgrade-UpgradeOS.ps1, InPlaceUpgrade-GetOSBuild.ps1 and InPlaceUpgrade-PreReq.ps1
+		New TS required, ver 6.10 or higher
+
+[6.13]
+20210121	Add possibilty to set postpone counter for Upgrade in InPlaceUpgrade-ReadyTool + variable in Upgrade TS
+20210215	Added logic not to add product key as upgrade variable when client is not KMS in InPlaceUpgrade-UpgradeOS.ps1
+
+[6.14]
+20210324	Add copy of InstallO365.xml to log share
+
+[6.15]
+20210330	Corrected bug in OSDeployment-MicrosoftStoreUpdate.ps1 where powershell script file were not properly created
+
+[6.16]
+20210423	Corrected bug in "Check Multidisk" PS script not discovering smallest disk if mix of SSD and spinning disks
+		Added disk Index from "Check Multidisk" to target format disk steps in TS
+		Removed Powerplan settings steps since this is now introduced as configurable item in TS
+
+[6.17]
+20210506	Added logic to set product key dependent on version (Enterprise/Professional/etc) only if KMS client key is found
+		Removed power plan settings steps in Upgrade TS + 1 missed step in OS deployment TS
+
+[6.18]
+20210618	Add getting HP firmware update logs in OSDeployment-CopyLogs.ps1 and InPlaceUpgrade-CopyLogs.ps1
+
+[6.19]
+20210709	Added logic in InPlaceUpgrade-GetOSBuild.ps1 to check if ISO in system drive is different than downloaded - then use downloaded.
+
+[6.20]
+20210714	Add ASUS as manufacturer in OSDeployment-SetComputerName.ps1, OSDeployment-PreFlightCheck.ps1 & OSDeployment-GetWMI.ps1
+		Add disabling lock screen so that Upgrade background is ontop in InPlaceUpgrade-Background.ps1 and enable again in InPlaceUpgrade-BackgroundUninstall.ps1
+		Add disable screen saver during upgrade in InPlaceUpgrade-Background.ps1 and enable again in InPlaceUpgrade-BackgroundUninstall.ps1
+		Close running InPlaceUpgrade-ReadyTool.exe before starting tool in InPlaceUpgrade-GetOSBuild.ps1
+
+[6.21]		
+20210930	Add missing Write-GlobalLog function in InPlaceUpgrade-PreReq.ps1 (logs in t:\_WindowsUpgradeError.log)
+
+[6.22]
+20211022	Add removal of C:\SMSTSLOG after deployment in OSDeployment-CleanUpOldObjects.ps1
+		Change to password variable for LogUser - add TS variable in task sequence and replaced hardcoded password in scripts
+
+[6.23]
+20211201	Sometimes driver would not download and add DriverOK.txt is present - check number of files and size driver folder it retry download is neccessary (InPlaceUpgrade-DriverDownload.ps1)
+
+[6.24]
+20220216	Add logging for failed enumeration of computers using freenumber/lastnumber as name in OSDeployment-SetComputerName.ps1
+
+[6.25]	
+20220307	Add removal of C:\SMSTSLog in OSDeployment-CleanUpOldObjects.ps1
+
+[6.26]	
+20220518	Add logic to get enablement packages from wim file to determine real build in InPlaceUpgrade-GetOSBuild.ps1
+
+[6.27]
+20220530	Add logic in InPlaceUpgrade-PreReq.ps1 and OSDeployment-PreFlightCheck.ps1 to ignore share check if fx Loguser is empty	
+		Add logic in above scripts to test connection towards log server before try mapping
+
+[6.28]
+20220622	Add logging for missing driver in OSDeployment-PreFlightCheck.ps1
+
+[6.29]		
+20220709	Add additional logging in InPlaceUpgrade-PreReq.ps1
+		Add logic to force upgrade when no user is logged on InPlaceUpgrade-PreReq.ps1 (requires TS ver 6.25)
+		Add variable in TS to set Service Window for upgrade (requires TS ver 6.25)
+		Add logic in InPlaceUpgrade-PreReq.ps1 and InPlaceUpgrade-GetReturnCode.ps1 to support service window
+
+[6.30]
+20220711	Corrected a bug in InPlaceUpgrade-PreReq.ps1, not setting Upgrade window variable
+
+[6.31]
+20220711	Add warning if exit code other than 0 for upgrade in InPlaceUpgrade-UpgradeOS.ps1
+		Add copy of diagnostics files from C:\WINDOWS\logs\SetupDiag\SetupDiagResults.xml in InPlaceUpgrade-CopyLogs.ps1
+		Add name to log of last step before copying logs in InPlaceUpgrade-CopyLogs.ps1
+
+[6.32]
+20220712	Close InPlaceUpgrade-ReadyTool.exe if already running in InPlaceUpgrade-PreReq.ps1 (from another upgrade attempt)
+		If OS is already upgraded the exit code is set to 0 in InPlaceUpgrade-SetError.ps1
+
+[6.33]
+20220714	Add error handling for removing C:\SWINDOWS.~BT in InPlaceUpgrade-PreReq.ps1
+		Add check for running msiexec process before killing in InPlaceUpgrade-Background.ps1 - avoiding errors in log
+		Change population of $tsenv.Value("OSDLockScreen") to avoid illegal null value in InPlaceUpgrade-Background.ps1
+		New version of setupdiag.exe (1.6.2107.27002)
+		Bug in InPlaceUpgrade-SetupDiagCheck.ps1 argument for setup diag was mispelled
+		Add checking blocking drivers in InPlaceUpgrade-SetupDiagCheck.ps1
+		Add copying the blocked driver .inf found to log share in InPlaceUpgrade-CopyLogs.ps1
+		Add check for startup of ccmexec service and set to automatic in InPlaceUpgrade-UpgradeOS.ps1
+
+[6.34]
+20220714	Add logic in InPlaceUpgrade-UpgradeOS.ps1 to remove blocking drivers and retry upgrade
+
+[6.35]
+20220816	Add check if driver package is array (multiple package IDs, meaning duplicate driver packages for a certain model
+
+[6.36]	
+20220826	Add new script OSDeployment-CheckDomainJoin.ps1 to check if domain join was successful (requires TS version 6.36)
+
+[6.37]
+20220915	Add new script OSDeployment-SetInstallationPostAction.ps1 to set post action to update gpo (give device time to enroll cert etc).
+		(Requires TS version 6.37)
+
+[6.38]
+20221010	Removed setting for enabling macadresspassthrough for Lenovo in OSDeployment-SetBIOS.ps1 and OSDeployment-GetBIOS.ps1 (cause problems reinstalling)
+
+[6.39]
+20221018	Changed from "NET USE" to PSDrive method mapping log share. This to avoid showing command box in InPlaceUpgrade-CopyLogs.ps1 and OSDeployment-CopyLogs.ps1.
+		Dell cctk upgraded from 4.4.0 to 4.8.0
+		Remove lmdisk from tools
+		Upgrade 7zip from 19.0.0.0 to 22.1.0.0
+		Upgrade PSExec in Microsoft tools from 2.2 to 2.4
+
+[6.40]	
+20221020	Added back imDisk tool with version 2.1.1
+
+[6.41]
+20221021	Add logic copying smsts.log from multiple locations to log share in InPlaceUpgrade-CopyLogs.ps1
+
+[6.42]
+20221116	Add check for enablement package in ISO to determine Win 10 22H2 (19045) in InPlaceUpgrade-GetOSBuild.ps1
+
+[6.43]
+20221130	Removing computer object in AD beacuse of new constraints overwriting object joining computer. Change made in OSDeployment-SetComputerName.ps1
+		https://support.microsoft.com/en-au/topic/kb5020276-netjoin-domain-join-hardening-changes-2b65a0f3-1f4c-42ef-ac0f-1caaf421baf8
+
+[6.44]
+20221207	Add function KillProcessesWithHandles in InPlaceUpgrade-PreReq.ps1
+		Add logic to take ownership, setting permissions and close open handles on c:\$WINDOWS.~BT so it can be deleted before retry upgrade, InPlaceUpgrade-PreReq.ps1
+
+[6.45]
+20221208	Corrected bug where setting required drivers to false did not clear corresponding variable in InPlaceUpgrade-UpgradeOS.ps1
+		Adding lines to SetupRollbackTemplate.cmd in InPlaceUpgrade-UpgradeOS.ps1 to avoid setting agent in provision mode after failed upgrade etc.
+		Adding lines to SetupCompleteTemplate.cmd in InPlaceUpgrade-UpgradeOS.ps1 to trigger HW inventory after successful upgrade
+		Logging off disconnected users in InPlaceUpgrade-PreReq.ps1 before wizard is started.
+		Add SetACL in tools + using SetACL to take ownership on $WINDOWS.~BT in InPlaceUpgrade-PreReq.ps1
+
+[6.46]
+20221209	New function in InPlaceUpgrade-ReadyTool.exe to force installation after 1 hour instead of only disabling postpone
+		Dell cctk upgraded from 4.8.0 to 4.9.0
+		New folder - icons. Windows update png image for upgrade TS
+
+[6.47]
+20221209	Bug in InPlaceUpgrade-CopyLogs.ps1 where user variable for connecting share was not populated. Added extra try (NET USE) to log share
+		Bug in InPlaceUpgrade-SetError.ps1 setting error code 0 when actual failure has happened.
+
+[6.48]
+20230123	Bug in InPlaceUpgrade-UpgradeOS.ps1 and InPlaceUpgrade-GetOSBuild.ps1 when failed to mount ISO - extraction was not tried as next step

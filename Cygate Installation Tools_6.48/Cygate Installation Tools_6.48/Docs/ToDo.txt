@@ -1,0 +1,4 @@
+Change "assuming MAK client" will add KMS key to upgrade in Inplace-Upgrade-UpgradeOS.ps1
+Remove power settings in upgrade TS
+Remove power settings in OSD TS
+"OS image matching current language found with index: 3" in InPlaceUpgrade-PreReq, but [InPlaceUpgrade-UpgradeOS] OS Index from variable: 1

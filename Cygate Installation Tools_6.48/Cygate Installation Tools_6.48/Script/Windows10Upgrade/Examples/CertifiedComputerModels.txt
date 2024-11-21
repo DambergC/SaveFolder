@@ -1,0 +1,33 @@
+# Microsoft
+Virtual Machine
+# Dell
+# Lenovo
+M710
+M720
+20L8
+20L7
+20KF
+20KE
+20KJ
+20KK
+20M9
+20MA
+20EN
+20FQ
+# HP
+HP EliteBook 840 G1
+HP EliteBook 820 G2
+HP EliteBook 840 G2
+HP EliteBook 850 G2
+HP EliteBook 820 G3
+HP EliteBook 840 G3
+HP EliteBook 850 G3
+HP EliteBook 820 G4
+HP EliteBook 840 G4
+HP EliteBook Folio 1040 G1
+HP EliteBook Folio 9470m
+HP ZBook 15
+# VMware
+VMware Virtual Platform
+# Xplore
+iX125R1
