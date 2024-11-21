@@ -1,0 +1,833 @@
+                                                                   Revision : 01
+--------------------------------------------------------------------------------
+Software name      BIOS Update Utility
+
+Support models     ThinkPad X1 Yoga (Machine types: 20FQ, 20FR)
+                   ThinkPad X1 Carbon (Machine types: 20FB, 20FC)
+
+Operating Systems  Microsoft Windows 10  64-bit
+                   Microsoft Windows 8.1  64-bit
+                   Microsoft Windows 7  32-bit, 64-bit
+
+                   Refer to marketing materials to find out what computer models
+                   support which Operating Systems.
+
+Version            1.56
+
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package updates the UEFI BIOS (including system program and Embedded
+  Controller program) stored in the ThinkPad computer to fix problems, add new
+  functions, or expand functions as noted below.
+
+  This package also contains the tool to create a bootable BIOS Flash USB memory key.
+  Please refer to "Instruction US - BIOS flash USB memory key.txt" in the installation
+  folder for detail instruction.
+
+  This program is language independent and can be used with any language system.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+  Version 1.56
+
+- Enhancement to address security vulnerability, CVE-2017-5715, CVE-2022-33894,
+  CVE-2022-34301, CVE-2022-34302, CVE-2022-34303.
+
+[New functions or enhancements]
+- Updated the Diagnostics module to version 04.27.000.
+
+[Problem fixes]
+- Fixed "Clear All Secure Boot Keys" not working when Secure Boot is Enable.
+- Fixed an issue Secure Boot Enable is not protected.
+
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+  There are two ways to check the UEFI BIOS version and BIOS ID.
+
+
+ [Checking on Windows]
+
+  Windows 10/8.1:
+
+  1. Hold down the Windows logo key and press X to open a menu at the lower-left
+     area of the screen.
+
+  2. Select Control Panel from the menu.
+  3. Make sure "View by Category" is selected, and select System and Security,
+     select Administrative Tools, and then select System Information.
+     - or -
+  2. Select Run from the menu.
+  3. Type msinfo32, and press Enter.
+
+  4. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  5. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.
+
+  Windows 7:
+
+  1. Click Start, click All Programs or Programs, click Accessories, click
+     System Tools and then click System Information.
+     - or -
+     Click Start, type msinfo32 in the Start Search box and then click msinfo32
+     in the Programs list.
+  2. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  3. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.
+
+
+ [Checking on ThinkPad Setup]
+
+  Windows 10:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key.
+  3. Select Power from the menu.
+  4. Select Reboot to restart the computer.
+
+  Windows 8.1:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+
+  Windows 7:
+  1. Turn off the computer.
+  2. Turn on the computer.
+  3. Go to the step 5.
+
+  5. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Locate the UEFI BIOS Version line and Embedded Controller Version line.
+     "UEFI BIOS version (BIOS ID)" will be shown on the UEFI BIOS Version line.
+  7. Turn off the computer.
+
+
+--------------------------------------------------------------------------------
+NOTES
+
+- If the UEFI BIOS has been updated to version 1.31 or higher, it is no longer
+  able to roll back to the version before 1.31 for security improvement.
+
+- If the UEFI BIOS has been updated to version 1.29 or higher, it is no longer
+  able to roll back to the version before 1.29 for security improvement.
+
+- If the UEFI BIOS has been updated to version 1.23 or higher, it is no longer
+  able to roll back to the version before 1.23 for security improvement.
+
+- If the UEFI BIOS has been updated to version 1.17 or higher, it is no longer
+  able to roll back to the version before 1.17 for security improvement.
+
+- Be aware that the OS Optimized Defaults option in the Restart menu of ThinkPad
+  Setup should not be normally changed. Lenovo recommends to use the factory
+  default setting for it, as follows.
+
+                                                       OS Optimized Defaults
+  - For Windows 10/8.1 64-bit Preload models           [Enabled]
+  - For Windows 7                                      [Disabled]
+
+  To install Windows 7, the OS Optimized Defaults option should be [Disabled].
+
+  If the OS Optimized Defaults setting is changed, Setup Default by the F9 key
+  will not load the same default configuration, as follows. Furthermore, by the
+  condition of Operating System installation, the computer may not be booted due
+  to the setting change.
+
+  If your computer runs satisfactorily now, you have no need to change the OS
+  Optimized Defaults option. If you need to change the setting, consider well
+  the effect of the setting change.
+
+  Affected Setup menu items :
+  "OS Optimized Defaults" setting          [Disabled] case      [Enabled] case
+  - Security
+    - UEFI BIOS Update Option
+      - Secure RollBack Prevention         [Disabled]           [Enabled]
+    - Secure Boot
+      - Secure Boot                        [Disabled]           [Enabled]
+  - Startup
+    - UEFI/Legacy Boot                     [Both]               [UEFI Only]
+    - UEFI/Legacy Boot Priority            [Legacy First]       (Not shown)
+    - CSM Support                          [Yes]                [No]
+
+  By the OS to be newly installed, you need to change the OS Optimized Defaults
+  option, and load default configuration.
+
+  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad
+     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.
+  2. Select Restart, then select OS Optimized Defaults and press Enter.
+  3. Select the following setting and press Enter.
+       [Enabled]   (for Windows 10/8.1 64-bit)
+       [Disabled]  (for Windows 7)
+  4. Press the F9 key to load default configuration.
+  5. Select Yes.
+  6. Press the F10 key to save default configuration and exit.
+  7. Select Yes.
+     The computer will be restarted automatically.
+
+  (Caution)
+  If both the Secure Boot option is Enabled and UEFI Secure Boot in the Main
+  menu of ThinkPad Setup is shown as Off, restoring Factory Keys is needed. Do
+  the following to restore Factory Keys.
+
+  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad
+     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.
+  2. Select Security, then select Secure Boot.
+  3. Select Restore Factory Keys, and press Enter.
+  4. Select Yes to restore Factory keys.
+  5. Press the F10 key to save configuration and exit.
+  6. Select Yes.
+     The computer will be restarted automatically.
+
+- To enable 30 Day standby feature of ThinkVantage Power Manager, the computer
+  has to disable waking computer by network adapters and USB devices. Uncheck
+  the checkbox next to "Allow this device to wake the computer" in the Power
+  Management tab for each device in Device Manager.
+
+
+--------------------------------------------------------------------------------
+UPDATING THE UEFI BIOS
+
+Notes:
+- If the UEFI BIOS has been updated to version 1.31 or higher, it is no longer
+  able to roll back to the version before 1.31 for security improvement.
+- If the UEFI BIOS has been updated to version 1.29 or higher, it is no longer
+  able to roll back to the version before 1.29 for security improvement.
+- If the UEFI BIOS has been updated to version 1.23 or higher, it is no longer
+  able to roll back to the version before 1.23 for security improvement.
+- If the UEFI BIOS has been updated to version 1.17 or higher, it is no longer
+  able to roll back to the version before 1.17 for security improvement.
+- If your computer runs satisfactorily now, it may not be necessary to update
+  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the
+  Version Information section.
+- You need an AC adapter and a charged battery pack.
+- Remove the Power-on password prior to updating the UEFI BIOS in the remote
+  deployment environments.
+
+
+Attention:
+  Do not turn off or suspend the computer until the update has been completed.
+  IF YOU DO THAT WHILE THE UPDATE IS STILL IN PROGRESS, THE SYSTEM BOARD MAY
+  HAVE TO BE REPLACED.
+
+
+Manual Update
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Downloading file
+  1. Click once on the underlined file name. Once this is done, some pop-up
+     windows will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, click Save.
+  4. Choose the folder you would like to download the file to and click Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+
+  Extracting file
+  5. Make sure to be logged on with an administrator account on the target
+     computer.
+  6. Make sure the AC adapter is firmly connected to the target computer.
+  7. Locate the folder where the file was downloaded.
+  8. Locate the file that was downloaded and double-click it.
+  9. Follow the instructions on the screen.
+ 10. In Extract or Install? window, select "Install", click Next, and move to
+     step 14 to continue installation.
+     Or, select "Extract only" and click Next to extract and keep the files
+     on the specified folder.
+ 11. In the Select Destination Location window, click Extract.
+     If you would like to select a different folder, click Browse.
+ 12. All the necessary files will be extracted to the folder selected in the
+     step 11.
+ 13. Click Finish.
+
+  Updating the UEFI BIOS
+ 14. In the Ready to Install window, click Install. All the necessary files will
+     be extracted to the temporary folder BIOS will be ready to update.
+     Extracted files will be deleted after installation.
+ 15. Click Finish.
+ 16. Follow the instructions on the screen.
+ 17. Select 'Update ThinkPad BIOS' and follow the instructions on the screen.
+ 18. The program shows a message 'System program update is continued by BIOS at
+     the next reboot'.
+ 19. Click OK.
+     The computer will be restarted automatically and the EFI BIOS will be
+     updated.
+
+
+Unattended Update
+
+  This is for system administrators' use only.
+
+  1. Refer to the Manual Update section, and download and extract the file.
+  2. At the command line, execute WINUPTP.EXE with the -s option.
+     Example: [Path where the files were extracted]\WINUPTP -s
+  3. Restart or fully shut down the computer.
+     Note:
+     Make sure to restart or fully shut down the computer to complete the BIOS
+     update. If hybrid shutdown is made after the BIOS update on Windows 10/8.1,
+     the update will not be done correctly.
+     Full shutdown can be done with the following command at the command line on
+     Windows 10/8.1.
+       Shutdown /s /t 0
+
+  To view the update result, refer to the WINUPTP.log file created at the same
+  directory of the package.
+
+
+--------------------------------------------------------------------------------
+INITIALIZING UEFI BIOS
+
+  UEFI BIOS Initialization is suggested for some problems. To initialize the
+  UEFI BIOS settings:
+
+ Windows 10:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key.
+  3. Select Power from the menu.
+  4. Select Reboot to restart the computer.
+
+ Windows 8.1:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+
+ Windows 7:
+  1. Power off the computer.
+  2. Power on the computer.
+  3. Go to the step 5.
+
+  5. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Press the F9 key to load default configuration.
+  7. Select Yes.
+  8. Press the F10 key to save default configuration and exit.
+  9. Select Yes.
+ 10. Restart the computer.
+
+  Note:
+  After initialization you may need to reapply some settings that you had
+  changed previously.
+
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions of UEFI BIOS and ECP (Embedded Controller Program) have
+  been released to date.
+
+  Package      (ID)     UEFI BIOS (BIOS ID)  ECP (ECP ID)      Rev.  Issue Date
+  --------------------  -------------------  ---------------   ----  ----------
+  1.56      (N1FUJ49W)  1.56 (N1FET82W)      1.19 (N1FHT36W)   01    2022/12/21
+  1.55      (N1FUJ48W)  1.55 (N1FET81W)      1.19 (N1FHT36W)   01    2022/10/27
+  1.54      (N1FUJ47W)  1.54 (N1FET80W)      1.19 (N1FHT36W)   01    2022/08/15
+  1.53      (N1FUJ46W)  1.53 (N1FET79W)      1.19 (N1FHT36W)   01    2022/06/17
+  1.52      (N1FUJ45W)  1.52 (N1FET78W)      1.19 (N1FHT36W)   01    2022/01/27
+  1.51      (N1FUJ44W)  1.51 (N1FET77W)      1.18 (N1FHT35W)   01    2021/11/24
+  1.50      (N1FUJ43W)  1.50 (N1FET76W)      1.18 (N1FHT35W)   01    2021/09/16
+  1.49      (N1FUJ42W)  1.49 (N1FET75W)      1.18 (N1FHT35W)   01    2021/06/09
+  1.48      (N1FUJ41W)  1.48 (N1FET74W)      1.18 (N1FHT35W)   01    2020/11/30
+  1.47      (N1FUJ40W)  1.47 (N1FET73W)      1.18 (N1FHT35W)   01    2020/07/09
+  1.45      (N1FUJ38W)  1.45 (N1FET71W)      1.18 (N1FHT35W)   01    2020/01/10
+  1.44      (N1FUJ37W)  1.44 (N1FET70W)      1.18 (N1FHT35W)   01    2019/07/31
+  1.43      (N1FUJ36W)  1.43 (N1FET69W)      1.18 (N1FHT35W)   01    2019/06/05
+  1.42      (N1FUJ35W)  1.42 (N1FET68W)      1.18 (N1FHT35W)   01    2019/03/20
+  1.41      (N1FUJ34W)  1.41 (N1FET67W)      1.18 (N1FHT35W)   01    2019/02/14
+  1.40      (N1FUJ33W)  1.40 (N1FET66W)      1.18 (N1FHT35W)   01    2018/12/05
+  1.39      (N1FUJ32W)  1.39 (N1FET65W)      1.18 (N1FHT35W)   01    2018/11/02
+  1.38      (N1FUJ31W)  1.38 (N1FET64W)      1.18 (N1FHT35W)   01    2018/08/03
+  1.37      (N1FUJ30W)  1.37 (N1FET63W)      1.18 (N1FHT35W)   01    2018/06/12
+  1.36      (N1FUJ29W)  1.36 (N1FET62W)      1.18 (N1FHT35W)   01    2018/04/04
+  1.35      (N1FUJ28W)  1.35 (N1FET61W)      1.18 (N1FHT35W)   01    2018/02/07
+  1.33      (N1FUJ26W)  1.33 (N1FET59W)      1.18 (N1FHT35W)   02    2018/02/06
+  1.33      (N1FUJ26W)  1.33 (N1FET59W)      1.18 (N1FHT35W)   01    2017/12/25
+  1.32      (N1FUJ25W)  1.32 (N1FET58W)      1.18 (N1FHT35W)   01    2017/12/04
+  1.31      (N1FUJ24W)  1.31 (N1FET57W)      1.17 (N1FHT34W)   01    2017/10/08
+  1.29      (N1FUJ22W)  1.29 (N1FET55W)      1.17 (N1FHT34W)   01    2017/09/11
+  1.28      (N1FUJ21W)  1.28 (N1FET54W)      1.17 (N1FHT34W)   01    2017/08/24
+  1.27      (N1FUJ20W)  1.27 (N1FET53W)      1.17 (N1FHT34W)   01    2017/07/24
+  1.26      (N1FUJ19W)  1.26 (N1FET52W)      1.17 (N1FHT34W)   01    2017/06/27
+  1.25      (N1FUJ18W)  1.25 (N1FET51W)      1.17 (N1FHT34W)   01    2017/05/26
+  1.24      (N1FUJ17W)  1.24 (N1FET50W)      1.16 (N1FHT33W)   01    2017/03/23
+  1.23      (N1FUJ16W)  1.23 (N1FET49W)      1.15 (N1FHT32W)   01    2017/02/10
+  1.22      (N1FUJ15W)  1.22 (N1FET48W)      1.15 (N1FHT32W)   01    2017/02/03
+  1.21      (N1FUJ14W)  1.21 (N1FET47W)      1.14 (N1FHT31W)   01    2016/12/01
+  1.19      (N1FUJ13W)  1.19 (N1FET45W)      1.13 (N1FHT30W)   01    2016/11/16
+  1.18      (N1FUJ12W)  1.18 (N1FET44W)      1.13 (N1FHT30W)   01    2016/09/13
+  1.17      (N1FUJ11W)  1.17 (N1FET43W)      1.12 (N1FHT29W)   01    2016/08/09
+  1.15      (N1FUJ10W)  1.15 (N1FET41W)      1.10 (N1FHT27W)   01    2016/07/05
+  1.14      (N1FUJ09W)  1.14 (N1FET40W)      1.09 (N1FHT26W)   01    2016/04/27
+  1.11      (N1FUJ08W)  1.11 (N1FET37W)      1.08 (N1FHT25W)   01    2016/03/18
+  1.10      (N1FUJ07W)  1.10 (N1FET36W)      1.07 (N1FHT24W)   01    2016/03/10
+  1.08-1.06 (N1FUJ05W)  1.08 (N1FET34W)      1.06 (N1FHT23W)   02    2016/03/04
+  1.08-1.06 (N1FUJ05W)  1.08 (N1FET34W)      1.06 (N1FHT23W)   01    2016/02/03
+  1.08      (N1FUJ04W)  1.08 (N1FET34W)      1.05 (N1FHT22W)   01    2016/01/29
+  1.06      (N1FUJ03W)  1.06 (N1FET32W)      1.03 (N1FHT20W)   01    2015/12/30
+  1.05-1.03 (N1FUJ02W)  1.05 (N1FET31W)      1.03 (N1FHT20W)   01    2015/12/15
+  1.05      (N1FUJ01W)  1.05 (N1FET31W)      1.02 (N1FHT19W)   Factory Use Only
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of UEFI BIOS and Embedded Controller Program, refer to
+  the Determining which version is installed section.
+
+
+Summary of Changes
+
+  Where: <   >        Package version
+         UEFI:        UEFI BIOS version
+         ECP:         Embedded Controller Program version
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+<1.56>
+ UEFI: 1.56 / ECP: 1.19
+- [Important] Enhancement to address security vulnerability, CVE-2017-5715, CVE-2022-33894,
+              CVE-2022-34301, CVE-2022-34302, CVE-2022-34303.
+- (New) Updated the Diagnostics module to version 04.27.000.
+- (Fix) Fixed "Clear All Secure Boot Keys" not working when Secure Boot is Enable.
+- (Fix) Fixed an issue Secure Boot Enable is not protected.
+
+<1.55>
+ UEFI: 1.55 / ECP: 1.19
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to version 04.26.000.
+
+<1.54>
+ UEFI: 1.54 / ECP: 1.19
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to version 04.25.000.
+
+<1.53>
+ UEFI: 1.53 / ECP: 1.19
+- [Important] Enhancement to address security vulnerability, CVE-2022-21151, CVE-2022-0005.
+- (New) Updated the Diagnostics module to version 04.24.000.
+- (New) Updated the CPU microcode.
+- (Fix) Fixed an issue where device firmware update via Windows Update failed
+        when OPAL management software is installed.
+
+<1.52>
+ UEFI: 1.52 / ECP: 1.19
+- [Important] Update includes a security fix.
+- (New) Updated the MEBx.
+- (New) Updated the TXT BIOS ACM.
+- (New) Updated the CPU microcode.
+- (New) Updated the Diagnostics module to version 04.21.000.
+- (Fix) Fixed an issue where fan might rotated with max speed due to not reading CPU
+        temperature correctly.
+
+<1.51>
+ UEFI: 1.51 / ECP: 1.18
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to version 04.18.000.
+
+<1.50>
+ UEFI: 1.50 / ECP: 1.18
+- [Important] Update includes a security fix.
+
+<1.49>
+ UEFI: 1.49 / ECP: 1.18
+- [Important] CVE-2020-24511,CVE-2020-24512.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24511)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24512)
+- (New) Updated the CPU microcode.
+- (New) Updated the Diagnostics module to version 04.17.000.
+
+<1.48>
+ UEFI: 1.48 / ECP: 1.18
+- [Important] Addresses CVE-2020-8696 and CVE-2020-8698.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8696)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8698)
+- [Important] Addresses CVE-2020-0587, CVE-2020-0588, CVE-2020-0590, CVE-2020-0591,
+              CVE-2020-0592, and CVE-2020-0593.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0587)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0588)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0590)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0591)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0592)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0593)
+- (New) Updated the CPU microcode.
+- (New) Updated the Diagnostics module to version 04.15.000.
+
+<1.47>
+ UEFI: 1.47 / ECP: 1.18
+- [Important] Addresses CVE-2019-6173 and CVE-2019-6196.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6173)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6196)
+              Refer to Lenovo's Security Advisory page for additional information about
+              LEN-27431 "DLL Search Path and Symbolic Link Vulnerabilities".
+              (https://support.lenovo.com/us/en/product_security/LEN-27431)
+              (Note)
+              Vulnerabilities exploitable only during installation.
+              Previously installed version is not vulnerable to these CVEs.
+- [Important] Address CVE-2020-0548.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2020-0548)
+- [Important] Address CVE-2020-0549.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2020-0549)
+- [Important] Address CVE-2020-0543.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2020-0543)
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to version 04.12.001.
+
+<1.45>
+ UEFI: 1.45 / ECP: 1.18
+- [Important] Addresses CVE-2019-0151.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0151)
+- [Important] Addresses CVE-2019-0152.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0152)
+- [Important] Addresses CVE-2019-0123.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0123)
+- [Important] Addresses CVE-2019-0124.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0124)
+- [Important] Addresses CVE-2019-0117.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0117)
+- [Important] Addresses CVE-2019-0184.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0184)
+- [Important] Addresses CVE-2019-0185.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0185)
+- [Important] Addresses CVE-2019-0154.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0154)
+  Refer to Lenovo's Security Advisory page for additional information about
+  LEN-27714 "Multi-vendor BIOS Security Vulnerabilities".
+  (https://support.lenovo.com/us/en/product_security/LEN-27714)
+- [Important] Addresses CVE-2019-14607.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14607)
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to version 04.11.000.
+
+<1.44>
+ UEFI: 1.44 / ECP: 1.18
+- [Important] Enhancement to address security vulnerability CVE-2018-6622.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2018-6622)
+              Refer to Lenovo's Security Advisory page for additional information
+              about LEN-20494 "TPM 2.0 Sleep-Wake Error in BIOS Firmware"
+              (https://support.lenovo.com/us/en/solutions/LEN-20494).
+- [Important] Update includes a security fix.
+- (Fix) Fixed an issue where system might hang up at POST when some KVM device was connected.
+
+<1.43>
+ UEFI: 1.43 / ECP: 1.18
+- [Important] Enhancement to address security vulnerability CVE-2018-12126.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2018-12126)
+- [Important] Enhancement to address security vulnerability CVE-2018-12127.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2018-12127)
+- [Important] Enhancement to address security vulnerability CVE-2018-12130.
+              (https://cve.mitre.org//cgi-bin//cvename.cgi?name=CVE-2018-12130)
+  Refer to Lenovo's Security Advisory page for additional information about LEN-26696
+  "Microarchitectural Data Sampling (MDS) Side Channel Vulnerabilities"
+  (https://support.lenovo.com/us/en/product_security/LEN-26696).
+
+- (New) Updated the CPU microcode.
+- (New) Updated the Diagnostics module to version 04.08.000.
+
+<1.42>
+ UEFI: 1.42 / ECP: 1.18
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to 04.06.000.
+
+<1.41>
+ UEFI: 1.41 / ECP: 1.18
+- (New) Updated the Diagnostics module to full version 04.05.000.
+- (Fix) Fixed an issue where SAMSUNG PM871 SSD might not be detected correctly
+        after system restart.
+
+<1.40>
+ UEFI: 1.40 / ECP: 1.18
+- [Important] Security fix addresses LEN-20494 TPM 2.0 Sleep-Wake Error in BIOS Firmware (CVE-2018-6622).
+              Refer to Lenovo's Security Advisory page for additional information.
+              (https://support.lenovo.com/us/en/solutions/LEN-20494)
+- (New) Updated the Diagnostics module to version 04.05.000.
+
+<1.39>
+ UEFI: 1.39 / ECP: 1.18
+- [Important] Update includes a security fix.
+- [Important] Added Hyper Threading enable/disable option to ThinkPad Setup for virtualized
+              system users in order to address LEN-24163 L1 Terminal Fault Side Channel
+              Vulnerabilities (CVE-2018-3646). Refer to Lenovo's Security Advisory page for
+              additional information.(https://support.lenovo.com/us/en/solutions/LEN-24163)
+- [Important] Security fix addresses LEN-23848 Insecure Handling of BIOS and AMT Passwords in
+              Intel Platform Sample Firmware (CVE-2017-5704).
+              Refer to Lenovo's Security Advisory page for additional information.
+              (https://support.lenovo.com/us/en/solutions/LEN-23848)
+
+<1.38>
+ UEFI: 1.38 / ECP: 1.18
+- (New) Updated the Diagnostics module to version 04.00.001.
+- (Fix) Fixed an issue where BIOS silent update might fail with system account.
+- (Fix) Fixed an issue where BIOS POST might display the error message "Boot Manager
+        recover from an error."
+
+<1.37>
+ UEFI: 1.37 / ECP: 1.18
+- [Important] Security fix addresses LEN-22133 Speculative Execution Side Channel
+              Variants 4 and 3a (CVE-2018-3639, CVE-2018-3640).
+              Refer to Lenovo's Security Advisory page for additional information.
+              (https://support.lenovo.com/product_security/home)
+
+<1.36>
+ UEFI: 1.36 / ECP: 1.18
+- [Important] Security fix addresses LEN-19568 Intel Active Management Technology MEBx Access Control Bypass.
+- (New) Updated the Diagnostics module to version 03.12.003.
+
+<1.35>
+ UEFI: 1.35 / ECP: 1.18
+- (Fix) Fix an issue where user cannot enter Bitlocker Pin code by using Bloomberg 4 keyboard.
+- (Fix) Fix an issue where system cannot boot with USB 3.0 Ethernet adapter or ThinkPad Docks
+        with USB Ethernet device.
+- (Fix) Fix an issue where Operating System cannot recognize custom ACPI Table.
+
+<1.33>
+ UEFI: 1.33 / ECP: 1.18
+- [Important] Enhancement to address CVE-2017-5715.
+              (Note)
+              Release to the web again after re-evaluation of the solution.
+
+<1.33>
+ UEFI: 1.33 / ECP: 1.18
+- [Important] Enhancement to address CVE-2017-5715.
+
+<1.32>
+ UEFI: 1.32 / ECP: 1.18
+- (New) Updated TXT BIOS ACM.
+- (Fix) Fixed an issue where fan might rotated with max speed due to not reading CPU
+        temperature correctly.
+- (Fix) Fixed an issue where system might not boot to OS when attached an external monitor
+        and its USB3 devices.
+- (Fix) Fixed an issue where network boot might happened at reboot after resume from suspend
+        by Wake On LAN.
+
+<1.31>
+ UEFI: 1.31 / ECP: 1.17
+- (New) Updated the Diagnostics module to version 03.11.001.
+- (New) Enhanced Bottom Cover Tamper detection.
+- (New) Changed the Type field in SMBIOS Type 3 (System Enclosure or Chassis)
+        structure.
+- (New) Support interface of TPM firmware update.
+- (New) Updated the CPU microcode.
+- (Fix) Fixed BitLocker recovery issue when PCR5 was enabled as platform validation profile.
+
+<1.29>
+ UEFI: 1.29 / ECP: 1.17
+- [Important] Update includes a security fix.
+              (Note)
+              If the UEFI BIOS has been updated to version 1.29 or higher,
+              it is no longer able to roll back to the version before 1.29
+              for security improvement.
+
+<1.28>
+ UEFI: 1.28 / ECP: 1.17
+- (New) Updated the readme file.
+- (New) Updated the Diagnostics module to version 03.11.000.
+
+<1.27>
+ UEFI: 1.27 / ECP: 1.17
+- (Fix) Fixed an issue where no boot devices might be shown when Boot Order Lock is
+        enabled after Microsoft SCCM installation.
+- (Fix) Fixed an issue where POST 191 error might occur when only SVP change is
+        requested by WMI.
+
+<1.26>
+ UEFI: 1.26 / ECP: 1.17
+- (New) Updated BIOS update process.
+
+<1.25>
+ UEFI: 1.25 / ECP: 1.17
+- [Important] Update includes a security fix.
+- (New) Updated the Diagnostics module to version 03.10.001.
+- (Fix) Fixed an issue where Handelsbanken USB Smart Card Reader might cause a
+        POST hang.
+- (Fix) Fixed a POST hang issue when Lenovo T2424z monitor is attached to the
+        system and is selected as a boot display.
+
+<1.24>
+ UEFI: 1.24 / ECP: 1.16
+- (New) Display PCI LAN device with component name in Boot Menu.
+- (New) Updated the CPU microcode.
+- (New) Changed the Type field in SMBIOS Type 3 (System Enclosure or Chassis)
+        structure.
+- (Fix) Fixed an issue where volume-control buttons might not work.
+
+<1.23>
+ UEFI: 1.23 / ECP: 1.15
+- [Important] Security fix addresses LEN-13640 Intel Direct Connect Interface
+              can be enabled.
+              (Note)
+              If the UEFI BIOS has been updated to version 1.23 or higher,
+              it is no longer able to roll back to the version before 1.23
+              for security improvement.
+
+<1.22>
+ UEFI: 1.22 / ECP: 1.15
+- [Important] Fixed an issue where user might get BSOD when applying BIOS Update
+              on the system with Device Guard feature enebled on Windows 10
+              Enterprise Edition.
+              (Note)
+              Fix is effective at next BIOS Update timing. To apply this BIOS
+              Update package, user needs to disable Device Guard feature
+              temporarily in advance.
+- (Fix) Fixed an issue where keyboard might not work at restart.
+- (Fix) Fixed an issue where virtual keyboard/screen orientation might not work
+        correctly when resume from hibernation/fast startup.
+
+<1.21>
+ UEFI: 1.21 / ECP: 1.14
+- [Important] Update includes some security fixes.
+- (New) Support SMBIOS reporting option in BIOS setup.
+- (New) Moified the brightness control for OLED panel.
+- (New) Enabled the volume-control buttons even when the computer lid is closed.
+- (New) Updated the Intel reference code.
+- (Fix) Fixed to be able to unlock the password at reboot.
+- (Fix) Fixed an issue where the cursor without password prompt might appear at
+        unattended boot.
+- (Fix) Fixed an issue where the predesktop authentication prompt for
+        fingerprint reader might not appear.
+- (Fix) Provided a workaround to make the PxE boot display resolution to XGA
+        (1024x768)
+- (Fix) Fixed an issue where the computer might not boot when keyboard with USB
+        hub is attached to USB2.0 port of ThinkPad USB 3.0 Dock.
+- (Fix) Fixed an issue where the boot is paused for more than seconds when
+        specific USB device is attached to the computer.
+- (Fix) Fixed an issue where the computer might not boot when attaching to USB3.0 Hub
+        on ThinkVision T2224z Monitor.
+
+<1.19>
+ UEFI: 1.19 / ECP: 1.13
+- (Fix) Fixed an issue where user might not connect the Ethernet network through
+        ThinkPad OneLink+ Dock.
+
+<1.18>
+ UEFI: 1.18 / ECP: 1.13
+- [Important] Update includes a security fix.
+- (Fix) Fixed an issue where the computer might not wake from hibernation by
+        opening the computer lid in battery mode.
+
+<1.17>
+ UEFI: 1.17 / ECP: 1.12
+- [Important] Update includes some security fixes.
+              (Note)
+              If the UEFI BIOS has been updated to version 1.17 or higher,
+              it is no longer able to roll back to the version before 1.17
+              for security improvement.
+- (New) Updated the CPU microcode.
+- (New) Updated the Diagnostics module to version 2.09.09.
+- (New) Updated Intel Management Engine BIOS Extension (MEBx).
+- (New) Disabled the power button when the computer is in battery mode and the
+        computer lid is closed.
+- (Fix) Fixed an issue where the computer might not resume normal operation
+        from sleep state when hard disk password is set to NVMe drive.
+- (Fix) Fixed an issue where keyboard might not work properly at system power on.
+
+<1.15>
+ UEFI: 1.15 / ECP: 1.10
+- (New) Added support of Remote Secure Erase with Intel AMT.
+- (New) Allow keyboard input during POST logo under Tent / Stand multi-mode usage.
+- (New) Updated the CPU microcode.
+- (Fix) Fixed an issue where the computer was not booted when ThinkPad USB 3.0
+        Dock and the USB headset were attached to the computer.
+- (Fix) Thermal function was improved.
+
+<1.14>
+ UEFI: 1.14 / ECP: 1.09
+- (New) Updated the CPU microcode.
+- (New) Updated the Diagnostics module to version 2.09.08.
+- (New) Added support for legacy boot on system with NVMe SSD. (Driver is needed.)
+- (New) Added support for UEFI applications to work with TrackPoint.
+- (New) Updated the logo screen at start up.
+- (Fix) Fixed an issue where Ethernet LAN Option ROM might not work properly
+        with PoE Ethernet Switch.
+- (Fix) Fixed an issue where 16-bit aplication might not work in command prompt.
+- (Fix) Fixed an issue where "Boot Order Lock" in ThinkPad Setup cannot
+        be changed to "Enabled".
+- (Fix) Fixed an issue where "Ethernet LAN Option ROM" in ThinkPad Setup
+        did not work.
+
+<1.11>
+ UEFI: 1.11 / ECP: 1.08
+- (Fix) Fixed an issue where an unexpected warning message of Lenovo Settings
+        might appear when the ThinkPad Onelink+ dock was attached then power
+        on the computer.
+
+<1.10>
+ UEFI: 1.10 / ECP: 1.07
+- (New) Updated the CPU microcode.
+- (New) System can be turned on without AC adapter even if bottom cover
+        was opened.
+- (New) Added support for Windows 10 Device Guard feature.
+- (New) Added support for following combined button operations. (available on
+        ThinkPad X1 Yoga only)
+        - Ctrl+Alt+Del operation by Windows button and Power button.
+        - Narrator function enabling by Windows button and Volume Up button.
+        - Screen capture by Windows button and Volume Down button.
+- (Fix) Fixed an issue where the computer might not resume normal operation
+        from sleep state due to the inconsistent BIOS setting of security chip.
+- (Fix) Fixed an issue where error message may show on Windows 7 32 bit
+        system with hard disk password after resume from hibernation.
+
+<1.08-1.06>
+ UEFI: 1.08 / ECP: 1.06
+- (New) Added support for ThinkPad X1 Carbon (Machine types: 20FB, 20FC).
+
+<1.08-1.06>
+ UEFI: 1.08 / ECP: 1.06
+- (Fix) Fixed an issue where an unexpected warning message of Lenovo Settings
+        might appear when the ThinkPad OneLink+ to RJ45 Adapter was attached.
+
+<1.08>
+ UEFI: 1.08 / ECP: 1.05
+- (New) Updated the CPU microcode.
+- (New) Changed the timeout value of EFI system firmware to 90 seconds to
+        support EFI application using Intel PTT.
+- (Fix) Fixed an issue where an unexpected warning message of Lenovo Settings
+        might appear when the ThinkPad OneLink+ to RJ45 Adapter was attached.
+
+<1.06>
+ UEFI: 1.06 / ECP: 1.03
+- (Fix) Fixed an issue where Fingerprint device might not work at Pre-Boot
+        Authentication.
+
+<1.05-1.03>
+ UEFI: 1.05 / ECP: 1.03
+- (New) Added support for Lenovo Scaling Utility.
+
+<1.05>
+ UEFI: 1.05 / ECP: 1.02
+- (New) Initial release for ThinkPad X1 Yoga (Machine types: 20FQ, 20FR).
+
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+  Nothing.
+
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo, ThinkPad and ThinkVantage are registered trademarks of Lenovo.
+
+* Intel is a registered trademark of Intel Corporation.
+* Microsoft, Internet Explorer and Windows are registered trademarks of
+  Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.

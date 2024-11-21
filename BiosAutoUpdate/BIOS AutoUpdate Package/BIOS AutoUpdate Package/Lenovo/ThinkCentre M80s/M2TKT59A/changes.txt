@@ -1,0 +1,110 @@
+
+                                 BIOS Changes History
+      
+
+General Information:
+
+        M2TJ9xxUSA is Flash CD ROM image.
+        M2TJTxxUSA is Flash in UEFI Shell zip package.
+        M2TJYxxUSA is Flash in Windows utility.
+        NOTE: All changes carry forward.  That is, if a change is added in 01,it is also in 02, 03 etc.
+
+CHANGES for M2TKT59A / WU Version 1.0.0.89
+  - Enhancement to address security vulnerability LEN-135369, LEN-141561, LEN-146616, LEN-147504.
+  - Enhancement to address security vulnerability CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-22655,CVE-2023-23583,CVE-2023-38575,CVE-2023-39368,CVE-2023-28746,CVE-2023-27502,CVE-2023-28389,CVE-2023-32633,CVE-2023-35191,CVE-2023-32282, CVE-2023-27504, CVE-2023-28402, CVE-2023-28383.
+
+CHANGES for M2TKT58A / WU Version 1.0.0.88
+  - Autopilot marker fix. 
+  - Enhance BIOS update support.
+  - Enhancement to address security vulnerability CVE-2023-39539, CVE-2023-25756, CVE-2023-22329, CVE-2023-34470.
+  - Enhancement to address security vulnerability LEN-124704.
+
+CHANGES for M2TKT56A / WU Version 1.0.0.86
+  - Enhancement to address security vulnerability LEN-LEN-124703. 
+  - Enhancement to address security vulnerability CVE-2022-38087, CVE-2022-33894, CVE-2022-36763, CVE-2022-36764, CVE-2022-36765, CVE-2023-0286, CVE-2022-4304, CVE-2022-4203, CVE-2023-0215, CVE-2022-4450, CVE-2022-40982, CVE-2022-37343, CVE-2022-44611, CVE-2022-27879, CVE-2022-38083 ,CVE-2022-43505, CVE-2021-38575, CVE-2023-0464.
+
+CHANGES for M2TKT55A / WU Version 1.0.0.85
+  - Enhance BIOS update support.
+  - Enhancement to address security vulnerability LEN-119525, LEN-123566.
+  - Enhancement to address security vulnerability CVE-2023-25494.
+
+CHANGES for M2TKT54A / WU Version 1.0.0.84
+  - Enhancement to address security vulnerability LEN-99938, LEN-99939, LEN-99942, LEN-105119, LEN-107837, LEN-107838, LEN-113890, LEN-113891, LEN-113892.
+  - Enhancement to address security vulnerability CVE-2022-33894, CVE-2022-30539, CVE-2022-36348, CVE-2022-36794, CVE-2022-38090, CVE-2021-38578.
+
+CHANGES for M2TKT52A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT51A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT50A
+  - Enhancement to address security vulnerability.
+  - Update Embedded UEFI Diagnostics Tool.
+
+CHANGES for M2TKT4FA
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT4DA
+  - Update MEBx.
+
+CHANGES for M2TKT4BA
+  - Enhance BIOS Setup support.
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT4AA
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT47A
+  - Enhancement to address security vulnerability.
+  - Update Embedded UEFI Diagnostics Tool v04.19.000.
+
+CHANGES for M2TKT3FA
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT3CA
+  - Enhance card reader support.
+  - Enhance password support.
+
+CHANGES for M2TKT38A
+  - Enhance WMI support.
+
+CHANGES for M2TKT37A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT35A
+  - Enhance WMI support.
+
+CHANGES for M2TKT33A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT32A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT31A
+  - Enhance BIOS Setup support.
+  - Enhance Serial Port support.
+  - Enhance Smart USB protection support.
+
+CHANGES for M2TKT2EA
+  - Enhance TCO logo support.
+
+CHANGES for M2TKT2DA
+  - Maintenance Release.
+
+CHANGES for M2TKT2BA
+  - Fix some BIOS SETUP layout issues.
+
+CHANGES for M2TKT29A
+  - Fix some SMBIOS issues.
+  - Fix some BIOS SETUP layout issues.
+
+CHANGES for M2TKT27A
+  - Enhance CPU support.
+
+CHANGES for M2TKT26A
+  - Enhance CPU support.
+
+CHANGES for M2TKT14A
+  - Initial Production BIOS release.
+

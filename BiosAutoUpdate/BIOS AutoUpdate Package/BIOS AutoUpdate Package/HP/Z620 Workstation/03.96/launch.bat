@@ -1,0 +1,1 @@
+@start iexplore "C:\SWSetup\SP100699\BIOS Flash.htm"

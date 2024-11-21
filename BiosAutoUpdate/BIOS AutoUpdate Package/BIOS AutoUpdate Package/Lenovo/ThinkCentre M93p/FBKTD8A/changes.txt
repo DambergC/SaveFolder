@@ -1,0 +1,235 @@
+
+                                 BIOS Changes History
+      
+
+General Information:
+
+        FBJ9xxUSA is Flash CD ROM image.
+        FBJTxxUSA is Flash in DOS zip package.
+        FBJYxxUSA is Flash in Windows utility.
+        FBKTxxA is the binary image. (BIOS)
+        NOTE: All changes carry forward.  That is, if a change is added in 01,it is also in 02, 03 etc.
+
+This file will be updated from the beginning with first Production BIOS release
+
+CHANGES for FBKTD8A
+                 - [Important] Update includes security fixes.
+
+CHANGES for FBKTD6A
+                 - [Important] Update includes security fixes. 
+CHANGES for FBKTD5A
+                 - [Important] Update includes security fixes
+                 - Preserve the "Physical presence for clear" setting in Setup.                  
+CHANGES for FBKTD4A
+                 - Maintenance Release.
+CHANGES for FBKTD2A
+                 - Maintenance Release.
+CHANGES for FBKTD1A
+                 - Maintenance Release.
+CHANGES for FBKTCYA
+                 - Maintenance Release.
+CHANGES for FBKTCUA
+                 - Enhancement to address CVE-2017-5715 (http://www.cve.mitre.org/cgibin/cvename.cgi?name=2017-5715)
+CHANGES for FBKTCPA
+                 - Maintenance Release.
+CHANGES for FBKTCLA
+                 - [Important] Update includes security fixes.
+
+CHANGES for FBKTCGA
+                 - [Important] Update includes security fixes.
+
+CHANGES for FBKTCCA
+                 - [Important] Update includes security fixes.
+
+CHANGES for FBKTCAA
+                 - Update WMI behavior.
+
+CHANGES for FBKTC9A
+                 - Update Embedded UEFI Diagnostics Tool v02.09.09
+                 - Update the CPU Microcode M32306C3_00000021
+                 - [Important] Update includes security fixes.
+
+CHANGES for FBKTC6A
+                 - [Important] Update includes security fixes.
+
+CHANGES for FBKTC5A
+                 - Maintenance Release.
+
+CHANGES for FBKTC4A
+                 - [Important] Update includes security fixes.
+                 - Update Embedded UEFI Diagnostics Tool v02.09.08
+
+CHANGES for FBKTC1A
+                 - [Important] Update includes security fixes.
+                 - Fixes hard disk password problem.
+
+CHANGES for FBKTB9A
+                 - Maintenance Release.
+
+CHANGES for FBKTB8A
+                 - Update Embedded UEFI Diagnostics Tool v02.08.01
+                 - Security fix disables AMT USB Provisioning when AMT is disabled. Refer to Lenovo Security Advisory LEN-3556 for more information.
+
+CHANGES for FBKTB6A
+                 - Fixes WMI tools list wrong USB ports when disable Front USB Ports or Rear USB Ports.
+
+CHANGES for FBKTB4A
+                 - Added Win10 support.
+                 - Maintenance Release.
+
+CHANGES for FBKTB2A
+                 - Add some CPU support.
+
+CHANGES for FBKTB1A
+                 - Fixes the USB Mimo Monitor causes a long POST delay when attached.
+
+CHANGES for FBKTB0A
+                 - Fixes System Date issue.
+                 - Fixes the issue where Buffalo USB3.0 HDD not detected during BIOS POST.
+
+CHANGES for FBKTA7A
+                 - Maintenance Release.
+
+CHANGES for FBKTA6A
+                 - Update computrace module.
+
+CHANGES for FBKTA5A
+                 - Update Embedded UEFI Diagnostics Tool v2.06.00
+
+CHANGES for FBKTA4A
+                 - Support one type of Seagate HDD on M93p Tiny.
+
+CHANGES for FBKTA3A
+                 - Fix computrace test fail issue.
+
+CHANGES for FBKTA2A
+                 - Update Embedded UEFI Diagnostics Tool v2.05.00.
+
+CHANGES for FBKTA1A
+                 - Update SMBIOS Type0 information.
+
+CHANGES for FBKTA0A
+                 - Change the POST 0199 error behavior.
+
+CHANGES for FBKT99A
+                 - Support some USB devices.
+
+CHANGES for FBKT98A
+                 - Update Intel VBIOS to version 1030.
+
+CHANGES for FBKT96A
+                 - Support NTFS 512-byte cluster.
+                 - Update Intel VBIOS to version 1025.
+                 - Fix Linux will automatic wakeup when WOL enabled.
+
+CHANGES for FBKT90A
+                 - Update Embedded UEFI Diagnostics Tool v2.04.01.
+                 - Update the CPU Microcode M32306C3_00000019.
+
+CHANGES for FBKT89A
+                 - Fix System Serial Number can't show all strings issue.
+
+CHANGES for FBKT87A
+                 - Fix the issue that system will hang after flash BIOS with some CPU.
+
+CHANGES for FBKT86A
+                 - Fix Turbo Mode display issue in BIOS SETUP.
+
+CHANGES for FBKT79A
+                 - Fix system hang B2 when plus some graphic card without display monitor.
+                 - Fix the issue no boot with USB storage device connected, system would hang with a particular large HDD.
+		 - Fix the issue USB storage recognized as USB FDD.
+                 - Add the Smart USB Protection in BIOS SETUP.
+                 - Add Haswell refresh CPU support.
+                 - Fix FingerPrinter can't associate HDD password.
+                 - Fix system hang when plug two special PCIE LAN cards on PCIE4x and PCIE16x during preload.
+
+CHANGES for FBKT75A
+                 -Fix "Physcial Presence for clear" can't capture by SRDOS.
+                 -Fix some Samsung 128G SSD hang up when power on Q87.
+                 -Fix the issue that hangs in boot when a special 3rd party smartcard reader is inserted.
+                 -Update the PXE Option rom to BA1550Q2.LOM.
+
+CHANGES for FBKT74A
+                 -Add EFI_ATA_PASS_THRU_PROTOCOL and EFI_SCSI_PASS_THRU_PROTOCOL support in BIOS so that UEFI Diag has the stoage test item.
+                 -Fix the issue that system will hang when the system is with some special USB HDD during BIOS POST.
+                 -Fix the issue that system will hang after exiting a special PXE Linux.
+                 -Fix the issue that 0190 error will occur after changing computrace status.
+
+CHANGES for FBKT73A
+                 - Update the CPU Microcode M3240661_0000000F
+                 - Fix the issue that can't clear TCG feature in BIOS setup
+                 - Critical Update for the Embedded Controller Firmware in M93p Tiny.
+
+CHANGES for FBKT72A
+                 - Fix the issue that the "Hardware Password Manager" BIOS setup item can't be changed by WMI.
+                 - Add 8192EE wifi support
+
+CHANGES for FBKT71A
+                 - Update Embedded UEFI Diag 2.02.00
+
+CHANGES for FBKT67A
+                 -Support MTM length from 7 to 10
+                 -Update the CPU Microcode revision display format
+ 
+CHANGES for FBKT66A
+                 -Set the default Asset Tag as " ".
+
+CHANGES for FBKT65A
+                 -Fix an issue that can't disable the according USB port by WMI
+
+CHANGES for FBKT64A
+                 -Update microcode M32306C3_00000017.PDB
+
+CHANGES for FBKT63A
+                 -Add a Wireless LAN setup item for Tiny
+                  
+CHANGES for FBKT61A
+                 -Update TXT BIOS ACM 1.5
+                 -Add a new fingerprint Keyboard support
+
+CHANGES for FBKT60A
+                 -Add a RTL wifi support(VID/DID: 10ec/b723)
+
+CHANGES for FBKT50A
+                 -Fix some SSD can't work very well issue.
+
+CHANGES for FBKT49A
+                 -Update Intel TXT ACM module to Version 1.4.0
+
+CHANGES for FBKT48A
+                 -Update C-0 Haswell Microcode to version 016
+                 -Update the VBIOS to version 2177/the GOP to version 1034
+
+CHANGES for FBKT47A
+                 -Add a setup item "Require Admin. Pass. for F12 Boot" to support password check before F12 boot.
+                 -Update the UEFI Diag to version 02_01_06.
+CHANGES for FBKT46A
+                 -BIOS will indetify the USB disk whose size is larger than 32G as a USB HDD.
+                 -Update Microcode to M32306C3_00000012.PDB
+                 -Fix QEP9/QDN6 CPU HDMI audio work abnormal issue
+
+CHANGES for FBKT42A
+                 - Update CPU microcode to 10 version.
+		 - Fix the PCI slot controller can't be seen in windows device manager with low probability issue.
+                 - Fix the issue that USB 3.0 key still can be used in Windows after disabling the according USB port in BIOS setup.
+    Only For M93p Tiny
+                 -Fix the issue that can't detect USB device on the USB port 2 during BIOS POST with low probability issue.
+
+
+CHANGES for FBKT41A
+		 - Update Intel VBIOS to version 2175
+
+CHANGES for FBKT40A
+		 - Update Intel GOP to version 1032 
+
+CHANGES for FBKT39A
+		 - Initial Production BIOS release
+
+CHANGES for FBKT38A
+		 - Initial Production BIOS release
+
+
+
+
+

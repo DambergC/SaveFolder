@@ -1,0 +1,547 @@
+2085-07-31 02:41:57,972 INFO [2276] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-07-31 02:41:58,003 INFO [2276] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 02:41:58,003 DEBUG [2276] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 02:41:58,018 DEBUG [2276] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 02:41:58,018 DEBUG [2276] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 02:41:58,018 DEBUG [2276] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 02:41:58,018 DEBUG [2276] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 02:41:58,018 INFO [2276] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 02:41:58,018 INFO [2276] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-07-31 02:41:58,018 INFO [2276] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 02:41:58,018 INFO [2276] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 02:41:58,034 INFO [2276] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 02:41:58,420 INFO [2276] eSIO.FunIsp.IspAction[0]- IspAction
+2085-07-31 02:41:58,420 DEBUG [2276] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 02:41:58,420 INFO [2276] eSIO.FunDpRefresher.DP_Agent[0]- Initial Ok
+2085-07-31 02:44:57,924 INFO [2416] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-07-31 02:44:57,956 INFO [2416] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 02:44:57,956 DEBUG [2416] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 02:44:57,971 DEBUG [2416] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 02:44:57,971 DEBUG [2416] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 02:44:57,971 DEBUG [2416] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 02:44:57,971 DEBUG [2416] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 02:44:57,971 DEBUG [2416] eSIO.Hardware.DrvMyPortIO[0]- Open the device ok
+2085-07-31 02:44:58,284 INFO [2416] eSIO.FunIsp.IspAction[0]- IspAction
+2085-07-31 02:44:58,284 DEBUG [2416] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 02:44:58,284 INFO [2416] eSIO.FunDpRefresher.DP_Agent[0]- Initial Ok
+2085-07-31 04:46:08,972 INFO [2288] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Start
+2085-07-31 04:46:09,659 INFO [2288] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 04:46:09,722 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 04:46:09,753 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 04:46:09,753 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 04:46:09,753 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 04:46:09,753 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 04:46:09,769 INFO [2288] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 04:46:09,800 DEBUG [2288] eSIO.Hardware.ServiceDriver[0]- Service Exists
+2085-07-31 04:46:09,800 INFO [2288] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 04:46:09,800 INFO [2288] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:46:10,034 INFO [2288] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 04:46:12,206 DEBUG [2288] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 04:46:12,206 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-07-31 04:46:12,206 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,222 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,222 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-07-31 04:46:12,222 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,238 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,238 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-07-31 04:46:12,238 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,253 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,253 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-07-31 04:46:12,253 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,269 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,269 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-07-31 04:46:12,269 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,284 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,284 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-07-31 04:46:12,284 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,300 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,300 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-07-31 04:46:12,300 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,316 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,316 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-07-31 04:46:12,316 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:46:12,331 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:46:12,472 DEBUG [2288] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-07-31 04:46:12,503 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-07-31 04:46:12,503 DEBUG [2288] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-07-31 04:46:12,519 INFO [2288] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-07-31 04:46:12,519 ERROR [2288] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:46:12,550 ERROR [2288] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-07-31 04:46:12,550 INFO [2288] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-07-31 04:46:12,550 INFO [2288] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:46:12,550 INFO [2288] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-07-31 04:46:12,550 INFO [2288] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Exit
+2085-07-31 04:51:58,446 INFO [1356] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-07-31 04:51:58,478 INFO [1356] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 04:51:58,478 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 04:51:58,493 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 04:51:58,493 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 04:51:58,493 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 04:51:58,493 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 04:51:58,493 INFO [1356] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 04:51:58,493 INFO [1356] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-07-31 04:51:58,493 INFO [1356] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 04:51:58,493 INFO [1356] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:51:58,509 INFO [1356] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 04:52:05,156 INFO [1356] eSIO.FunDpRefresher.DpRsEngine[0]- End
+2085-07-31 04:52:05,172 INFO [1356] eSIO.FunIsp.IspAction[0]- IspAction
+2085-07-31 04:52:05,359 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 04:52:05,375 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 04:52:05,375 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 04:52:05,392 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:52:05,392 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:52:05,392 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:52:05,392 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:52:05,392 DEBUG [1356] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 04:52:11,092 INFO [1356] eSIO.FunIsp.IspEngine[0]- Start
+2085-07-31 04:52:11,092 INFO [1356] eSIO.FunIsp.IspEngine[0]- IspEngine
+2085-07-31 04:52:11,185 DEBUG [996] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 04:52:11,185 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-07-31 04:52:11,185 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,217 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,217 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-07-31 04:52:11,217 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,232 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,232 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-07-31 04:52:11,232 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,248 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,248 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-07-31 04:52:11,248 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,264 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,264 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-07-31 04:52:11,264 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,264 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,264 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-07-31 04:52:11,264 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,279 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,279 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-07-31 04:52:11,279 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,295 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,295 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-07-31 04:52:11,295 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:52:11,311 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:52:11,326 DEBUG [996] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-07-31 04:56:05,955 INFO [1356] eSIO.FunIsp.IspEngine[0]- End
+2085-07-31 04:56:05,955 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-07-31 04:56:05,955 DEBUG [1356] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-07-31 04:56:05,955 INFO [1356] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-07-31 04:56:05,971 ERROR [1356] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:56:05,986 ERROR [1356] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-07-31 04:56:05,986 INFO [1356] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-07-31 04:56:05,986 INFO [1356] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:56:05,986 INFO [1356] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-07-31 04:56:05,986 INFO [1356] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Exit
+2085-07-31 04:56:11,415 INFO [2000] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Start
+2085-07-31 04:56:11,447 INFO [2000] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 04:56:11,447 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 04:56:11,447 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 04:56:11,447 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 04:56:11,447 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 04:56:11,447 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 04:56:11,462 INFO [2000] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 04:56:11,462 INFO [2000] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-07-31 04:56:11,462 INFO [2000] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 04:56:11,462 INFO [2000] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:56:11,478 INFO [2000] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 04:56:11,587 DEBUG [2000] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 04:56:11,587 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-07-31 04:56:11,587 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,619 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,619 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-07-31 04:56:11,619 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,634 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,634 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-07-31 04:56:11,634 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,650 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,650 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-07-31 04:56:11,650 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,666 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,666 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-07-31 04:56:11,666 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,666 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,666 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-07-31 04:56:11,666 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,681 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,681 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-07-31 04:56:11,681 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,681 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,681 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-07-31 04:56:11,681 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 04:56:11,697 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 04:56:11,712 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Process_IspSignature: <<offset=65535 (0xFFFF) size=1>> Write 0x00
+2085-07-31 04:56:11,728 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Process_IspSignature: Read 0x00
+2085-07-31 04:56:11,728 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Erase <<offset=4096 (0x1000) size=258048>>
+2085-07-31 04:56:12,494 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Program <<offset=4096 (0x1000) size=258048>>
+2085-07-31 04:56:18,432 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Read <<offset=4096 (0x1000) size=258048>>
+2085-07-31 04:56:24,401 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Verify <<offset=4096 (0x1000) size=258048>>
+2085-07-31 04:56:24,401 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Process_IspSignature: <<offset=65535 (0xFFFF) size=1>> Write 0xA5
+2085-07-31 04:56:24,401 DEBUG [2000] eSIO.FunIsp.IspAction[0]- Process_IspSignature: Read 0xA5
+2085-07-31 04:56:24,401 DEBUG [2000] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-07-31 04:56:24,401 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-07-31 04:56:24,401 DEBUG [2000] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-07-31 04:56:24,417 INFO [2000] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-07-31 04:56:24,417 ERROR [2000] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:56:24,433 ERROR [2000] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-07-31 04:56:24,433 INFO [2000] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-07-31 04:56:24,433 INFO [2000] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:56:24,433 INFO [2000] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-07-31 04:56:24,433 INFO [2000] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Exit
+2085-07-31 04:56:30,250 INFO [636] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-07-31 04:56:30,282 INFO [636] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 04:56:30,282 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 04:56:30,297 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 04:56:30,297 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 04:56:30,297 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 04:56:30,297 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 04:56:30,297 INFO [636] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 04:56:30,297 INFO [636] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-07-31 04:56:30,297 INFO [636] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 04:56:30,297 INFO [636] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 04:56:30,313 INFO [636] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 04:56:30,407 INFO [636] eSIO.FunIsp.IspAction[0]- IspAction
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:56:30,594 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 04:57:22,849 INFO [636] eSIO.FunIsp.IspEngine[0]- End
+2085-07-31 04:57:24,599 INFO [636] eSIO.FunDpRefresher.DpRsEngine[0]- End
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 04:57:24,599 DEBUG [636] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:01:46,317 INFO [636] eSIO.FunIsp.IspEngine[0]- End
+2085-07-31 05:01:46,333 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-07-31 05:01:46,333 DEBUG [636] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-07-31 05:01:46,348 INFO [636] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-07-31 05:01:46,348 ERROR [636] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 05:01:46,364 ERROR [636] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-07-31 05:01:46,364 INFO [636] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-07-31 05:01:46,364 INFO [636] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 05:01:46,364 INFO [636] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-07-31 05:01:46,364 INFO [636] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Exit
+2085-07-31 05:01:58,773 INFO [1096] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Start
+2085-07-31 05:01:58,805 INFO [1096] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 05:01:58,805 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 05:01:58,820 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 05:01:58,820 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 05:01:58,820 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 05:01:58,820 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 05:01:58,820 INFO [1096] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 05:01:58,820 INFO [1096] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-07-31 05:01:58,820 INFO [1096] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 05:01:58,820 INFO [1096] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 05:01:58,836 INFO [1096] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 05:01:58,945 DEBUG [1096] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 05:01:58,961 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-07-31 05:01:58,961 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:58,977 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:58,977 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-07-31 05:01:58,977 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:58,992 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:58,992 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-07-31 05:01:58,992 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:59,008 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:59,008 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-07-31 05:01:59,008 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:59,023 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:59,023 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-07-31 05:01:59,023 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:59,039 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:59,039 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-07-31 05:01:59,039 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:59,055 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:59,055 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-07-31 05:01:59,055 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:59,070 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:59,070 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-07-31 05:01:59,070 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:01:59,086 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:01:59,102 DEBUG [1096] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-07-31 05:01:59,117 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-07-31 05:01:59,117 DEBUG [1096] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-07-31 05:01:59,117 INFO [1096] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-07-31 05:01:59,117 ERROR [1096] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 05:01:59,148 ERROR [1096] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-07-31 05:01:59,148 INFO [1096] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-07-31 05:01:59,148 INFO [1096] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 05:01:59,148 INFO [1096] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-07-31 05:01:59,148 INFO [1096] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Exit
+2085-07-31 05:03:52,943 INFO [2924] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-07-31 05:03:52,974 INFO [2924] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-07-31 05:03:52,990 DEBUG [2924] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-07-31 05:03:52,990 DEBUG [2924] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-07-31 05:03:52,990 DEBUG [2924] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-07-31 05:03:52,990 DEBUG [2924] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-07-31 05:03:52,990 DEBUG [2924] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-07-31 05:03:52,990 INFO [2924] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-07-31 05:03:53,005 INFO [2924] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-07-31 05:03:53,005 INFO [2924] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-07-31 05:03:53,005 INFO [2924] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-07-31 05:03:53,021 INFO [2924] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-07-31 05:03:53,115 INFO [2924] eSIO.FunIsp.IspAction[0]- IspAction
+2085-07-31 05:03:53,287 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:03:53,302 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:12:33,689 INFO [2924] eSIO.FunIsp.IspEngine[0]- End
+2085-07-31 05:12:38,224 INFO [2924] eSIO.FunDpRefresher.DpRsEngine[0]- End
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:12:38,239 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:15:54,857 INFO [2924] eSIO.FunIsp.IspEngine[0]- Start
+2085-07-31 05:15:54,857 INFO [2924] eSIO.FunIsp.IspEngine[0]- IspEngine
+2085-07-31 05:15:54,903 DEBUG [2728] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-07-31 05:15:54,903 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-07-31 05:15:54,903 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:54,935 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:54,935 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-07-31 05:15:54,935 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:54,950 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:54,950 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-07-31 05:15:54,950 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:54,966 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:54,966 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-07-31 05:15:54,966 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:54,982 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:54,982 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-07-31 05:15:54,982 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:54,997 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:54,997 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-07-31 05:15:54,997 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:55,013 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:55,013 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-07-31 05:15:55,013 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:55,029 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:55,029 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-07-31 05:15:55,029 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-07-31 05:15:55,044 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-07-31 05:15:55,060 DEBUG [2728] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.FMain[0]- DEVICE_REMOVECOMPLETE
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceHid[0]- DeviceSMBus.FindDevice
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceHid[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceHid[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceHid[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceHid[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-07-31 05:19:15,941 DEBUG [2924] eSIO.Hardware.DeviceHid[0]- FindDevice failed
+2085-07-31 07:39:05,675 INFO [2924] eSIO.FunIsp.IspEngine[0]- End
+2085-08-01 05:21:22,849 INFO [2920] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-08-01 05:21:22,881 INFO [2920] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-08-01 05:21:22,896 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-08-01 05:21:22,896 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-08-01 05:21:22,896 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-08-01 05:21:22,896 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-08-01 05:21:22,896 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-08-01 05:21:22,896 INFO [2920] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-08-01 05:21:22,896 DEBUG [2920] eSIO.Hardware.ServiceDriver[0]- Service Exists
+2085-08-01 05:21:22,896 INFO [2920] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-08-01 05:21:22,912 INFO [2920] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:21:22,959 INFO [2920] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-08-01 05:21:23,132 INFO [2920] eSIO.FunIsp.IspAction[0]- IspAction
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:21:23,330 DEBUG [2920] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-08-01 05:21:36,133 INFO [2920] eSIO.FunIsp.IspEngine[0]- Start
+2085-08-01 05:21:36,211 INFO [2920] eSIO.FunIsp.IspEngine[0]- IspEngine
+2085-08-01 05:21:36,476 DEBUG [2892] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-08-01 05:21:36,508 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-08-01 05:21:36,508 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,523 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,523 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-08-01 05:21:36,523 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,539 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,539 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-08-01 05:21:36,539 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,554 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,554 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-08-01 05:21:36,554 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,570 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,570 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-08-01 05:21:36,570 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,586 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,586 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-08-01 05:21:36,586 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,601 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,601 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-08-01 05:21:36,601 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,617 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,617 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-08-01 05:21:36,617 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:21:36,633 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:21:36,633 DEBUG [2892] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-08-01 05:21:43,657 INFO [2920] eSIO.FunIsp.IspEngine[0]- End
+2085-08-01 05:21:43,797 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-08-01 05:21:43,797 DEBUG [2920] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-08-01 05:21:43,797 INFO [2920] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-08-01 05:21:43,797 ERROR [2920] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:21:43,829 ERROR [2920] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-08-01 05:21:43,829 INFO [2920] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-08-01 05:21:43,829 INFO [2920] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:21:43,829 INFO [2920] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-08-01 05:21:43,829 INFO [2920] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Exit
+2085-08-01 05:22:36,654 INFO [1144] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-08-01 05:22:36,686 INFO [1144] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-08-01 05:22:36,686 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-08-01 05:22:36,701 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-08-01 05:22:36,701 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-08-01 05:22:36,701 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-08-01 05:22:36,701 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-08-01 05:22:36,701 INFO [1144] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-08-01 05:22:36,701 INFO [1144] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-08-01 05:22:36,701 INFO [1144] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-08-01 05:22:36,701 INFO [1144] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:22:36,732 INFO [1144] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-08-01 05:22:36,826 INFO [1144] eSIO.FunIsp.IspAction[0]- IspAction
+2085-08-01 05:22:36,998 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- DeviceDbg.FindDevice_Internal
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0003#6&55f571d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_00#7&1f83283f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col01#7&c530c01&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- \\?\hid#vid_1c4f&pid_0016&mi_01&col02#7&c530c01&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+2085-08-01 05:22:37,014 DEBUG [1144] eSIO.Hardware.DeviceDbg[0]- FindDevice failed
+2085-08-01 05:22:41,481 INFO [1144] eSIO.FunIsp.IspEngine[0]- End
+2085-08-01 05:22:41,496 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-08-01 05:22:41,496 DEBUG [1144] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-08-01 05:22:41,512 INFO [1144] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-08-01 05:22:41,512 ERROR [1144] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:22:41,528 ERROR [1144] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-08-01 05:22:41,528 INFO [1144] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-08-01 05:22:41,528 INFO [1144] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:22:41,528 INFO [1144] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-08-01 05:22:41,528 INFO [1144] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Exit
+2085-08-01 05:22:59,491 INFO [960] eSIO.NuvECIOProg[0]- ============================== NuvECIOProg Start
+2085-08-01 05:22:59,522 INFO [960] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-08-01 05:22:59,538 DEBUG [960] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-08-01 05:22:59,538 DEBUG [960] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-08-01 05:22:59,538 DEBUG [960] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-08-01 05:22:59,538 DEBUG [960] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-08-01 05:22:59,538 DEBUG [960] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-08-01 05:22:59,538 INFO [960] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2085-08-01 05:22:59,538 INFO [960] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2085-08-01 05:22:59,538 INFO [960] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2085-08-01 05:22:59,554 INFO [960] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:22:59,569 INFO [960] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2085-08-01 05:22:59,946 INFO [960] eSIO.FunIsp.IspAction[0]- IspAction
+2085-08-01 05:22:59,946 DEBUG [960] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-08-01 05:22:59,946 INFO [960] eSIO.FunDpRefresher.DP_Agent[0]- Initial Ok
+2085-08-01 05:24:09,100 INFO [276] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Start
+2085-08-01 05:24:09,131 INFO [276] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2085-08-01 05:24:09,131 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2085-08-01 05:24:09,131 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- servicePath:C:\Users\bbbbb\Desktop\0.97\MyPortIO_x64.sys
+2085-08-01 05:24:09,131 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2085-08-01 05:24:09,131 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2085-08-01 05:24:09,147 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2085-08-01 05:24:09,147 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- Open the device ok
+2085-08-01 05:24:09,256 DEBUG [276] eSIO.FunIsp.IspUtil[?]- LPC Setting: A20 A21 A22
+2085-08-01 05:24:09,256 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 00 37
+2085-08-01 05:24:09,256 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,287 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,287 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 01 34
+2085-08-01 05:24:09,287 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,303 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,303 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 02 35
+2085-08-01 05:24:09,303 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,319 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,319 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 03 34
+2085-08-01 05:24:09,319 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,334 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,334 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 04 37
+2085-08-01 05:24:09,334 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,334 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,334 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 05 30
+2085-08-01 05:24:09,334 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,350 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,350 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 06 35
+2085-08-01 05:24:09,350 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,366 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,366 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write MagicPattern 07 33
+2085-08-01 05:24:09,366 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- Write ok
+2085-08-01 05:24:09,366 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- WaitData ok
+2085-08-01 05:24:09,412 DEBUG [276] eSIO.FunIsp.IspAction[0]- Erase <<offset=0 (0x00) size=262144>>
+2085-08-01 05:24:09,788 DEBUG [276] eSIO.FunIsp.IspAction[0]- Program <<offset=0 (0x00) size=262144>>
+2085-08-01 05:24:15,851 DEBUG [276] eSIO.FunIsp.IspAction[0]- Read <<offset=0 (0x00) size=262144>>
+2085-08-01 05:24:21,898 DEBUG [276] eSIO.FunIsp.IspAction[0]- Verify <<offset=0 (0x00) size=262144>>
+2085-08-01 05:24:21,898 DEBUG [276] eSIO.FunIsp.IspItfLpc[0]- EndIsp- 01 Jump to UserModeCode
+2085-08-01 05:24:21,898 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2085-08-01 05:24:21,898 DEBUG [276] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2085-08-01 05:24:21,914 INFO [276] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2085-08-01 05:24:21,914 ERROR [276] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:24:21,930 ERROR [276] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2085-08-01 05:24:21,930 INFO [276] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2085-08-01 05:24:21,930 INFO [276] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2085-08-01 05:24:21,930 INFO [276] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2085-08-01 05:24:21,930 INFO [276] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Exit
+2018-02-02 10:20:29,094 INFO [4564] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Start
+2018-02-02 10:20:29,310 INFO [4564] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2018-02-02 10:20:29,321 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2018-02-02 10:20:29,329 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- servicePath:D:\pM81\tool\M1CCT11A_WinFlash\MyPortIO_x64.sys
+2018-02-02 10:20:29,329 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2018-02-02 10:20:29,329 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2018-02-02 10:20:29,330 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2018-02-02 10:20:29,334 INFO [4564] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2018-02-02 10:20:29,336 INFO [4564] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2018-02-02 10:20:29,337 INFO [4564] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2018-02-02 10:20:29,338 INFO [4564] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2018-02-02 10:20:29,360 INFO [4564] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2018-02-02 10:20:29,681 DEBUG [4564] eSIO.FunIsp.IspUtil[0]- LPC Setting: A20 A21 A22
+2018-02-02 10:20:29,683 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2018-02-02 10:20:29,683 DEBUG [4564] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2018-02-02 10:20:29,684 INFO [4564] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2018-02-02 10:20:29,684 ERROR [4564] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2018-02-02 10:20:29,693 ERROR [4564] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2018-02-02 10:20:29,693 INFO [4564] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2018-02-02 10:20:29,693 INFO [4564] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2018-02-02 10:20:29,693 INFO [4564] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2018-02-02 10:20:29,693 INFO [4564] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Exit
+2018-02-02 10:20:50,313 INFO [5528] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Start
+2018-02-02 10:20:50,323 INFO [5528] eSIO.Hardware.DrvMyPortIO[0]- Initiate
+2018-02-02 10:20:50,325 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 1
+2018-02-02 10:20:50,327 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- servicePath:D:\pM81\tool\M1CCT11A_WinFlash\MyPortIO_x64.sys
+2018-02-02 10:20:50,327 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- driverName:MyPortIO
+2018-02-02 10:20:50,327 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- deviceName:MyPortIODev
+2018-02-02 10:20:50,327 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- devicePath:\\.\MyPortIODev
+2018-02-02 10:20:50,328 INFO [5528] eSIO.Hardware.ServiceDriver[0]- InstallDriver
+2018-02-02 10:20:50,329 INFO [5528] eSIO.Hardware.ServiceDriver[0]- CreateService ok
+2018-02-02 10:20:50,329 INFO [5528] eSIO.Hardware.ServiceDriver[0]- StartDriver
+2018-02-02 10:20:50,329 INFO [5528] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2018-02-02 10:20:50,330 INFO [5528] eSIO.Hardware.ServiceDriver[0]- StartService ok
+2018-02-02 10:20:50,368 DEBUG [5528] eSIO.FunIsp.IspUtil[0]- LPC Setting: A20 A21 A22
+2018-02-02 10:20:50,370 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- Using MyPortIO Count: 0
+2018-02-02 10:20:50,370 DEBUG [5528] eSIO.Hardware.DrvMyPortIO[0]- Start to Remove MyPortIO
+2018-02-02 10:20:50,370 INFO [5528] eSIO.Hardware.ServiceDriver[0]- StopDriver
+2018-02-02 10:20:50,371 ERROR [5528] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2018-02-02 10:20:50,379 ERROR [5528] eSIO.Hardware.ServiceDriver[0]- StopDriver ok
+2018-02-02 10:20:50,379 INFO [5528] eSIO.Hardware.ServiceDriver[0]- RemoveDriver
+2018-02-02 10:20:50,379 INFO [5528] eSIO.Hardware.ServiceDriver[0]- OpenService ok
+2018-02-02 10:20:50,379 INFO [5528] eSIO.Hardware.ServiceDriver[0]- DeleteService ok
+2018-02-02 10:20:50,379 INFO [5528] eSIO.eSIOFlashProg[0]- ============================== eSIOFlashProg Exit

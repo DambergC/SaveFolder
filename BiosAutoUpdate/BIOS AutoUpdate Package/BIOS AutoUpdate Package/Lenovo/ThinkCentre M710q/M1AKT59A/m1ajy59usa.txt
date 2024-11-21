@@ -1,0 +1,348 @@
+Flash BIOS update - Flash from Operating System version
+for ThinkCentre M910t, M910s, M910q, M910x, M710q, ThinkStation P320 Tiny
+Version M1AKT59A
+Installation README
+
+This package updates the basic input/output system (BIOS) on
+all ThinkCentre M910t, M910s, M910q, M910x, M710q, ThinkStation P320 Tiny systems.
+
+BIOS is programming that controls low-level hardware operations,
+including interactions with diskette drives, hard disk drives,
+and the keyboard. The BIOS is stored on a chip.  Your computer
+uses flash BIOS, which can be updated through a program on a 
+flash diskette so that you do not have to replace the BIOS
+chip to update the BIOS.
+
+Do not write protect the flash diskette as this may cause the
+flash process to hang.
+
+Print this file so that you can refer to it during the installation.
+
+Downloading the package
+=======================
+1. Click the file link to download the file from the web page.
+2. When prompted, select a drive and directory in which to save the 
+   downloaded file.
+
+Extracting the package
+======================
+1. Click Start, select Find or Search, then click All files and folders.
+2. Type m1ajy59usa.exe for Windows 10 or m1ajy59usa_win7.exe for 
+    Windows 7 in the search field, then click Find Now or search 
+    Everywhere. This will locate the file you just downloaded.
+3. Double-click the m1ajy59usa.exe or m1ajy59usa_win7.exe icon.
+4. Read the license agreement
+5. Click I accept the terms in the license agreement.
+6. Click Next.
+7. Ensure that "Save files in folder" is set to
+   C:\SWTOOLS\FLASH\M1AJY59USA
+8. Click Next.
+9. Click Finish.
+
+Installing the package
+======================
+Please print out these instructions or write them down before
+starting this flash update utility.                          
+                                                             
+This flash under operating system (32-bit/64-bit) utility provides
+the ability to update the system BIOS from a Windows application. 
+                                                             
+The utility may be downloaded from the internet and unpacked into 
+the default path: "C:\SWTOOLS\FLASH\M1AJYxxUSA", where "xx"  
+represents the two-digit BIOS level. Please follow steps in  
+section 2 to launch the Windows based flash application to update 
+your system BIOS.                                            
+                                                             
+1.  Please make note of any settings you have changed in the BIOS
+    Setup utility. They may have to be re-entered after updating 
+    the BIOS.                                                    
+                                                                 
+2.  Click on the Start button and type cmd.exe?  Right-click on  
+    the cmd.exe application and select run as administrator?to   
+    open the Command Prompt?with Administrator privilege.        
+                                                                 
+3.  In the "Command Prompt" window, change to the directory where the
+    above files were extracted.  The command to go to the location is
+    "cd C:\SWTOOLS\FLASH\M1AJYxxUSA", where "xx" represents the two  
+    digit flash level.                                           
+                                                                 
+4.  Enter the command "flash.cmd" and press the Enter key to start   
+    the flashing process.                                        
+                                                                 
+5.  You may first see a confirmation prompt "Proceed with BIOS   
+    update now?". Click "Yes" to continue.?                      
+                                                                 
+6.  You will see the prompt "Would you like to update the Serial 
+    Number?". Input "n" and press Enter.                         
+                                                                 
+7.  Then you will see the prompt "Would you like to update the   
+    Machine Type and Model?". Input "n" and press Enter again.   
+    Then the BIOS update process will start.                     
+                                                                 
+8.  The update may take up to 2 minutes. Do not power off or restart 
+    the system during this procedure! After the Windows update   
+    process ends, the system will automatically reboot to continue   
+    the flash process.                                           
+                                                                 
+9.  After the system reboots, the BIOS update process will continue  
+    with a simple graphic UI. When the BIOS update process ends, 
+    the system will reboot automatically.                        
+                                                                 
+10.  The BIOS update process ends with above nine steps.          
+                                                                 
+Notes:                                                            
+      - You may see a POST error "0162: Setup data integrity check   
+    failure" after step 9.Press F1 to enter BIOS Setup Utility,  
+    and then press F10 to save your settings   
+
+Summary of Changes
+==================
+General Information:
+
+        M1AJ9xxUSA is Flash CD ROM image.
+        M1AJTxxUSA is Flash in DOS zip package.
+        M1AJYxxUSA_WIN7 is Flash in Windows utility.
+        M1AKTxxA is the binary image. (BIOS)
+        NOTE: All changes carry forward.  That is, if a change is added in 01,it is also in 02, 03 etc.
+
+CHANGES for M1AKT59A / WU Version 1.0.0.89
+  - Autopilot marker fix.
+
+CHANGES for M1AKT58A
+  - Correct a problem with a warm boot BIOS update using the SCCM parameter.
+  - Improve Error 0x81 message when flashing same/older BIOS ROM.
+
+CHANGES for M1AKT57A
+  - Enhancement to address security vulnerability LEN-99955, LEN-99954, LEN-96373, LEN-96367, LEN-96364, LEN-95703, LEN-95701, LEN-94533, LEN-94531, LEN-91372, LEN-77635.
+
+CHANGES for M1AKT56A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT54A
+  - Enhancement to address security vulnerability.
+  - Update CPU microcode.
+
+CHANGES for M1AKT53A
+  - Fix some BIOS update issues.
+
+CHANGES for M1AKT52A
+  - Enhancement to address security vulnerability.
+  - Update CPU microcode.
+
+CHANGES for M1AKT51A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT50A
+  - Enhancement to address security vulnerability.
+  - Update CPU microcode.
+
+CHANGES for M1AKT4FA
+  - Optimized IPV6 disable function.
+  
+CHANGES for M1AKT4EA
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT4DA
+  - Update CPU microcode.
+
+CHANGES for M1AKT4CA
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT4BA
+  - Update CPU microcode.
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT4AA
+  - Update CPU microcode.
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT49A
+  - Fix NVME SSD password issue.
+  
+CHANGES for M1AKT48A
+  - Update CPU microcode.
+  - Enhancement to address security vulnerability.
+
+CHANGES for M1AKT47A
+  - Fix the issue that there might be no video during POST with 2 monitors attached.
+  
+CHANGES for M1AKT46A
+  - Fix Bitlocker recovery is intermittently triggered with TXT enabled after resume from sleep.
+  
+CHANGES for M1AKT45A
+  - Enhancement to address security vulnerability.
+  - Enhance BIOS SETUP support.
+
+CHANGES for M1AKT44A
+  - Maintenance release.
+  
+CHANGES for M1AKT41A
+  - Update UEFI DIAG to 4.08.
+  
+CHANGES for M1AKT40A
+  - Update CPU Microcode.
+
+CHANGES for M1AKT3FA
+  - Update includes security fixes. 
+
+CHANGES for M1AKT3EA
+  - Fix PXE boot issue. 
+    
+CHANGES for M1AKT3DA
+  - Update UEFI DIAG to 4.05. 
+  - Update VBIOS 9.0.1062.
+
+CHANGES for M1AKT3CA
+  - Fix event log cleared issue.
+  - Update UEFI DIAG to 4.04. 
+  - Fix NVME SSD password issue.
+  - Enhance SCCM BIOS deployment support.
+
+CHANGES for M1AKT3BA
+  - Fix some SMBIOS issue.
+
+CHANGES for M1AKT3AA
+  - Fix system fan may spin high after resume from suspend. 
+  - Update SMBIOS information.
+
+CHANGES for M1AKT39A
+  - Maintenance release.
+
+CHANGES for M1AKT37A
+  - Update CPU Microcode.
+  - Fix some BIOS update issues.
+
+CHANGES for M1AKT36A
+  - Fix BSOD may happen when installing Win7 on NVMe drive.
+  - NVRAM management improvement to fix  POST hangs.
+
+CHANGES for M1AKT35A
+  - Enhance Device Guard support.
+  - Enhance Toshiba GX5 support.
+  - Fix WinMagic issue.
+
+CHANGES for M1AKT34A
+  - Update CPU Microcode revision to 0x84.
+
+CHANGES for M1AKT33A
+  - Fix Discrete TPM FW Switch failure issue.
+
+CHANGES for M1AKT30A
+  - Enhance Discrete TPM firmware capsule update support.
+  - Fix some BIOS WMI issues.
+
+CHANGES for M1AKT2DA
+  - Enhance the support of NVS310 graphic card.
+
+CHANGES for M1AKT2CA
+  - Add TPM firmware Windows Update support.
+  - Enhance Discrete TPM FW Switch function. 
+  - Fix eDrive Bitlock issue.
+  - Fix some system boot failure issue.
+
+CHANGES for M1AKT2AA
+  - Fix the issue that there is no Windows Boot Manager in Optane mode.
+  - Fix some BIOS WMI issues.
+
+CHANGES for M1AKT28A
+  - Enhance NVME RAID support for M910x and P320 Tiny platforms. 
+  - Fix TPM FW switch problem with CFGWIN tool.
+  - Fix TPM problems with "Did not select Fmp device target".
+  - Fix some BIOS WMI issues.
+
+CHANGES for M1AKT26A
+  - Fix BitLocker Network Unlock not working if WDS server on different VLAN.
+  - Enhance Discrete TPM FW Switch function.
+  - Fix 'User Defined Alarm' settings cannot be restored with CFGWIN tool.
+  - Fix Boot order is executed in reverse in some conditions.
+  - Enhance Tiny TIO feature.
+
+CHANGES for M1AKT24A
+  - Fix there is no HDD Password setting items for Toshiba M.2 NVMe SSD models in BIOS SETUP.
+
+CHANGES for M1AKT23A
+  - Fix some of WMI issues.
+  - Fix BIOS setup issues.
+  - Update CPU microcode.
+  - Fix finger print keyboard issues.
+
+CHANGES for M1AKT22A
+  - Enhance TPM feature.
+  - Enhance NVME RAID support for M910x products.
+
+CHANGES for M1AKT21A
+  - Enhance TIO support.
+  - Fix WMI issues.
+
+CHANGES for M1AKT20A
+  - Fix S3 resume unusual issue.
+  - Fix some BIOS setting related issues.
+  - Enhance Intel(R) Optane memory feature.
+  - Enhance Tiny OTP feature.
+
+CHANGES for M1AKT18A
+  - Fix some BIOS setup issues.
+  - Fix WMI issues.
+  - Enhance TIO support.
+  - Fix EDU issues.
+
+CHANGES for M1AKT17A
+  - Enhance TIO support.
+  - Fix some BIOS setup issues.
+  - Enhance Tiny system feature.
+  - Add Intel(R) Optane memory support
+  - Fix some issue related to Asmedia Type-C card.
+  - Fix PXE boot failure issue.
+
+CHANGES for M1AKT15A
+  - Enhance Tiny NVME SSD support.
+  - Enhance TIO support.
+  - Fix some setup issues.
+  - Fix 4K display garbage in Windows 10 hibernate.
+
+CHANGES for M1AKT13A
+  - Fix Win7 issue.
+  - Fix parallel port issue.
+
+CHANGES for M1AKT12A
+  - Enhance WMI function.
+  - Enhance Tiny TIO function.
+  - Fix Win7 issue.
+  - Update SMBIOS.
+
+CHANGES for M1AKT11A
+  - Enhance WMI function.
+  - Enhance Tiny TIO function.
+
+CHANGES for M1AKT10A
+  - Fix system does not beep when no memory detected.
+  - Update CPU Microcode revision to 0x48.
+  - Fix Security Erase HDD Data issue.
+  - Update SMBIOS.
+  - Update BIOS WMI interface support.
+
+CHANGES for M1AKT06A
+  - Fix system does not beep when no memory detected.
+
+CHANGES for M1AKT05A
+  - Initial Production BIOS release
+
+Trademarks
+==========
+ThinkCentre is a trademark of the Lenovo Corporation in the
+United States, other countries, or both.
+
+Microsoft and Windows are trademarks of Microsoft Corporation in
+the United States, other countries, or both.
+
+Other company, product, and service names may be trademarks or
+service marks of others.
+
+THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+LENOVO DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF FITNESS
+FOR A PARTICULAR PURPOSE AND MERCHANTABILITY WITH RESPECT TO THE
+INFORMATION IN THIS DOCUMENT.  BY FURNISHING THIS DOCUMENT, LENOVO
+GRANTS NO LICENSES TO ANY PATENTS OR COPYRIGHTS.
+
+(C) Copyright Lenovo Corporation 2023, all rights reserved.

@@ -1,0 +1,439 @@
+Flash BIOS update - Flash from Operating System version
+for Intel B150 for ThinkCentre M700 Tiny, ThinkCentre M800, M900, M900x Tiny
+Version FWKTB9A
+Installation README
+
+This package updates the basic input/output system (BIOS) on
+all Intel B150 for ThinkCentre M700 Tiny, ThinkCentre M800, M900, M900x Tiny systems.
+
+BIOS is programming that controls low-level hardware operations,
+including interactions with diskette drives, hard disk drives,
+and the keyboard. The BIOS is stored on a chip.  Your computer
+uses flash BIOS, which can be updated through a program on a 
+flash diskette so that you do not have to replace the BIOS
+chip to update the BIOS.
+
+Do not write protect the flash diskette as this may cause the
+flash process to hang.
+
+Print this file so that you can refer to it during the installation.
+
+Downloading the package
+=======================
+1. Click the file link to download the file from the web page.
+2. When prompted, select a drive and directory in which to save the 
+   downloaded file.
+
+Extracting the package
+======================
+1. Click Start, select Find or Search, then click All files and folders.
+2. Type fwjyb9usa.exe in the search field, then click Find Now or 
+   Search Everywhere. This will locate the file you just downloaded.
+3. Double-click the fwjyb9usa.exe icon.
+4. Read the license agreement
+5. Click I accept the terms in the license agreement.
+6. Click Next.
+7. Ensure that "Save files in folder" is set to
+   C:\SWTOOLS\FLASH\FWJYB9USA
+8. Click Next.
+9. Click Finish.
+
+Installing the package
+======================
+Please print out these instructions or write them down before  
+starting this flash update utility.                            
+                                                               
+This flash under operating system (32-bit/64-bit) utility provides
+the ability to update the system BIOS from a Windows application. 
+                                                               
+The utility may be downloaded from the internet and unpacked into 
+the default path: "C:\SWTOOLS\FLASH\FWJYxxUSA", where "xx"     
+represents the two-digit BIOS level. Please follow steps in    
+section 2 to launch the Windows based flash application to update 
+your system BIOS.                                              
+                                                               
+1.  Please make note of any settings you have changed in the BIOS 
+    Setup utility. They may have to be re-entered after updating  
+    the BIOS.                                                  
+                                                               
+2.  Click on the Start button and type cmd.exe,  Right-click on
+    the cmd.exe application and select run as administrator to 
+    open the Command Prompt with Administrator privilege.      
+                                                               
+3.  In the "Command Prompt" window, change to the directory where the
+    above files were extracted.  The command to go to the location is
+    "cd C:\SWTOOLS\FLASH\FWJYxxUSA", where "nn" represents the two  
+    digit flash level.                                         
+                                                               
+4.  Enter the command "flash.cmd" and press the Enter key to start
+    the flashing process.                                      
+                                                               
+5.  You may first see a confirmation prompt "Proceed with BIOS 
+    update now?". Click "Yes" to continue.                     
+                                                               
+6.  You will see the prompt "Would you like to update the Serial  
+    Number?". Input "n" and press Enter.                       
+                                                               
+7.  Then you will see the prompt "Would you like to update the 
+    Machine Type and Model?". Input "n" and press Enter again. 
+    Then the BIOS update process will start.                   
+                                                               
+8.  The update may take up to 2 minutes. Do not power off or restart 
+    the system during this procedure! After the Windows update 
+    process ends, the system will automatically reboot to continue
+    the flash process.                                         
+                                                               
+9.  After the system reboots, the BIOS update process will continue  
+    with a simple graphic UI. When the BIOS update process ends,  
+    the system will reboot automatically.                      
+                                                               
+10.  The BIOS update process ends with above nine steps.        
+                                                               
+Notes:                                                          
+      - You may see a POST error "0162: Setup data integrity check
+    failure" after step 9.Press F1 to enter BIOS Setup Utility,
+    and then press F10 to save your settings          
+
+Summary of Changes
+==================
+General Information:
+
+        FWJ9xxUSA is Flash CD ROM image.
+        FWJTxxUSA is Flash in DOS zip package.
+        FWJYxxUSA is Flash in Windows utility.
+        FWKTxxA is the binary image. (BIOS)
+        NOTE: All changes carry forward. That is, if a change is added in 01,it is also in 02, 03 etc.
+
+CHANGES for FWKTB9A
+ - Enhancement to address security vulnerability.
+
+CHANGES for FWKTB7A
+ - Enhancement to address security vulnerability.
+ - Update CPU microcode.
+
+CHANGES for FWKTB5A
+ - Enhancement to address security vulnerability. 
+
+CHANGES for FWKTB3A
+  - Update CPU Microcode. 
+
+CHANGES for FWKTB1A
+  - Enhancement to address security vulnerability. 
+
+CHANGES for FWKTAFA
+  - Enhancement to address security vulnerability.
+
+CHANGES for FWKTAEA
+  - Update CPU microcode.
+  - Enhancement to address security vulnerability.
+
+CHANGES for FWKTACA
+  - Update CPU microcode.
+  - Enhancement to address security vulnerability.
+
+CHANGES for FWKTA7A
+  - Update CPU microcode.
+  - Enhancement to address security vulnerability.
+
+CHANGES for FWKTA5A
+  - Enhancement to address security vulnerability.
+
+CHANGES for FWKTA3A
+  - Maintenance release.
+
+CHANGES for FWKTA1A
+  - Update UEFI DIAG to 4.08.003.
+
+CHANGES for FWKT9EA
+  - Update CPU microcode.
+  - Fix customized power-on Logo stretching issue.
+
+CHANGES for FWKT9CA
+  - [Important] Update includes security fixes.
+  - Fix updating BIOS will clear the event log issue.
+
+CHANGES for FWKT9AA
+  - [Important] Update includes security fixes.
+
+CHANGES for FWKT99A
+  - Fixes Aux2 Fan detection issue.
+  - Updatess some BIOS SETUP items.
+  - Update TIO warning message.
+
+CHANGES for FWKT95A
+  - NVRAM management improvement to fix POST hangs.
+
+CHANGES for FWKT91A
+  - Update CPU microcode.
+
+CHANGES for FWKT90A
+  - Fix BIOS update issue.
+
+CHANGES for FWKT8DA
+  - Fix some boot sequence issue.
+  - Fix some BIOS update issue.
+
+CHANGES for FWKT86A
+  - Enhancement to address CVE-2017-5715 (http://www.cve.mitre.org/cgibin/cvename.cgi?name=2017-5715)
+
+CHANGES for FWKT7FA
+  - Add PCIE Root Port ASPM Support.
+  - Fix some WMI issues.
+  - Fix cannot set Discrete TPM to Active with SRWIN issue.
+
+CHANGES for FWKT7CA
+  - Add PCIE Root Port ASPM Support.
+  - Fix can't change Security Chip in WMI.
+
+CHANGES for FWKT79A
+  - [Important] Update includes security fix.  
+  - Update CPU microcode.
+
+CHANGES for FWKT76A
+  - Fix POST may hang if no monitor connected.
+
+CHANGES for FWKT75A
+  - Fix system may freeze under certain conditions.
+
+CHANGES for FWKT73A
+  - Fix the boot sequence related issue.
+
+CHANGES for FWKT72A
+  - Fix some SETUP item issue.
+  - Fix some Wake on LAN issue.
+  - Fix some boot issue.
+
+CHANGES for FWKT70A
+  - Modify some setup items behavior.
+  - Fix windows update version showing abnormal in ESRT table.
+  - Add Wireless LAN Enabled/Disabled control in BIOS Setup.
+  - Fix OKR logo showing abnormal when trying to boot to OKR.
+
+CHANGES for FWKT6CA
+  - Improve the remote control of network items.
+
+CHANGES for FWKT6AA
+  - Fix system may show redundant Windows Boot Manager in boot sequence.
+  - Fix cannot make IPv4 first on the boot sequence over IPv6 issue.
+  - Enhance the support of some SSD models on TINY.
+
+CHANGES for FWKT68A
+  - Enhance the support for some new M.2 SSD models on TINY.
+  - Fix some BIOS SETUP issue.
+
+CHANGES for FWKT65A
+  - Fix some WMI related issue.
+  - Add support for some new models of M.2 SSD on TINY.
+  - Fix system boot time may be very long with some kind of USB printer.
+
+CHANGES for FWKT63A
+  - Fix POST logo may be abnormal with some kind of monitors when trying to boot to OKR.
+  - Fix Wake Up on Alarm fails under certain special conditions.
+
+CHANGES for FWKT5FA
+  - [Important] Update includes security fixes.
+  - Fix Windows Event Viewer reports WHEA_Logger Event ID 17 error with some kind of configurations.
+  - Support IPV4 and IPV6 boot when Boot Mode is set as "UEFI Only".
+
+CHANGES for FWKT5EA
+  - Fix two EDID may be detected with some kind of graphic card.
+
+CHANGES for FWKT5AA
+  - Fix system cannot enter C8 state issue.
+
+CHANGES for FWKT59A
+  - Tune the SATA port settings for better performance for all platform.
+  - Fix POST display priority for TINY.
+
+CHANGES for FWKT58A
+  - [Important] Update includes security fixes.
+  - Change "Hot Plug" default setting to "Enabled" for eSATA port.
+  - Fix "Dust Shield Alert" SETUP item may disappear issue.
+  - Fix "Turbo Mode" SETUP item may disappear issue.
+  - Fix some APS issue for TINY.
+  - Tune the SATA port settings for better performance for TINY.
+
+CHANGES for FWKT57A
+  - [Important] Update includes security fixes.
+  - Adds support of WMI interface for ¡°Dust Shield Alert¡±.
+  - Updates Lenovo Diagnostics Tool to v2.09.09.
+  - Adds PXE IPv4 and IPv6 item to boot sequence.
+  - Fixes POST may show BIOS Sync error after updating BIOS with some kind of non-vPro processor.
+
+CHANGES for FWKT56A
+  - Adds "Hot Plug" SETUP item and set the default setting to "Disabled" for eSATA port.
+  - Fixes some WMI related issue.
+  - Updates CPU microcode to 0x9E.
+
+CHANGES for FWKT55A
+  - Fixes internal Bluetooth devices are reported as external devices.
+  - Adds support of WMI interface for turning on Secure Boot.
+  - Fixes "COM1" is reported as "COM2" in operating systems for TINY platforms.
+
+CHANGES for FWKT54A
+  - [Important] Update includes security fixes.
+  - Fixes the  no F11 information in Startup Interrup Menu issue.
+  - Fixes the SRDOS/SRWIN cannot change "TCG Security Device" SETUP option issue.
+
+CHANGES for FWKT53A
+  - Fix no POST display with two NVIDIA Quadro K420 video cards configuration.
+  - Fix Can't install TCM driver issue.
+  - Fix I350-T4 device location detect abnormal issue.
+  - Update thermal control policy to support I3, Pentium and Celeron processors.
+  - Fix chassis intrusion detection issue.
+
+CHANGES for FWKT52A
+  - Shorten POST time in legacy mode request.
+  - Update ME FW capsule.
+
+CHANGES for FWKT51A
+  - Add TINY 65W TIO support.
+
+CHANGES for FWKT49A
+  - Fix system will hang up with 1394 card.
+  - Modify BIOS setup information.
+  - Fix can't exit "Startup Device Menu" issue.
+  - Fix system hang or display incorrect issue.
+  - Fix can't identify USB3.0 hard disk connected to Type C dongle for TINY.
+  - Fix TCG SETUP empty issue for TINY.
+
+CHANGES for FWKT48A
+  - Fix Thunderbolt issue.
+  - Fix Serial port issue.
+  - Fix Tcg issue.
+
+CHANGES for FWKT47A
+  - Modify usable memory size in 32 bit OS.
+  - Modify setup item.
+
+CHANGES for FWKT46A
+  - Fix M.2 Sata disappear in boot sequence.
+
+CHANGES for FWKT45A
+  - Update Lenovo Diagnostics Tool to v2.09.08.
+  - Update PXE ROM to v0.1.09.
+  - Fix Bitlocker issue.
+
+CHANGES for FWKT44A
+  - Fix USB provision function abnormal.
+
+CHANGES for FWKT43A
+  - Fix Restore CMOS map fail when TPM item set to FW TPM.
+  - Fix TPM setting can't verify by Srdos & Srwin.
+  - Fix Hard Disk password setting in Setup.
+  - Enable SOBOL Wifi card into M900/M800/M700 TDT BIOS whitelist.
+
+CHANGES for FWKT42A
+  - Fix F11 Option Key prompt message cannot be shown on logo when set it as legacy style.
+  - Fix Display password check issue.
+  - Update Embedded UEFI Diagnostics Tool to v2.09.06.
+
+CHANGES for FWKT41A
+  - Fix H170 lose TCG menu after insert TCM card.
+  - Fix PCIE_1X LAN card location in BootSequence issue.
+
+CHANGES for FWKT39A
+  - [Important] Update includes security fixes. 
+  - Fix UEFI CFGWIN test fail.
+  - Fix no HDMI audio for G4400/G3920/G390.
+  - Fix it will show FTPM after F9(Load defalt) with TCM card.
+  - Force update both BB and main bios during BBR. 
+  - Fix CSM will be changed to Enabled when secure boot switch from Enabled to Disabled.
+  - Add Dust Filter Feature Support.
+  - Add PCIE_1X LAN card to Boot Sequence.
+
+CHANGES for FWKT38A
+  - Fix DP/HDMI dongle no display issue for TINY platforms.
+
+CHANGES for FWKT35A
+  - Regulate bios setup help message.
+  - Fix PCI-E Network Card can't boot from the special boot sequence. 
+  - Improve HDMI audio compatibility.
+  - Upgrade Microcode.
+
+CHANGES for FWKT34A
+  - Update VBIOS to revision 1037.
+  - Modify the boot block flashing rule.
+
+CHANGES for FWKT33A
+  - Update CPU microcode.
+  - Fix the issue RAID function may be abnormal when "OS Optimized Default" is set to "Enabled".
+  - Fix some boot issue related to PCI-E Network Card.
+
+CHANGES for FWKT32A
+  - Modify VBIOS & GOP.
+  - Modify TCG feature.
+  - Modify some messages for VMkernel.
+
+CHANGES for FWKT31A
+  - Fix system may not enter S3 mode by pushing power button for the first time 
+    after waking up from S3 by pressing any key of PS/2 keyboard.
+
+CHANGES for FWKT30A
+  - Update ME FW capsule firmware version.
+  - Modify some SMBIOS issue.
+
+CHANGES for FWKT29A
+  - Fix some WMI related issues.
+  - Update USBF driver to enhance Smart USB Protection support.
+  - Fix some BIOS SETUP related issues.
+
+CHANGES for FWKT28A
+  - Modify some SMBIOS issue.
+  - Fix some incorrect POST error information.
+  - Enhance Chassis Intrusion fucntion support.
+
+CHANGES for FWKT27A   
+  - Update TXT BIOS ACM to fix some POST hang issue with TXT enabled.
+  - Enhance boot time for Tiny project.
+
+CHANGES for FWKT26A
+  - Enhance Power-On Password.
+  - Add "Internal Speaker" SETUP item control.
+  - Enhance USB disable jumper for Workstation projects.
+
+CHANGES for FWKT25A
+  - Enhance boot time.   
+  
+CHANGES for FWKT24A
+  - Enhance WiFi cards compatibility.
+  - Enhance USB and SATA funtion compatibility in BIOS setup.
+  - Enhance Memory test tool compatibility.
+  - Fix Thunderbolt device auto detection issue for Workstation projects.
+  - Fix Press "ESC" doesn't take function. 
+  - Fix the issue that system may freeze in BIOS SETUP.
+  - Update some BIOS SETUP help message.
+  
+CHANGES for FWKT19A
+  - Modify Win7:BitLocker Drive Encryption.
+  - Modify RST LPM Option.
+  - Modify MTM in LTDW system information.
+
+CHANGES for FWKT18A
+  - Modify KB function when TXT enabled.
+  - Modify Bitlocker USB function under Win7 32&64
+  - Modify remote BIOS management function
+  - Modify Energy Star Logo position at lower right corner of monitor.  
+
+CHANGES for FWKT17A
+  - Initial Production BIOS release
+
+Trademarks
+==========
+ThinkCentre is a trademark of the Lenovo Corporation in the
+United States, other countries, or both.
+
+Microsoft and Windows are trademarks of Microsoft Corporation in
+the United States, other countries, or both.
+
+Other company, product, and service names may be trademarks or
+service marks of others.
+
+THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+LENOVO DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF FITNESS
+FOR A PARTICULAR PURPOSE AND MERCHANTABILITY WITH RESPECT TO THE
+INFORMATION IN THIS DOCUMENT.  BY FURNISHING THIS DOCUMENT, LENOVO
+GRANTS NO LICENSES TO ANY PATENTS OR COPYRIGHTS.
+
+(C) Copyright Lenovo Corporation 2021, all rights reserved.

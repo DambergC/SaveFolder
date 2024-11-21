@@ -1,0 +1,105 @@
+﻿
+                                 BIOS Changes History
+      
+
+General Information:
+
+        M1CJ9xxUSA is Flash CD ROM image.
+        M1CJTxxUSA is Flash in DOS zip package.
+        M1CJYxxUSA is Flash in Windows utility.
+        M1CKTxxA is the binary image. (BIOS)
+        NOTE: All changes carry forward.  That is, if a change is added in 01,it is also in 02, 03 etc.
+
+This file will be updated from the beginning with first Production BIOS release
+
+CHANGES for M1CKT19A/M1CJT19A
+         - Initial Production BIOS release.
+
+CHANGES for M1CKT20A/M1CJT20A
+         - Support SR tool V1.6.3.
+
+CHANGES for M1CKT21A/M1CJT21A
+         - Support wflash tool V4.5.9.
+
+CHANGES for M1CKT23A/M1CJT23A
+         - Upgrade Intel ME 11.6.26.1246.
+         - Upgrade Intel RaidDriver to 15.5.0.2875.
+         - Upgrade Intel MCU M2A906E9_0000005E.
+         - Upgrade Intel MCU M36506E3_000000BA.
+         - Update includes security fixes.
+         - Improve the system stable.
+
+CHANGES for M1CKT24A/M1CJT24A
+         - Supprot TPM FW Switch feature.
+
+CHANGES for M1CKT25A/M1CJT25A
+         - Update TCG2 module for Win 10 RS3 Support.
+         - Improve the system stable.
+
+CHANGES for M1CKT26A/M1CJT26A
+         - Upgrade Intel ME 11.8.50.3399.
+         - Update includes security fixes.
+
+CHANGES for M1CKT27A/M1CJT27A
+         - Update includes security fixes.
+
+CHANGES for M1CKT28A/M1CJT28A
+         - Update includes security fixes.
+
+CHANGES for M1CKT29A/M1CJT29A
+         - Update includes security fixes.
+
+CHANGES for M1CKT30A/M1CJT30A
+         - Update includes security fixes.
+
+CHANGES for M1CKT31A/M1CJT31A
+         - Update includes security fixes.
+
+CHANGES for M1CKT32A/M1CJT32A
+         - Improve the system stable.
+
+CHANGES for M1CKT33A/M1CJT33A
+         - Update includes security fixes.
+
+CHANGES for M1CKT34A/M1CJT34A
+         - Improve the system stable.
+
+CHANGES for M1CKT35A/M1CJT35A
+         - Update includes security fixes.
+
+CHANGES for M1CKT36A/M1CJT36A
+         - Update includes security fixes.
+         - Update WU setting.
+
+CHANGES for M1CKT37A/M1CJT37A
+         - Update includes security fixes.
+
+CHANGES for M1CKT38A/M1CJT38A
+         - Update includes security fixes.
+
+CHANGES for M1CKT39A/M1CJT39A
+         - Enhancement to address security vulnerability.
+
+CHANGES for M1CKT40A/M1CJT40A
+         - Enhancement to address security vulnerability.
+
+CHANGES for M1CKT41A/M1CJT41A
+         - Enhancement to address security vulnerability.
+
+CHANGES for M1CKT42A/M1CJT42A
+         - Enhancement to address security vulnerability.
+
+CHANGES for M1CKT43A/M1CJT43A
+         - Enhancement to address security vulnerability.
+
+CHANGES for M1CKT44A/M1CJT44A
+         - Enhancement to address security vulnerability.
+         
+CHANGES for M1CKT45A/M1CJT45A
+         - Improve the system stable.
+
+CHANGES for M1CKT46A/M1CJT46A
+         - Enhancement to address security vulnerability.
+
+CHANGES for M1CKT47A/M1CJT47A
+         - Enhancement to address security vulnerability.

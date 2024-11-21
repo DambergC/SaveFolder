@@ -1,0 +1,220 @@
+Flash BIOS update - Flash from Operating System version
+for ThinkCentre M70t, M70s, M80t, M80s, M90t, M90s
+Version M2TKT59A 
+Installation README
+
+This package updates the basic input/output system (BIOS) on
+all ThinkCentre M70t, M70s, M80t, M80s, M90t, M90s systems.
+
+BIOS is programming that controls low-level hardware operations,
+including interactions with diskette drives, hard disk drives,
+and the keyboard. The BIOS is stored on a chip.  Your computer
+uses flash BIOS, which can be updated through a program on a 
+flash diskette so that you do not have to replace the BIOS
+chip to update the BIOS.
+
+Do not write protect the flash diskette as this may cause the
+flash process to hang.
+
+Print this file so that you can refer to it during the installation.
+
+Downloading the package
+=======================
+1. Click the file link to download the file from the web page.
+2. When prompted, select a drive and directory in which to save the 
+   downloaded file.
+
+Extracting the package
+======================
+1. Click Start, select Find or Search, then click All files and folders.
+2. Type m2tjy59usa.exe in the search field, then click Find Now or 
+   Search Everywhere. This will locate the file you just downloaded.
+3. Double-click the m2tjy59usa.exe icon.
+4. Read the license agreement
+5. Click I accept the terms in the license agreement.
+6. Click Next.
+7. Ensure that "Save files in folder" is set to
+   C:\SWTOOLS\FLASH\M2TJY59USA
+8. Click Next.
+9. Click Finish.
+
+Installing the package
+======================
+Please print out these instructions or write them down before      
+starting this flash update utility.                                
+                                                                   
+This flash under operating system (32-bit/64-bit) utility provides 
+the ability to update the system BIOS from a Windows application.  
+                                                                   
+The utility may be downloaded from the internet and unpacked into  
+the default path: "C:\SWTOOLS\FLASH\M2TJYnnUSA", where "nn"        
+represents the two-digit BIOS level. Please follow steps in        
+section 2 to launch the Windows based flash application to update  
+your system BIOS.                                                  
+
+1.  Please make note of any settings you have changed in the BIOS  
+    Setup utility. They may have to be re-entered after updating   
+    the BIOS.                                                      
+                                                                   
+2.  Click on the Start button and type cmd.exe,  Right-click on    
+    the cmd.exe application and select run as administrator to     
+    open the Command Prompt with Administrator privilege.          
+                                                                   
+3.  In the "Command Prompt" window, change to the directory where the 
+    above files were extracted.  The command to go to the location is 
+    "cd C:\SWTOOLS\FLASH\M2TJYnnUSA", where "nn" represents the two
+    digit flash level.                                             
+                                                                   
+4.  Enter the command "flash.cmd" and press the Enter key to start 
+    the flashing process.                                          
+                                                                   
+5.  You may first see a confirmation prompt "Proceed with BIOS     
+    update now?". Click "Yes" to continue.                         
+                                                                   
+6.  You will see the prompt "Would you like to update the Serial   
+    Number?". Input "n" and press Enter.                           
+                                                                   
+7.  Then you will see the prompt "Would you like to update the     
+    Machine Type and Model?". Input "n" and press Enter again.     
+    Then the BIOS update process will start.                       
+                                                                   
+8.  The update may take up to 2 minutes. Do not power off or restart 
+    the system during this procedure! After the Windows update     
+    process ends, the system will automatically reboot to continue 
+    the flash process.                                             
+                                                                   
+9.  After the system reboots, the BIOS update process will continue
+    with a simple graphic UI. When the BIOS update process ends,   
+    the system will reboot automatically.                          
+                                                                   
+10.  The BIOS update process ends with above nine steps.            
+                                                                   
+Notes:                                                              
+      - You may see a POST error "0162: Setup data integrity check 
+    failure" after step 9.Press F1 to enter BIOS Setup Utility,    
+    and then press F10 to save your settings     
+
+Summary of Changes
+==================
+General Information:
+
+        M2TJ9xxUSA is Flash CD ROM image.
+        M2TJTxxUSA is Flash in UEFI Shell zip package.
+        M2TJYxxUSA is Flash in Windows utility.
+        NOTE: All changes carry forward.  That is, if a change is added in 01,it is also in 02, 03 etc.
+
+CHANGES for M2TKT59A / WU Version 1.0.0.89
+  - Enhancement to address security vulnerability LEN-135369, LEN-141561, LEN-146616, LEN-147504.
+  - Enhancement to address security vulnerability CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-22655,CVE-2023-23583,CVE-2023-38575,CVE-2023-39368,CVE-2023-28746,CVE-2023-27502,CVE-2023-28389,CVE-2023-32633,CVE-2023-35191,CVE-2023-32282, CVE-2023-27504, CVE-2023-28402, CVE-2023-28383.
+
+CHANGES for M2TKT58A / WU Version 1.0.0.88
+  - Autopilot marker fix. 
+  - Enhance BIOS update support.
+  - Enhancement to address security vulnerability CVE-2023-39539, CVE-2023-25756, CVE-2023-22329, CVE-2023-34470.
+  - Enhancement to address security vulnerability LEN-124704.
+
+CHANGES for M2TKT56A / WU Version 1.0.0.86
+  - Enhancement to address security vulnerability LEN-LEN-124703. 
+  - Enhancement to address security vulnerability CVE-2022-38087, CVE-2022-33894, CVE-2022-36763, CVE-2022-36764, CVE-2022-36765, CVE-2023-0286, CVE-2022-4304, CVE-2022-4203, CVE-2023-0215, CVE-2022-4450, CVE-2022-40982, CVE-2022-37343, CVE-2022-44611, CVE-2022-27879, CVE-2022-38083 ,CVE-2022-43505, CVE-2021-38575, CVE-2023-0464.
+
+CHANGES for M2TKT55A / WU Version 1.0.0.85
+  - Enhance BIOS update support.
+  - Enhancement to address security vulnerability LEN-119525, LEN-123566.
+  - Enhancement to address security vulnerability CVE-2023-25494.
+
+CHANGES for M2TKT54A / WU Version 1.0.0.84
+  - Enhancement to address security vulnerability LEN-99938, LEN-99939, LEN-99942, LEN-105119, LEN-107837, LEN-107838, LEN-113890, LEN-113891, LEN-113892.
+  - Enhancement to address security vulnerability CVE-2022-33894, CVE-2022-30539, CVE-2022-36348, CVE-2022-36794, CVE-2022-38090, CVE-2021-38578.
+
+CHANGES for M2TKT52A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT51A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT50A
+  - Enhancement to address security vulnerability.
+  - Update Embedded UEFI Diagnostics Tool.
+
+CHANGES for M2TKT4FA
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT4DA
+  - Update MEBx.
+
+CHANGES for M2TKT4BA
+  - Enhance BIOS Setup support.
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT4AA
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT47A
+  - Enhancement to address security vulnerability.
+  - Update Embedded UEFI Diagnostics Tool v04.19.000.
+
+CHANGES for M2TKT3FA
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT3CA
+  - Enhance card reader support.
+  - Enhance password support.
+
+CHANGES for M2TKT38A
+  - Enhance WMI support.
+
+CHANGES for M2TKT37A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2TKT35A
+  - Enhance WMI support.
+
+CHANGES for M2TKT33A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT32A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2TKT31A
+  - Enhance BIOS Setup support.
+  - Enhance Serial Port support.
+  - Enhance Smart USB protection support.
+
+CHANGES for M2TKT2DA
+  - Maintenance Release.
+
+CHANGES for M2TKT2BA
+  - Fix some BIOS SETUP layout issues.
+
+CHANGES for M2TKT29A
+  - Fix some SMBIOS issues.
+  - Fix some BIOS SETUP layout issues.
+
+CHANGES for M2TKT27A
+  - Enhance CPU support.
+
+CHANGES for M2TKT26A
+  - Enhance CPU support.
+
+CHANGES for M2TKT14A
+  - Initial Production BIOS release.
+
+Trademarks
+==========
+ThinkCentre is a trademark of the Lenovo Corporation in the
+United States, other countries, or both.
+
+Microsoft and Windows are trademarks of Microsoft Corporation in
+the United States, other countries, or both.
+
+Other company, product, and service names may be trademarks or
+service marks of others.
+
+THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+LENOVO DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF FITNESS
+FOR A PARTICULAR PURPOSE AND MERCHANTABILITY WITH RESPECT TO THE
+INFORMATION IN THIS DOCUMENT.  BY FURNISHING THIS DOCUMENT, LENOVO
+GRANTS NO LICENSES TO ANY PATENTS OR COPYRIGHTS.
+
+(C) Copyright Lenovo Corporation 2024, all rights reserved.

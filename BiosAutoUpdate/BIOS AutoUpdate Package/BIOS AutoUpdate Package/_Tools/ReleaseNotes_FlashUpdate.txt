@@ -1,0 +1,19 @@
+===============================================================================
+Dell Inc.
+Copyright (C) 2007 - 2020, All Rights reserved.
+www.dell.com
+
+===============================================================================
+Feature:      flash64W.exe
+Version:      3.3.8
+Build Date:   08/7/2020
+
+Fixes/Enhancements
+------------------
+1. Rebuilding the tool after changes to DBUtil2, OSPA & WmiDaci libraries.
+
+Known Issue
+------------
+None
+
+====================================================================================

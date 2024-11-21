@@ -1,0 +1,223 @@
+﻿
+                                 BIOS Changes History
+      
+
+General Information:
+
+        M2WJ9xxUSA is Flash CD ROM image.
+        M2WJTxxUSA is Flash in UEFI Shell zip package.
+        M2WJYxxUSA is Flash in Windows utility.
+        NOTE: All changes carry forward.  That is, if a change is added in 01, it is also in 02, 03 etc.
+
+This file will be updated from the beginning with first Production BIOS release
+
+CHANGES for M2WKT5AA / WU Version 1.0.0.90
+  - Enhancement to address security vulnerability LEN-124703,LEN-123566.
+  - Enhancement to address security vulnerability CVE-2022-38087,CVE-2022-33894,CVE-2023-25494,CVE-2022-36763,CVE-2022-36764,CVE-2022-36765,CVE-2022-40982,CVE-2022-36392,CVE-2022-38102,CVE-2022-29871,CVE-2022-37343,CVE-2022-44611,CVE-2022-27879,CVE-2022-38083,CVE-2022-43505.
+  - Improve Error 0x81 message when flashing same/older BIOS ROM.
+  - Correct a problem with a warm boot BIOS update using the SCCM parameter.
+  
+CHANGES for M2WKT59A / WU Version 1.0.0.89
+  - Enhancement to address security vulnerability LEN-94533,LEN-99954,LEN-105119,LEN-99942,LEN-99938,LEN-99939,LEN-99940,LEN-107838,LEN-107837,LEN-115197.
+  - Enhancement to address security vulnerability CVE-2022-36348,CVE-2022-36794,CVE-2021-38578.
+
+CHANGES for M2WKT58A
+  - Enhancement to address security vulnerability.
+  - Update CPU Microcode.
+
+CHANGES for M2WKT57A
+  - Enhancement to address security vulnerability.
+  - Update UEFI Diagnostics to v4.25.
+
+CHANGES for M2WKT55A
+  - Enhancement to address security vulnerability.
+  - Update CPU Microcode.
+
+CHANGES for M2WKT54A
+  - Fix some Wake Up On Alarm issue.
+
+CHANGES for M2WKT53A
+  - Fix BIOS Setup issue.
+  
+CHANGES for M2WKT52A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT51A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT50A
+  - Enhancement to address security vulnerability.
+  - Enhance Secure Wipe support.
+  - Update UEFI Diagnostics to v4.20.
+  - Update BIOS SETUP layout.
+  - Add Nvidia T1000 graphics card support for P340 Tiny.  
+
+CHANGES for M2WKT4FA
+  - Maintenance release.
+
+CHANGES for M2WKT4EA
+  - Enhancement to address security vulnerability.
+  - Update UEFI Diagnostics to v4.19.
+
+CHANGES for M2WKT4DA
+  - Maintenance release.
+
+CHANGES for M2WKT4CA
+  - Update CPU Microcode.
+
+CHANGES for M2WKT4AA
+  - Security improvement of Startup Device Menu.
+  - Fix BIOS Setup issue.
+
+CHANGES for M2WKT49A
+  - Security improvement of Startup Device Menu.
+
+CHANGES for M2WKT48A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT46A
+  - Enhance iAMT support.
+  - Fix WMI issues.
+
+CHANGES for M2WKT45A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT44A
+  - Enhance BIOS Setup support.
+  
+CHANGES for M2WKT43A
+  - Fix BIOS Setup issue.
+  - Fix system shutdown may be slow issue.
+  - Optimized IPV6 disable function.
+
+CHANGES for M2WKT41A
+  - Fix BIOS update issue.
+  - Enhance Secure Wipe support.
+
+CHANGES for M2WKT40A
+  - Enhance iAMT support.
+  - Fix some Type C issue for P340tiny.
+
+CHANGES for M2WKT3FA
+  - Enhance BIOS Setup support.
+  - Enhance WMI support.
+  
+CHANGES for M2WKT3EA
+  - Enhance BIOS Setup support.
+
+CHANGES for M2WKT3DA
+  - Add Secure Wipe support.
+  - Enhance SOL support.
+
+CHANGES for M2WKT3CA
+  - Add Secure Wipe support.
+  - Enhance SOL support.
+
+CHANGES for M2WKT3AA
+  - Update CPU Microcode.
+
+CHANGES for M2WKT39A
+  - Enhance BIOS Setup support.
+  - Enhance ME firmware Windows Firmware Update support.
+
+CHANGES for M2WKT38A
+  - Enhancement to address security vulnerability.
+  - Enhance Windows Firmware Update support.
+
+CHANGES for M2WKT37A
+  - Enhance Smart USB Protection support.
+
+CHANGES for M2WKT36A
+  - Fix some BIOS flash issue.
+  - Fix TXT issue.
+
+CHANGES for M2WKT35A
+  - Fix some BIOS flash issue.
+  - Enhance Thunderbolt support.
+
+CHANGES for M2WKT34A
+  - Enhance BIOS Setup support.
+  - Enhance Thunderbolt support.
+  - Fix WMI issues.
+
+CHANGES for M2WKT33A
+  - Fix some SETUP issues.
+
+CHANGES for M2WKT32A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2WKT31A
+  - Update BIOS SETUP layout.
+
+CHANGES for M2WKT30A
+  - Fix Setup layout issue.
+
+CHANGES for M2WKT2FA
+  - Enhance LVFS support.
+  - Fix some BIOS update issue.
+
+CHANGES for M2WKT2EA
+  - Enhance LVFS support.
+  - Enhance HDD password support.
+  - Enhance Modern Standby support.
+
+CHANGES for M2WKT2DA
+  - Enhance BIOS Setup support.
+  - Enhance Windows Modern Standby support for M90q.
+  - Enhance Intel(R)Thunderbolt Support for P340 tiny.
+
+CHANGES for M2WKT2CA
+  - Enhance Intel(R) Optane with Intel(R) RST support.
+
+CHANGES for M2WKT2AA
+  - Enhance BIOS Setup support.
+  - Enhance WMI support.
+  - Enhance Optane memory support.
+  - Enhance password support.
+
+CHANGES for M2WKT29A
+  - Enhance BIOS Setup support.
+  - Enhance WMI support.
+
+CHANGES for M2WKT28A
+  - Enhance Modern Standby support for some M90q models.
+
+CHANGES for M2WKT26A
+  - Fix some SETUP issues.
+
+CHANGES for M2WKT25A
+  - Enhance TxT support. 
+  - Add Firmware TPM support.
+
+CHANGES for M2WKT1EA
+  - Fix some SMBIOS issue. 
+
+CHANGES for M2WKT1DA
+  - Add support for M730q. 
+
+CHANGES for M2WKT1CA
+  - Optimize power parameters for P340 tiny.
+
+CHANGES for M2WKT1BA
+  - Fix system may fail to resume from hibernation issue.
+
+CHANGES for M2WKT1AA
+  - Update UEFI DIAG.
+
+CHANGES for M2WKT18A
+  - Update SETUP layout.
+
+CHANGES for M2WKT15A
+  - Fix some SETUP issues.
+
+CHANGES for M2WKT13A
+  - Fix some SETUP issues.
+  - Enhance SCCM support.
+  - Enhance WMI support.
+  - Enhance DPTF support.
+
+CHANGES for M2WKT12A
+  - Update SETUP layout.
+
+CHANGES for M2WKT11A
+  - Initial Production BIOS release.

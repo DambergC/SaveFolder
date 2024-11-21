@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="utf-8">
+          <title>ReadMe</title>
+          <base href="/">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+          <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">      
+          
+
+          <style>
+                @import 'bootstrap/scss/bootstrap';
+        
+              
+                    
+                    .content {
+                      padding: 0 18px;
+                      display: none;
+                      overflow: hidden;
+                      background-color: #f1f1f1;
+                    }    
+                    
+                    html, body { height: 100%; }
+                    body { margin: 0; font: normal normal normal 16px Lato;
+                      letter-spacing: 0px;}
+
+                    .nav-breadcumb {
+                      position: sticky;
+                      top: 0;
+                      z-index: 999;
+                      display: flex;
+                      flex-direction: row;
+                      box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+                      background-color: white !important;
+                      height: 40px;
+                    }
+
+                    h2 {
+                      font-size: 30px;
+                      margin-top: 5px;
+                      margin-bottom: 5px;
+                      margin-left: 10px;
+                      margin-right: 10px;
+                      text-align: center;
+                      justify-content: center;
+                      align-items: center;
+                    }
+                    
+                    .collapsible {
+                      background-color: white;
+                      color: black;
+                      cursor: pointer;
+                      width: 100%;
+                      border: none;
+                      text-align: left;
+                      outline: none !important;
+                      font-size: 28px;
+                      font-weight: bold;
+                      border-bottom: 2px solid lightgrey;
+                      padding-left: 0px !important;
+                      padding-bottom: 16px;
+                      padding-top: 32px;
+                    }
+
+                    .collapsible.active {
+                      border: none;
+                    }
+                  
+                    .content {
+                      padding: 0 18px;
+                      display: none;
+                      overflow: hidden;
+                      background-color: #f1f1f1;
+                    }
+
+                    .topSection {
+                      margin-top: 32px;
+                    }
+                  
+                    .topSectionHeading {
+                      font-size: 28px;
+                      font-weight: bold;
+                    }
+                  
+                    .topSectionContent {
+                      font-size: 16px;
+                      padding-top: 15px;
+                      line-height: 19px;
+                    }
+                  
+                    .card.card-body {
+                      font-size: 11pt;
+                      border: none;
+                      border-bottom: 1px solid lightgray;
+                      border-radius: 0px;
+                      padding-left: 0px;
+                      padding-top: 0px;
+                      padding-bottom: 32px;
+                      font-family: 'Lucida Console';  
+                    }
+                  
+                    .heading {
+                      font-size: 34px;
+                      font-weight: bold;
+                    }
+                  
+                    .container {
+                      padding-top: 32px;
+                      padding-bottom: 78px;
+                    }
+                  
+                    .topList {
+                      margin-bottom: 0px;
+                    }
+  
+                  .card.card-body p {
+                    margin-bottom: 0px !important;
+                  }
+
+                  .collapsible .gg-chevron {
+                    box-sizing: border-box;
+                    position: relative;
+                    display: block;
+                    transform: scale(var(--ggs,1));
+                    width: 22px;
+                    height: 22px;
+                    border: 2px solid transparent;
+                    border-radius: 100px;
+                    float: right;
+                  }
+                  .collapsible .gg-chevron::after {
+                    content: "";
+                    display: block;
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 17px;
+                    height: 17px;
+                    border-bottom: 3px solid;
+                    border-right: 3px solid;
+                    transform: rotate(45deg);
+                    left: 4px;
+                    top: 2px;
+                    transition: transform 0.3s;
+                    margin-top: 2px;
+                  }                  
+                  .collapsible.active .gg-chevron::after {
+                      border-top: 3px solid;
+                      border-bottom: none;
+                      transform: rotate(-45deg);
+                      margin-top: 12px;
+                      transition: transform 0.3s;
+                  }
+
+                  a.viewMoreLink {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #294E95;
+                    text-decoration: none;
+                    cursor: default;
+                  }
+                  
+                  a.viewMoreLink:hover {
+                    text-decoration: underline;
+                  }
+                  .htmlContainer .card.card-body{
+                    white-space: pre-wrap
+                  }
+                  #readmeContent table {
+                    border-collapse: collapse;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black; 
+                  }
+  
+                  #readmeContent td {
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black; 
+                  }
+                  #readmeContent th {
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black; 
+                  }
+
+                  #readmeContent a {
+                    color: #ff5722;
+                  }
+                  table {
+                    display: contents;
+                  }
+                </style>
+    </head><body>
+    <div id="readmeContent">
+    
+      <div class="nav-breadcumb">
+        <div class="navbar-title-bar">
+          <img width="120" height="40" src="data:image/png;base64,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" alt="error" class="lenovoIcon" />
+        </div>
+    </div>
+    <div class="container htmlContainer">
+      <div class="heading">
+        BIOS Update Utility for Windows
+      </div>
+
+      <div class="topSection">
+    <div class="topSectionHeading">Support Models</div>
+    <div class="topSectionContent">
+        <p class="topList">ThinkPad P15 Gen 1 (type 20ST, 20SU) Laptop</p><p class="topList">ThinkPad P15v Gen 1 type (20TQ, 20TR) Laptop</p><p class="topList">ThinkPad P17 Gen 1 (type 20SN, 20SQ) Laptop</p><p class="topList">ThinkPad T15g Gen 1 (type 20UR 20US) Laptop</p><p class="topList">ThinkPad T15p Gen 1 (type 20TN 20TM) Laptop</p>
+        
+        
+          <span id="remainingItems" style="display: none">
+        
+          <div id="viewLess" style="margin-top: 12px">
+            <a class="viewMoreLink"  onclick="showLessModels()">View Less Models</a>
+          </div>
+        </span>
+
+    </div>
+</div>
+
+      <div class="topSection">
+            <div class="topSectionHeading">Operating Systems</div>
+            <div class="topSectionContent">
+            <p class="topList">Windows 10</p><p class="topList">Windows 11</p>
+            </div>
+        </div>
+
+        <div class="topSection">
+        <div class="topSectionHeading">Version</div>
+        <div class="topSectionContent">
+            <p class="topList">1.40&nbsp;&nbsp;(UEFI BIOS)</p><p class="topList">1.17&nbsp;&nbsp;(ECP)</p>
+        </div>
+    </div>
+
+    <div class="topSection">
+            <div class="topSectionHeading">Support Device</div>
+            <div class="topSectionContent">
+                <p class="topList">
+                    BIOS
+                </p>
+            </div>
+        </div>
+        <div class="topSection">
+            <div class="topSectionHeading">Revision</div>
+            <div class="topSectionContent">
+                <p class="topList">
+                    1
+                </p>
+            </div>
+        </div>
+      
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample" >
+      What This Package Does <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+          <p>  This package updates the UEFI BIOS (including system program and Embedded</p><p>  Controller program) stored in the ThinkPad computer to fix problems, add new</p><p>  functions, or expand functions as noted below.</p><p><br></p><p>  This package also contains the tool to create a bootable BIOS Flash USB memory key.</p><p>  Please refer to &quot;Instruction US - BIOS flash USB memory key.txt&quot; in the installation</p><p>  folder for detail instruction.</p><p><br></p><p>  This program is language independent and can be used with any language system.</p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="true" aria-controls="collapseExample">
+            Changes in This Release <i class="gg-chevron"></i>
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body"><p>Version BIOS 1.40</p><p>        ECFW 1.17</p><p><br></p><p>[Important updates]</p><p>- Enhancement to address security vulnerability,CVE-2023-41833, CVE-2023-23904, CVE-2023-22351, CVE-2023-25546.</p><p>- Update includes a security fix.</p><p><br></p><p>[New functions or enhancements]</p><p>- Updated the Diagnostics module to version 04.35.000.</p><p>- Updated the CPU microcode.</p><p><br></p><p>[Problem fixes]</p><p> Nothing.</p></div>
+        </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Dependency <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: &quot;Lucida Console&quot;; font-size: 11pt;">None</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Important Notice <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: &quot;Lucida Console&quot;;">- If the UEFI BIOS has been updated to version 1.15 or higher, it is no longer</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  able to roll back to the version before 1.15 for security improvement.</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">- To avoid system hang may occur in UEFI BIOS updating process,</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  this package does not support unattended update on BIOS version is 1.07</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  or lower version.</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">- Be aware that the OS Optimized Defaults option in the Restart menu of ThinkPad</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  Setup should not be normally changed. Lenovo recommends to use the factory</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  default setting for it, as follows.</span></p><p><br></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">  - OS Optimized Defaults                              [Enabled]</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">  If the OS Optimized Defaults setting is changed, Setup Default by the F9 key</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  will not load the same default configuration, as follows. Furthermore, by the</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  condition of Operating System installation, the computer may not be booted due</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  to the setting change.</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">  If your computer runs satisfactorily now, you have no need to change the OS</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  Optimized Defaults option. If you need to change the setting, consider well</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  the effect of the setting change.</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">  Affected Setup menu items :</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  &quot;OS Optimized Defaults&quot; setting          [Disabled] case      [Enabled] case</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  - Security</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - Security Chip</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">      - Intel(R) TXT Feature               [Disabled]           [Enabled]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - UEFI BIOS Update Option</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">      - Secure RollBack Prevention         [Disabled]           [Enabled]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - Virtualization</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">      - Kernel DMA Protection              [Disabled]           [Enabled]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">      - Intel(R) Virtualization Technology [Disabled]           [Enabled]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">      - Intel(R) VT-d Feature              [Disabled]           [Enabled]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - Secure Boot</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">      - Secure Boot                        [Disabled]           [Enabled]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  - Startup</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - UEFI/Legacy Boot                     [Both]               [UEFI Only]</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - UEFI/Legacy Boot Priority            [UEFI First]         (Not shown)</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">    - CSM Support                          [Yes]                [No]</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">  (Caution)</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  If both the Secure Boot option is Enabled and UEFI Secure Boot in the Main</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  menu of ThinkPad Setup is shown as Off, restoring Factory Keys is needed. Do</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  the following to restore Factory Keys.</span></p><p><br></p><p><span style="font-family: &quot;Lucida Console&quot;;">  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  2. Select Security, then select Secure Boot.</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  3. Select Restore Factory Keys, and press Enter.</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  4. Select Yes to restore Factory keys.</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  5. Press the F10 key to save configuration and exit.</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">  6. Select Yes.</span></p><p><span style="font-family: &quot;Lucida Console&quot;;">     The computer will be restarted automatically.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Determining Which Version Is Installed <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p>  There are two ways to check the UEFI BIOS version and BIOS ID.</p><p><br></p><p><br></p><p> [Checking on Windows]</p><p><br></p><p>  1. Hold down the Windows logo key and press X to open a menu at the lower-left</p><p>     area of the screen.</p><p><br></p><p>  2. Select Control Panel from the menu.</p><p>  3. Make sure &quot;View by Category&quot; is selected, and select System and Security,</p><p>     select Administrative Tools, and then select System Information.</p><p>     - or -</p><p>  2. Select Run from the menu.</p><p>  3. Type msinfo32, and press Enter.</p><p><br></p><p>  4. On the System Information window, make sure System Summary is selected in</p><p>     the left side of the window.</p><p>  5. Locate the BIOS version/date line in the right side of the window.</p><p>     &quot;LENOVO BIOS ID (BIOS version), date&quot; will be shown.</p><p><br></p><p>  If you are prompted for an administrator password or confirmation, type your</p><p>  password, or click Continue.</p><p><br></p><p><br></p><p> [Checking on ThinkPad Setup]</p><p><br></p><p>  1. Turn on the computer to start Windows.</p><p>  2. Hold down the Windows logo key.</p><p>  3. Select Power from the menu.</p><p>  4. Select Reboot to restart the computer.</p><p>  5. While the &quot;To interrupt normal startup, press Enter&quot; message is displayed</p><p>     at the lower-left area or lower-center of the screen, press the F1 key.</p><p>     The ThinkPad Setup menu will be displayed. If a password prompt appears,</p><p>     type the correct password.</p><p>  6. Locate the UEFI BIOS Version line and Embedded Controller Version line.</p><p>     &quot;UEFI BIOS version (BIOS ID)&quot; will be shown on the UEFI BIOS Version line.</p><p>  7. Turn off the computer.</p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Determining Operating System Version <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: &quot;Lucida Console&quot;; font-size: 11pt;">Not Applicable</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Installation Instructions / How To Use This Software <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p>Notes:</p><p>- If your computer runs satisfactorily now, it may not be necessary to update</p><p>  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the</p><p>  Version Information section.</p><p><br></p><p>- You need an AC adapter and a charged battery pack.</p><p><br></p><p>- Remove the Power-on password prior to updating the UEFI BIOS in the remote</p><p>  deployment environments.</p><p><br></p><p>Attention:</p><p>  Do not turn off or suspend the computer until the update has been completed.</p><p>  IF YOU DO THAT WHILE THE UPDATE IS STILL IN PROGRESS, THE SYSTEM BOARD MAY</p><p>  HAVE TO BE REPLACED.</p><p><br></p><p><br></p><p>Manual Update</p><p><br></p><p>  This section assumes to use Microsoft Edge and Windows Explorer.</p><p><br></p><p>  Downloading file</p><p>  1. Click once on the underlined file name. Once this is done, some pop-up</p><p>     windows will appear.</p><p>  2. Follow the instructions on the screen.</p><p>  3. In the window to choose &quot;Save&quot; or &quot;Save as&quot;, click &quot;Save&quot;.</p><p>     Once the download has completed, there may or may not be a message stating</p><p>     that the download completed successfully.</p><p><br></p><p>  Extracting file</p><p>  4. Make sure to be logged on with an administrator account on the target</p><p>     computer.</p><p>  5. Make sure the AC adapter is firmly connected to the target computer.</p><p>  6. Open a Windows Explorer and select &quot;Downloads&quot; from &quot;Quick access&quot;.</p><p>  7. Locate the file that was downloaded and double-click it.</p><p>  8. Follow the instructions on the screen.</p><p>  9. In Extract or Install? window, select &quot;Install&quot;, click Next, and move to</p><p>     step 13 to continue installation.</p><p>     Or, select &quot;Extract only&quot; and click Next to extract and keep the files</p><p>     on the specified folder.</p><p> 10. In the Select Destination Location window, click Extract. If you would like to</p><p>     select a different folder, click Browse.</p><p> 11. All the necessary files will be extracted to the folder selected in the step 10.</p><p> 12. Click Finish.</p><p><br></p><p>  Updating the UEFI BIOS</p><p> 13. In the Ready to Install window, click Install. All the necessary files will</p><p>     be extracted to the temporary folder and BIOS will be ready to update.</p><p>     Extracted files will be deleted after installation.</p><p> 14. Click Finish.</p><p> 15. Follow the instructions on the screen.</p><p> 16. Select &#39;Update ThinkPad BIOS&#39; and follow the instructions on the screen.</p><p> 17. The program shows a message &#39;System program update is continued by BIOS at</p><p>     the next reboot&#39;.</p><p> 18. Click OK.</p><p>     The computer will be restarted automatically and the EFI BIOS will be</p><p>     updated.</p><p><br></p><p>         Based on the ECP version, this package may update ECP only.</p><p>         If UEFI BIOS is not updated, locate to Destination Location folder</p><p>         specified in step 9. Then, click on WINUPTP.exe to update UEFI BIOS.</p><p><br></p><p><br></p><p>Unattended Update</p><p><br></p><p>  This is for system administrators&#39; use only.</p><p><br></p><p>  1. Refer to the Manual Update section, and download and extract the file.</p><p>  2. At the command line, execute WINUPTP.EXE with the -s option.</p><p>     Example: [Path where the files were extracted]\WINUPTP -s</p><p>  3. Restart or fully shut down the computer.</p><p>     Note:</p><p>     Make sure to restart or fully shut down the computer to complete the BIOS</p><p>     update. If hybrid shutdown is made after the BIOS update on Windows 10,</p><p>     the update will not be done correctly.</p><p>     Full shutdown can be done with the following command at the command line on</p><p>     Windows 10.</p><p>       Shutdown /s /t 0</p><p><br></p><p>  To view the update result, refer to the WINUPTP.log file created at the same</p><p>  directory of the package.</p> <br/>
+              <p><span style="font-family: &quot;Lucida Console&quot;; font-size: 11pt;">Not Applicable</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Version Information <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p>  The following versions of UEFI BIOS and ECP (Embedded Controller Program) have</p><p>  been released to date.</p><p><br></p><table style="width: 591pt;"><tbody><tr><td style="height: 18.75pt; width: 195px;"><p data-cellwidth="195px" data-cellheight="18.75pt">Package (ID)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px"> UEFI BIOS (BIOS ID)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">ECP (ECP ID)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px">Rev.</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">Issue Date</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.40 (N30UJ21W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.40 (N30ET57W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2024/9/2</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.39 (N30UJ21W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.39 (N30ET56W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2024/7/12</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.37 (N30UJ20W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.37 (N30ET54W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 02</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2024/4/3</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.37 (N30UJ20W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.37 (N30ET54W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2024/4/1</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.36 (N30UJ19W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.36 (N30ET53W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2023/12/1</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.35 (N30UJ18W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.35 (N30ET52W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2023/9/20</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.34 (N30UJ17W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.34 (N30ET51W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.17 (N30HT34W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 02</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2023/8/4</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.34 (N30UJ17W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.34 (N30ET51W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2023/7/28</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.32 (N30UJ16W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.32 (N30ET49W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2023/1/18</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.31 (N30UJ15W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.31 (N30ET48W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2022/12/5</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.30 (N30UJ14W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.30 (N30ET47W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2022/8/15</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.28 (N30UJ13W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.28 (N30ET45W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2022/3/31</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.26 (N30UJ12W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.26 (N30ET43W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/11/30</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.25 (N30UJ11W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.25 (N30ET42W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/10/29</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.23-1.16 (N30UJ10W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.23 (N30ET40W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.16 (N30HT33W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/10/7</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.23 (N30UJ09W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.23 (N30ET40W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.15 (N30HT32W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/8/26</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.22 (N30UJ08W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.22 (N30ET39W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.15 (N30HT32W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/7/9</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.21 (N30UJ07W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.21 (N30ET38W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.14 (N30HT31W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/5/18</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.19 (N30UJ06W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.19 (N30ET36W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.14 (N30HT31W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/3/15</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.17 (N30UJ05W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.17 (N30ET34W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.13 (N30HT30W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/3/2</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.16 (N30UJ04W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.16 (N30ET33W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.12 (N30HT29W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2021/1/20</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.15 (N30UJ03W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.15 (N30ET32W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.11 (N30HT28W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2020/11/20</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.13 (N30UJ02W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.13 (N30ET30W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.11 (N30HT28W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2020/10/28</p></td></tr><tr><td style="height: 18.75pt; width: 195px;"><p data-cellheight="18.75pt" data-cellwidth="195px">1.10 (N30UJ01W)</p></td><td style="height: 18.75pt; width: 176px;"><p data-cellheight="18.75pt" data-cellwidth="176px">1.10 (N30ET27W)</p></td><td style="height: 18.75pt; width: 183px;"><p data-cellheight="18.75pt" data-cellwidth="183px">1.10 (N30HT27W)</p></td><td style="height: 18.75pt; width: 111px;"><p data-cellheight="18.75pt" data-cellwidth="111px"> 01</p></td><td style="height: 18.75pt; width: 124px;"><p data-cellheight="18.75pt" data-cellwidth="124px">2020/9/9</p></td></tr></tbody></table><p><br></p><p>  Note: Revision number (Rev.) is for administrative purpose of this README</p><p>        document and is not related to software version. There is no need to</p><p>        upgrade this software when the revision number changes.</p><p><br></p><p>  To check the version of UEFI BIOS and Embedded Controller Program, refer to</p><p>  the Determining which version is installed section.</p><p><br></p><p><br></p><p>Summary of Changes</p><p><br></p><p>  Where: &lt;   &gt;        Package version</p><p>         UEFI:        UEFI BIOS version</p><p>         ECP:         Embedded Controller Program version</p><p>         [Important]  Important update</p><p>         (New)        New function or enhancement</p><p>         (Fix)        Correction to existing function</p><p><br></p><p>&lt;1.40&gt;</p><p>UEFI:1.40/ ECP: 1.17</p><p>- [Important] Update includes a security fix.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2023-41833, CVE-2023-23904, CVE-2023-22351, CVE-2023-25546.</p><p>- (New) Updated the Diagnostics module to version 04.35.000.</p><p>- (New) Updated CPU microcode.</p><p><br></p><p>&lt;1.39&gt;</p><p>UEFI:1.39/ ECP: 1.17</p><p>- [Important] Enhancement to address security vulnerability,CVE-2024-0762.</p><p>- [Important] Enhancement to address security vulnerability,LEN-154756.</p><p>- (New) Updated the Diagnostics module to version 04.34.001.</p><p><br></p><p>&lt;1.37&gt;</p><p>UEFI:1.37/ ECP: 1.17</p><p>- (Fix) Corrected support model name in readme. </p><p><br></p><p>&lt;1.37&gt;</p><p>UEFI:1.37/ ECP: 1.17</p><p>- [Important] Enhancement to address security vulnerability,CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, </p><p>              CVE-2023-45233, CVE-2023-45234, CVE-2023-45235, CVE-2023-45236, CVE-2023-45237.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2023-28402.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2022-21894, CVE-2023-24932.</p><p>- (New) Updated the Diagnostics module to version 04.33.000.</p><p><br></p><p>&lt;1.36&gt;</p><p>UEFI:1.36/ ECP: 1.17</p><p>- [Important] Enhancement to address security vulnerability, CVE-2023-5058</p><p><br></p><p>&lt;1.35&gt;</p><p>UEFI:1.35/ ECP: 1.17</p><p>- [Important] Enhancement to address security vulnerability,CVE-2021-38578.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2021-42299.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2021-38575.</p><p>- (New) Updated the Diagnostics module to version 04.31.000.</p><p><br></p><p>&lt;1.34&gt;</p><p>UEFI: 1.34/ ECP: 1.17</p><p>- [Important] Enhancement to address security vulnerability,CVE-2022-0778.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2022-4304.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2022-40982.</p><p>- [Important] Enhancement to address security vulnerability,CVE-2022-37343,CVE-2022-44611,</p><p>        CVE-2022-27879,CVE-2022-38083,CVE-2022-43505.</p><p>- (New) Updated the Diagnostics module to version 04.30.000.</p><p>- (New) Updated UNDI Driver to RtkUsbUndiDxe.2.040.2023.02.22.</p><p><br></p><p>&lt;1.32&gt;</p><p>UEFI: 1.32/ ECP: 1.16</p><p>- [Important] Enhancement to address security vulnerability, CVE-2022-33894</p><p>- [Important] Enhancement to address security vulnerability, CVE-2022-34301, CVE-2022-34302, CVE-2022-34303</p><p>- (New) Updated the Diagnostics module to version 04.27.000.</p><p>- (Fix) Fixed an issue where system unexpectedly powers on after shutdown by BitLocker timeout </p><p>        with Lenovo USB-C Mini Dock.</p><p><br></p><p>&lt;1.31&gt;</p><p>UEFI: 1.31/ ECP: 1.16</p><p>- [Important] Enhancement to address security vulnerability, CVE-2022-21198.</p><p>- (New) Updated the Diagnostics module to version 04.26.000.</p><p>- (New) Update Synaptics Prometheus driver to 6.0.59.1105.</p><p><br></p><p>&lt;1.30&gt;</p><p>UEFI: 1.30/ ECP: 1.16</p><p>- [Important] Enhancement to address security vulnerability, CVE-2022-21151, CVE-2022-0005,</p><p>              CVE-2021-33123, CVE-2021-33124.</p><p>- [Important] Update includes a security fix.</p><p>- (New) Updated the CPU microcode.</p><p>        (Note) Above update will show &quot;Self-Healing BIOS  backup progressing ... xx %&quot;</p><p>               massage on screen during BIOS update process.</p><p>- (New) Updated the Diagnostics module to version 04.25.000.</p><p>- (New) Supported 5.15-5.35 GHz band in Indonesia.</p><p>- (New) Updated WMI option to support setting Supervisor Password</p><p>        in System Deployment Boot Mode.</p><p><br></p><p>&lt;1.28&gt;</p><p>UEFI: 1.28/ ECP: 1.16</p><p>- [Important] Update includes a security fix.</p><p>- (New) Updated the Diagnostics module to version 04.22.000.</p><p>- (New) Update Regulatory Information</p><p>- (New) Added support for Microsoft Windows 11.</p><p>- (Fix) Fixed an issue where Power-On Password is set by WMI even if Power-On</p><p>        Password Control was disabled.</p><p><br></p><p>&lt;1.26&gt;</p><p>UEFI: 1.26/ ECP: 1.16</p><p>- (New) Updated the CPU microcode.</p><p>        (Note) Above update will show &quot;Self-Healing BIOS backup progressing ... xx %&quot;</p><p>               massage on screen during BIOS update process.</p><p>- (Fix) Fixed an issue where can&#39;t enter ThinkPad Setup when external 4K monitor is connected</p><p>        and Boot display device is set to HDMI/Type-C by ThinkPad Setup.</p><p><br></p><p>&lt;1.25&gt;</p><p>UEFI: 1.25/ ECP: 1.16</p><p>- [Important] Update includes a security fix.</p><p>- (Fix) Fixed an issue where can&#39;t recognize PXE boot for ThinkPad Thunderbolt 4 Dock.</p><p><br></p><p>&lt;1.23-1.16&gt;</p><p>UEFI: 1.23/ ECP: 1.16</p><p>- (New) Improve fan control under low load to reduce fan noise.</p><p><br></p><p>&lt;1.23&gt;</p><p>UEFI: 1.23/ ECP: 1.15</p><p>- [Important] Update includes a security fix.</p><p><br></p><p>&lt;1.22&gt;</p><p>UEFI: 1.22/ ECP: 1.15</p><p>- [Important] Update includes a security fix.</p><p>- (New) Improve fan noise.</p><p>- (Fix) Fixed an issue where Nuvoton TPM firmware version might not detected properly.</p><p>- (Fix) Fixed an issue where enter ThinkPad Setup menu hang after changing boot display device to HDMI or USB Type-C.</p><p><br></p><p>&lt;1.21&gt;</p><p>UEFI: 1.21/ ECP: 1.14</p><p>- [Important] Addresses CVE-2020-12359</p><p>              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-12359)</p><p>- [Important] Addresses CVE-2020-24511, CVE-2020-24512</p><p>              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24511)</p><p>              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24512)</p><p>- [Important] Addresses CVE-2020-24586, CVE-2020-24587, CVE-2020-24588</p><p>              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24586)</p><p>              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24587)</p><p>              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-24588)</p><p>- (New) Updated the CPU microcode.</p><p>        (Note) Above update will show &quot;Self-Healing BIOS  backup progressing ... xx %&quot;</p><p>               massage on screen during BIOS update process.</p><p>- (New) Updated the Diagnostics module to version 04.17.000.</p><p>- (Fix) Fixed an issue where system might hang when external USB keyboard is connected</p><p>        and Kernel DMA is set to Enabled by ThinkPad Setup.</p><p><br></p><p>&lt;1.19&gt;</p><p>UEFI: 1.19/ ECP: 1.14</p><p>- [Important] Update includes a security fix.</p><p>- (New) Reduce the fan&#39;s noise.</p><p><br></p><p>&lt;1.17&gt;</p><p> UEFI: 1.17/ ECP: 1.13</p><p>- [Important] Update includes a security fix.</p><p>- (New) Updated the CPU microcode.</p><p>          (Note) Above update will show &quot;Self-Healing BIOS  backup progressing ... xx %&quot;</p><p>          massage on screen during BIOS update process.</p><p>- (New) Updated Diagnostics module to version 04.16.000.</p><p>- (New) Update Synaptics Prometheus driver to 6.0.47.1105.</p><p>- (Fix) Fixed the problem that POP cannot be cleared for Power-On Password Control.</p><p><br></p><p>&lt;1.16&gt;</p><p> UEFI: 1.16/ ECP: 1.12</p><p>- (Fix) Fixed an issue where BIOS might generate 0288 beep error.</p><p>- (Fix) Fixed an issue where Setup Settings Capture/Playback Utility (SRSETUP)</p><p>        causes 191 error if Secure Boot Mode is reset to Setup Mode and</p><p>        Supervisor Password is changed at the same time.</p><p>- (Fix) AMT CIRA_Timeout cannot keep when exit AMT page.</p><p>- (Fix) System will suddenly reboot after press F10 at Key Management page in</p><p>        BIOS Setup Menu.</p><p>- (New) Updated the Diagnostics module to version 04.15.000.</p><p>- (New) Update the Synaptics Prometheus driver to 6.0.47.1105</p><p><br></p><p>&lt;1.15&gt;</p><p> UEFI: 1.15/ ECP: 1.11</p><p>- [Important] LEN-41208 INTEL-TA-00389: INTEL RAPL Advisory</p><p>  Addresses CVE-2020-8694, CVE-2020-8695</p><p>- (New) Updated the CPU microcode.</p><p>        (Note) Above update will show &quot;Self-Healing BIOS backup progressing ... xx %&quot;</p><p>               massage on screen during BIOS update process.</p><p><br></p><p>&lt;1.13&gt;</p><p> UEFI: 1.13 / ECP: 1.11</p><p>- [Important] Updated UNDI Driver to RtkUsbUndiDxe.2.030.2020.08.13.efi.</p><p>- [Important] Update E-label to v4.1.0.10.</p><p>- (New) Add &quot;Wake On Alarm&quot; function.</p><p><br></p><p>&lt;1.10&gt;</p><p> UEFI: 1.10 / ECP: 1.10</p><p>- (New) Initial release for ThinkPad P15  Gen 1 (Machine types: 20ST, 20SU),</p><p>                            ThinkPad P17  Gen 1 (Machine types: 20SN, 20SQ),</p><p>                            ThinkPad T15g Gen 1 (Machine types: 20UR, 20US),</p><p>                            ThinkPad T15p Gen 1 (Machine types: 20TN, 20TM),</p><p>                            ThinkPad P15v Gen 1 (Machine types: 20TQ, 20TR).</p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Trademarks <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p>* Lenovo, ThinkPad and ThinkVantage are registered trademarks of Lenovo.</p><p><br></p><p>* Microsoft and Windows are registered trademarks of Microsoft Corporation.</p><p>* Microsoft Edge is a trademark of Microsoft Corporation.</p><p><br></p><p>Other company, product, and service names may be registered trademarks,</p><p>trademarks or service marks of others.</p>
+          </div>
+      </div>
+
+    </div>
+    </div><script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    function showMoreModels() {
+      document.getElementById('remainingItems').style.display = 'block';
+      document.getElementById('viewMore').style.display = 'none';
+      
+    }
+    function showLessModels() {
+      document.getElementById('remainingItems').style.display = 'none';
+      document.getElementById('viewMore').style.display = 'block';
+      
+    }
+    </script>
+    
+    </body>
+    </html>
+    

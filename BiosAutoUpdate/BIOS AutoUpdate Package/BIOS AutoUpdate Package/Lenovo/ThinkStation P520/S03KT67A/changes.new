@@ -1,0 +1,394 @@
+                                 BIOS Changes
+
+Models:  
+
+General Information:
+
+     S03KTxxA is the binary image level. (BIOS)
+     NOTE: All changes carry forward. That is, if a change is added in 01, it is
+           also in 02, 03 etc.
+
+S03KT67A
+-Enhancement to address security vulnerability LEN-153507,LEN-154754,LEN-154755
+-Update RC MCU ME to support IPU 2024.3.
+-Update SA50216 LogoFAIL patch to Ver6.0.
+
+S03KT66A
+-Enhancement to address security vulnerability CVE-2023-45229, CVE-2023-45230, CVE-2023-45231, CVE-2023-45232, CVE-2023-45233, CVE-2023-45234, CVE-2023-45235.
+-Enhancement to address security vulnerability CVE-2023-43567, CVE-2023-43568, CVE-2023-43569, CVE-2023-43570, CVE-2023-43571, CVE-2023-43572, CVE-2023-43573, CVE-2023-43574, CVE-2023-43575, CVE-2023-43576, CVE-2023-43577,CVE-2023-43578, CVE-2023-43579, CVE-2023-43580, CVE-2023-43581
+-Enhancement to address security vulnerability LEN-149663 LEN-152500
+-Add JumperResetFactoryKeys - After "CLR_CMOS
+
+S03KT65A
+-Enhancement to address security vulnerability CVE-2022-36392,CVE-2022-38102,CVE-2022-29871,CVE-2022-40982,CVE-2022-37343,CVE-2022-44611,CVE-2022-27879,CVE-2022-38083,CVE-2022-43505.
+-Enhancement to address security vulnerability LEN-141561,LEN-135369,LEN-147504,LEN-146616,LEN-141562.
+-Fix wmi tool can change power loss item but no function issue. 
+-Update F11 recovery function.
+
+S03KT64A
+-Enhancement to address security vulnerability CVE-2022-43505,CVE-2023-34470,CVE-2023-0286,CVE-2022-4304,CVE-2023-0215,CVE-2022-4450.
+-Enhancement to address security vulnerability LEN-105119,LEN-99942,LEN-107838,LEN-138404,LEN-123566.
+-New support power on to automatic boot sequence feature.
+-Fix MSFT AutoPilot marker will lost after BIOS flash issue.
+
+S03KT63A
+-Enhancement to address security vulnerability CVE-2021-38575,CVE-2023-39539,CVE-2022-48181.
+-Enhancement to address security vulnerability LEN-131628
+-Optimize PXE windowsize parameter to improve compatibility.
+
+S03KT62A
+-Enhancement to address security vulnerability CVE-2022-36763, CVE-2022-36764, CVE-2022-36765, CVE-2021-38578.
+-Enhancement to address security vulnerability LEN-115710, LEN-105089, LEN-113891, LEN-107837, LEN-113890, LEN-113892, LEN-113891.
+
+S03KT61A
+-Update DBX key to May 9, 2023
+-Update IFX TPM2.0 FW
+-Update UEFI diag to 04.29.000
+-Update RC to support IPU 2023.1 and 2022.3
+
+S03KT60A
+-Force BRCM5719 lan speed to Gen2 in auto setting.
+-Update J3/J9/JY BIOS flash tool.
+
+S03KT59A
+-Enhancement to address security vulnerability CVE-2022-34301,CVE-2022-34302,CVE-2022-34303,CVE-2022-40250,CVE-2021-30004,LEN-77635,LEN-96364,LEN-96365,LEN-96366,LEN-96367.
+-Dynamic disable Nvidia GFX card HEVC.
+
+S03KT58A
+-Enhancement to address security vulnerability LEN-96373.
+-Change JY update method from runtime flash to capsule update.
+-Update MF package to support keep default setting.
+
+S03KT57A
+-Enhancement to address security vulnerability LEN-95703, LEN-95703, SA50122.
+-Enhancement DHCP pxe boot stability.
+-Update UEFI diag to 04.26.000
+-Update Microcode & ME to support 2022.1IPU.
+-Optimize smi password retry policy.
+
+S03KT56A
+-Enhancement to address security vulnerability LEN-78119,LEN-84945,LEN-84946,LEN-84951.
+-Update RC & Microcode & ACM to support 2022.1IPU.
+-Add wFlashGUI tool to support GUI for JY package.
+
+S03KT55A
+-Add support new Raid card LS-9560-16i in Fan table.
+-Enhancement to address security vulnerability CVE-2021-28216, LEN-77465, LEN-79454, LEN-84093.
+-Enhancement to address security vulnerability LEN-84071, LEN-84947, LEN-84952, LEN-84948, LEN-84949, LEN-84954, LEN-84950
+
+S03KT54A
+-Update Bitland lan card UEFI ROM to 2.057.2021.11.22.
+-Enhancement to address security vulnerability  LEN-78118.
+-Improve CPU performance when COM1 cable inserted.
+
+S03KT53A
+-Fix RC update caused BSOD in some extreme condition.
+-Update UEFI diag to 04.20.000
+-Fix Smart usb protection abnormal once permanently disable computrace.
+
+S03KT52A
+-Enhanced SMBIOS Type3 SerialNumber value.
+-Add more help message for "Security Erase HDD Data" item.
+-Enhancement to address security vulnerability LEN-75197.
+-Update MCU & CSME to support 2021IPU2.
+-Enhanced permanent disable computrace function.
+-Enable WPBT module for A and P version.
+
+S03KT51A
+-Update Fan table 4 to support 64G 3200 Memory.
+-Don't install WPBT table if USB smart protection disabled.
+
+S03KT50A
+-Remove Static Virtual Lockstep Mode support based on Intel removed it.
+-Enhance http boot function to support multiple http boot option.
+
+S03KT49A
+-Update UEFI diag to 04.19.000.
+-Upgrade RC to Support IPU 2021.1.
+-Update RSTe driver to 7.5.11.1002, and remove legacy RSTe support.
+-Update CSME to 11.12.86.1877.
+-Enhancement to address security vulnerability CVE-2021-0144.
+
+S03KT48A
+-Change customer wmi setup item name.
+-Add Customer Efivar.
+-Update P520-P720 PSU Overload Spec v1_4 setting
+-Rollback FWTS SMBIOS Type3 issue. Remove Type39 information.
+-Fix when PAP/POP keyin wrong cause display error button.
+
+S03KT47A
+-Enhancement to address security vulnerability CVE-2020-10255.
+-Enhancement to address security vulnerability LEN-50824.
+-Enhance PSU overload log.
+-Fix FWTS issue. DBGP, GammingGUID remove, Type3/Type39, PC00.XHCI.RHUB.SSxx._PLD returned value.
+-Enhance PAP security.
+
+S03KT46A
+-Enhancement to address security vulnerability CVE-2020-10713.
+-Enhancement to address security vulnerability LEN-43114.
+-Enhance the BIOS setup function for SAS card.
+-Update PSU overload feature.
+
+S03KT45A
+-Rollback ME to 11.12.77.1664.
+-Fix BIOS settings captured by SR tool on older BIOS did not work on BIOS 43A/44A.
+-Enhance the SMBIOS type 17.
+-Enhance the PAP verification feature.
+
+S03KT44A
+-Enhance PCIe stability.
+
+S03KT43A
+-Update RC code to 1524.D00.
+-Support Win10 20H2. 
+-Update ME to 11.12.80.1734
+-Enhance SMBIOS type 11.
+
+S03KT42A
+-Enhancement to address security vulnerability CVE-2020-8696, CVE-2020-8698.
+-Enhance the BIOS setup information.
+-Fix that Intel M.2 SSD is not deteced by BIOS with SATA RAID mode.
+-Fix the potential reboot issue with software Houdini for 165W CPU.
+-Support new graphics card.
+
+S03KT41A
+-Enhance the RTC date and time.
+-Enhance the BIOS update process.
+-Update fan table for a specific configuration.
+-Change BIOS setup mode to text with SOL.
+
+S03KT40A
+-Enhance HDD passoword function
+-Enhance Configuration Change Detection
+-Enable PCIe Port Bifurcation for P520c x16 slot
+
+S03KT39A
+-Support Win10 20H1
+-Update ME to 11.12.77.1664
+-Update Microcode to version MB750654_02006906/MBF50656_04002F01/MBF50657_05002F01
+-Enhance the event log for PCR0
+-Update UEFI diag to 04.10.00T
+-Enhance BIOS Setup
+-Enhance the WMI function
+-Update the fan table logic
+-Enhancement to address security vulnerability CVE-2020-0548, CVE-2020-0549, LEN-30689
+-Enhance external Intel LAN PXE and UEFI boot fuction
+	   
+S03KT38A
+-Enhance the LVFS function with some Linux OS.
+-Fix status of item "Boot Mode" is not correct in WMI list.
+-Fix the issue that boot options created by OS is removed after updating BIOS.
+-Fix the problem for USB disable funciton in BIOS setup.
+
+S03KT37A
+-Improve some fuction code(WMI/HDD password). 
+-BIOS password authentication before entering into MEBx.
+-Update RSTe firmware to 6.1.0.1034.
+ 
+S03KT36A
+-Fixed the issue happened when installing UEFI Win7 with ODD. 
+-Enhancement to new BIOS GUI.
+-Improve the LVFS function.
+-Improve the BBR function.
+-Enhance the WMI function.
+-Update Microcode version to 65 and 2C.
+-Enhancement to address security vulnerability LEN-28775,LEN-29091,LEN-29093,LEN-29095,LEN-29097,
+ LEN-29101,LEN-29818,CVE-2019-14607,CVE-2019-11157.
+ 
+S03KT35A
+-Update code to support Cascade Lake CPU.
+-Update diagnostics to v04.10.000.
+-Enhance WMI.
+-Support deployment boot mode.
+-Support new BIOS GUI.
+-Enhancement to address security vulnerability LEN-27776.
+-Enhancement to address security vulnerability LEN-28078.
+-Enhancement to address security vulnerability CVE-2019-11105,CVE-2019-11088,CVE-2019-11104,CVE-2019-11097,
+ CVE-2019-11103,CVE-2019-0131,CVE-2019-0166,CVE-2019-11087,CVE-2019-11101,CVE-2019-11100,CVE-2019-11102,
+ CVE-2019-11106,CVE-2019-11110.
+
+S03KT33A
+-Support 19H1 OS.
+-Fix "security level" is not changed successfully sometimes.
+-Enhance AMT disable function.
+-Enhance Smart USB function.
+
+S03KT32A
+-Enhance the Setup UI.
+-Fix the issue that the "Wake up on alarm" was loaded to default after flashing BIOS.
+-Enhance HSTI support.
+-Enhance System Event Log.
+-Fix some custom issue.
+
+S03KT30A
+-Update RSTe UEFI driver to 6.1 HF.
+ It is recommended that users download and install 6.1 HF RSTe drivers from Lenovo's eSupport(https://support.lenovo.com). 
+	   
+S03KT29A
+-Change the wfu progress bar place.
+-Support custom logo.
+-Modify the information for SMBIOS type1.
+-Improve to support custom graphic card.
+-Fix changing boot order failed with mouse.
+-Update microcode to MB750654_0200005E.
+-Delete 'Autonomous Core C-State'.
+-Fix TBT issue when TBT is in special PCIE slot.
+
+S03KT28A
+-Fix video display issue for custom setting.
+-Imrove WMI issue for item "option keys display".
+-Fix birurcation issue when TBT is connected at special slots. 
+	   
+S03KT27A
+-Disable keyboard KBBH21 during ME WFU.
+-Fix setup layout issue.
+-Implement custom default settings function.
+-Fix system language doesn't be load default value during manufacture.
+-Fix graphics card wx8200 display issue with new VBIOS. 
+-Fix enable AMT issue.
+-Modify the information in SMBIOS type41.
+-Upgrade Diagnostic to v04.08.001
+
+S03KT26A
+-Disable keyboard KBBH21 during ME WFU.
+-Fix setup layout issue.
+-Implement custom default settings function.
+-Fix system language doesn't be load default value during manufacture.
+-Fix graphics card wx8200 display issue with new VBIOS. 
+-Fix enable AMT issue.
+
+S03KT25A
+-Fix S3 resume issue on Rehat 7.6.
+-Improve M.2 information in BIOS setup.
+-Disable keyboard during ME WFU.
+-Improve CA code for Bitlocker.
+-Fix security issues.
+	   
+S03KT24A
+-Support RS5.
+-Upgrade CPU MCU to V02000050.
+-Upgrade RC to v1.1.6.
+-Upgrade ME to 11.11.60.1561.
+-Improve WMI function.
+-Fix security issues.
+	   
+S03KT23A
+-Modify the warning message format for SIO.
+-Disable serial port wake capability when serial port is disabled.
+-Improve fan event.
+-Fix the issue that BIOS item "COM0 Console Redirection Settings" shows abnormally sometimes.
+-Improve ThunderBolt feature.
+-Fix system date can not be changed to 29/30/31 typed with keyboard.
+-Modify and fix some BIOS setup item information.
+-Fix the Event log is not cleared by tool.
+-Fix that "Turbo Mode" disappear when BIOS load default.
+-Fix NoSnoopRdp porting error.
+-Fix that PS2 KB(SD50N66936) can not be used sometimes.
+	   
+S03KT22A
+-Modify some BIOS setup layout message.
+-Fix pcie slot with non strorage device can be set to VMD in some special case.
+-Fix the issue that IPV4/IPV6 is disabled when boot agent is disabled.
+-Fix event log is clear after updating BIOS.
+-Fix security issue.
+-Improve Memory RAS function.
+-Update WFU screen.
+-Implement Customer Password function.
+-Improve WMI function.
+-Add PCIE Slot Bifurcation on x16 slots to make it is changeable for customer.
+
+S03KT21A
+-Improve the password process for MFG.
+
+S03KT20A
+-Correct some BIOS setup information.
+-Fix that there is no Safe Removal of the USB device for some special USB port.
+-Fix that system language is load default after BIOS WFU.
+-Fix that "Require HDP on System Boot" is load default after BIOS update.
+-Fix the system boot slowly with some special device in the special slot.
+-Modify Device Guard behavior with PAP.
+-Change Computrace Performantly Disable Function.
+-Implement ME LFU funciton.
+-Improve EC update fucntion.
+-Improve Fan feature for medina card.
+-Fix security issue for CPU Microcdode DownGrade Attack.
+
+S03KT19A
+-Upgrade RC code.
+
+S03KT18A
+-Improve AMT disable function.
+-Change some BIOS setup item help message.
+-Fix SN that sent to SIO is incorrect.
+-Fix issues for secure boot item.
+-Fix POST message in Chinese language.
+-Fix ASPM is disabled when boot to OS.
+-Fix The UUT resume from S3 need 40s after enable Thunderbolt card in some special case.
+-Fix VT-d item will be disabled after load default.
+-Fix the UUT will restart repeatedly when change the GFX from WX5100 to P400 with Thunderbolt card.
+-Implement solution for security issue.
+-Patch for BIOS guard issue
+-Fix the issue that warning message of "Discrete TPM FW Switch" is wrong when in chinese or french mode 
+-Support SR /cptmode enable/disable. 
+
+S03KT16A
+-Upgrade CPU MCU to Version 0200004D.
+-Fixed IIO/PCH Port ASPM function 
+
+S03KT15A
+-Update code to support Win10 RS4.
+-Fix some itmes is not listed with WMI.
+-Remove FADB item in BIOS setup.
+-Fix some systems on VMD is not able to boot after updating BIOS.
+-Improve secure boot feature.
+-FIx item "Intel Manageability control" can not be load default value.
+-Fix PAP is not allowed to load default with WMI. 
+-Fix first time SN is not keeped with non-legacy style after MTM/SN is updated.
+-Fix HDD passowrd menu showed abnormally with key ESC.
+
+S03KT14A
+- Improve WMI function for Windows and Linux.
+
+S03KT13A
+-Improve TBT funciton.
+-Modify some message in BIOS setup
+-Modify some Boot menu.
+-Improve Intel Manageability Control funciton.
+-Improve BIOS WMI funciton.
+-Improve Intel Manageability Control funciton.
+-Modify the rule of serial nunber passed to EC.
+-Change prochot to input mode.
+-Fix some usb port is controlled by item All USB Devices
+-HDD Password is not requeired during reboot.
+-Improve WFU function
+
+S03KT12A
+-Improve PCIE device function on some PCIE slot.
+-Implement heartbeat fuction.
+-Add new patch for WFU progress bar interface to 12A.
+-Upgrade CPU MCU to Version 02000043.
+-Upgrade rste to 5.3.8.1002-PreOS-PV-HotFix.
+-Enhance PLDM function.
+-Fixed MCU will beep when cold/warm boot.
+-Fixed there is a warning Prompt when Disable CSM in BIOS setup.
+-Fixed fail to do LFU on Fedors 27 OS.
+-Implement AMT Configuration -> "Intel(R) Manageability Control". 
+
+S03KT11A
+- Fix SAS card is not in F12 boot menu when enable Thunderbolt.
+- Implement M.2 SSD information in POST/F12/F1 in VMD RAID.
+- Fix OS Optimized Defaults become disabled sometimes.
+- Fix some of setup items can not be kept.
+- Fix COM device is not showed in Device Manager.
+- Implement Security fuciton.
+- Upgrade PLDM module to v04.
+- Change MMIO High Base defaults to 4T.
+- Rollback CPU Microcode to 0200002E
+- Upgrade CryptoPkg to CryptoPkg_28.
+- Improve WFU/LVFS function.
+- Add more mapping language for setup item.
+- Implement new repuirement for AMT provision.
+- Fix TBT card issues.
+
+S03KT09A
+01. Initial Production release.

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="utf-8">
+          <title>ReadMe</title>
+          <base href="/">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+          <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">      
+          
+
+          <style>
+                @import 'bootstrap/scss/bootstrap';
+        
+              
+                    
+                    .content {
+                      padding: 0 18px;
+                      display: none;
+                      overflow: hidden;
+                      background-color: #f1f1f1;
+                    }    
+                    
+                    html, body { height: 100%; }
+                    body { margin: 0; font: normal normal normal 16px Lato;
+                      letter-spacing: 0px;}
+
+                    .nav-breadcumb {
+                      position: sticky;
+                      top: 0;
+                      z-index: 999;
+                      display: flex;
+                      flex-direction: row;
+                      box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+                      background-color: white !important;
+                      height: 40px;
+                    }
+
+                    h2 {
+                      font-size: 30px;
+                      margin-top: 5px;
+                      margin-bottom: 5px;
+                      margin-left: 10px;
+                      margin-right: 10px;
+                      text-align: center;
+                      justify-content: center;
+                      align-items: center;
+                    }
+                    
+                    .collapsible {
+                      background-color: white;
+                      color: black;
+                      cursor: pointer;
+                      width: 100%;
+                      border: none;
+                      text-align: left;
+                      outline: none !important;
+                      font-size: 28px;
+                      font-weight: bold;
+                      border-bottom: 2px solid lightgrey;
+                      padding-left: 0px !important;
+                      padding-bottom: 16px;
+                      padding-top: 32px;
+                    }
+
+                    .collapsible.active {
+                      border: none;
+                    }
+                  
+                    .content {
+                      padding: 0 18px;
+                      display: none;
+                      overflow: hidden;
+                      background-color: #f1f1f1;
+                    }
+
+                    .topSection {
+                      margin-top: 32px;
+                    }
+                  
+                    .topSectionHeading {
+                      font-size: 28px;
+                      font-weight: bold;
+                    }
+                  
+                    .topSectionContent {
+                      font-size: 16px;
+                      padding-top: 15px;
+                      line-height: 19px;
+                    }
+                  
+                    .card.card-body {
+                      font-size: 11pt;
+                      border: none;
+                      border-bottom: 1px solid lightgray;
+                      border-radius: 0px;
+                      padding-left: 0px;
+                      padding-top: 0px;
+                      padding-bottom: 32px;
+                      font-family: 'Lucida Console';  
+                    }
+                  
+                    .heading {
+                      font-size: 34px;
+                      font-weight: bold;
+                    }
+                  
+                    .container {
+                      padding-top: 32px;
+                      padding-bottom: 78px;
+                    }
+                  
+                    .topList {
+                      margin-bottom: 0px;
+                    }
+  
+                  .card.card-body p {
+                    margin-bottom: 0px !important;
+                  }
+
+                  .collapsible .gg-chevron {
+                    box-sizing: border-box;
+                    position: relative;
+                    display: block;
+                    transform: scale(var(--ggs,1));
+                    width: 22px;
+                    height: 22px;
+                    border: 2px solid transparent;
+                    border-radius: 100px;
+                    float: right;
+                  }
+                  .collapsible .gg-chevron::after {
+                    content: "";
+                    display: block;
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 17px;
+                    height: 17px;
+                    border-bottom: 3px solid;
+                    border-right: 3px solid;
+                    transform: rotate(45deg);
+                    left: 4px;
+                    top: 2px;
+                    transition: transform 0.3s;
+                    margin-top: 2px;
+                  }                  
+                  .collapsible.active .gg-chevron::after {
+                      border-top: 3px solid;
+                      border-bottom: none;
+                      transform: rotate(-45deg);
+                      margin-top: 12px;
+                      transition: transform 0.3s;
+                  }
+
+                  a.viewMoreLink {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #294E95;
+                    text-decoration: none;
+                    cursor: default;
+                  }
+                  
+                  a.viewMoreLink:hover {
+                    text-decoration: underline;
+                  }
+                  .htmlContainer .card.card-body{
+                    white-space: pre-wrap
+                  }
+                  #readmeContent table {
+                    border-collapse: collapse;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black; 
+                  }
+  
+                  #readmeContent td {
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black; 
+                  }
+                  #readmeContent th {
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: black; 
+                  }
+
+                  #readmeContent a {
+                    color: #ff5722;
+                  }
+                  table {
+                    display: contents;
+                  }
+                </style>
+    </head><body>
+    <div id="readmeContent">
+    
+      <div class="nav-breadcumb">
+        <div class="navbar-title-bar">
+          <img width="120" height="40" src="data:image/png;base64,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" alt="error" class="lenovoIcon" />
+        </div>
+    </div>
+    <div class="container htmlContainer">
+      <div class="heading">
+        BIOS Update Utility for Windows
+      </div>
+
+      <div class="topSection">
+    <div class="topSectionHeading">Support Models</div>
+    <div class="topSectionContent">
+        <p class="topList">ThinkPad T14s Gen 2 (Type 20WM, 20WN) Laptop</p><p class="topList">ThinkPad X13 Gen 2 (Type 20WK, 20WL) Laptop</p>
+        
+        
+          <span id="remainingItems" style="display: none">
+        
+          <div id="viewLess" style="margin-top: 12px">
+            <a class="viewMoreLink"  onclick="showLessModels()">View Less Models</a>
+          </div>
+        </span>
+
+    </div>
+</div>
+
+      <div class="topSection">
+            <div class="topSectionHeading">Operating Systems</div>
+            <div class="topSectionContent">
+            <p class="topList">Windows 10 64bit</p><p class="topList">Windows 11</p>
+            </div>
+        </div>
+
+        <div class="topSection">
+        <div class="topSectionHeading">Version</div>
+        <div class="topSectionContent">
+            <p class="topList">1.59&nbsp;&nbsp;(UEFI BIOS)</p><p class="topList">1.44&nbsp;&nbsp;(ECP)</p>
+        </div>
+    </div>
+
+    <div class="topSection">
+            <div class="topSectionHeading">Support Device</div>
+            <div class="topSectionContent">
+                <p class="topList">
+                    BIOS
+                </p>
+            </div>
+        </div>
+        <div class="topSection">
+            <div class="topSectionHeading">Revision</div>
+            <div class="topSectionContent">
+                <p class="topList">
+                    1
+                </p>
+            </div>
+        </div>
+      
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample" >
+      What This Package Does <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+          <p><span style="font-family: Verdana;">  This package updates the UEFI BIOS (including system program and Embedded</span></p><p><span style="font-family: Verdana;">  Controller program) stored in the ThinkPad computer to fix problems, add new</span></p><p><span style="font-family: Verdana;">  functions, or expand functions as noted below.</span></p><p><br></p><p><span style="font-family: Verdana;">  This package also contains the tool to create a bootable BIOS Flash USB memory key.</span></p><p><span style="font-family: Verdana;">  Please refer to &quot;Instruction US - BIOS flash USB memory key.txt&quot; in the installation</span></p><p><span style="font-family: Verdana;">  folder for detail instruction.</span></p><p><br></p><p><span style="font-family: Verdana;">  This program is language independent and can be used with any language system.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="true" aria-controls="collapseExample">
+            Changes in This Release <i class="gg-chevron"></i>
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body"><p><span style="font-family: Verdana;">Version Information</span></p><p><span style="font-family: Verdana;">       1.59 (UEFI BIOS)</span></p><p><span style="font-family: Verdana;">       1.44 (ECP)</span></p><p><br></p><p><span style="font-family: Verdana;">[Important updates]</span></p><p><span style="font-family: Verdana;"> - Updated includes security fixes.</span></p><p><br></p><p><span style="font-family: Verdana;">[New functions or enhancements]</span></p><p><span style="font-family: Verdana;"> - Updated the Diagnostics module to version 04.35.000.</span></p><p><br></p><p><span style="font-family: Verdana;">[Problem fixes]</span></p><p><span style="font-family: Verdana;"> Nothing.</span></p></div>
+        </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Dependency <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana; font-size: 11pt;">  Nothing.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Important Notice <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana;">- Be aware that the OS Optimized Defaults option in the Restart menu of ThinkPad</span></p><p><span style="font-family: Verdana;">  Setup should not be normally changed. Lenovo recommends to use the factory</span></p><p><span style="font-family: Verdana;">  default setting for it, as follows.</span></p><p><br></p><p><br></p><p><span style="font-family: Verdana;">  - OS Optimized Defaults                            [Enabled]</span></p><p><br></p><p><span style="font-family: Verdana;">  If the OS Optimized Defaults setting is changed, Setup Default by the F9 key</span></p><p><span style="font-family: Verdana;">  will not load the same default configuration, as follows. Furthermore, by the</span></p><p><span style="font-family: Verdana;">  condition of Operating System installation, the computer may not be booted due</span></p><p><span style="font-family: Verdana;">  to the setting change.</span></p><p><br></p><p><span style="font-family: Verdana;">  If your computer runs satisfactorily now, you have no need to change the OS</span></p><p><span style="font-family: Verdana;">  Optimized Defaults option. If you need to change the setting, consider well</span></p><p><span style="font-family: Verdana;">  the effect of the setting change.</span></p><p><br></p><p><span style="font-family: Verdana;">  Affected Setup menu items :</span></p><p><span style="font-family: Verdana;">  &quot;OS Optimized Defaults&quot; setting                [Disabled] case      [Enabled] case</span></p><p><span style="font-family: Verdana;">  - Security</span></p><p><span style="font-family: Verdana;">    - Security Chip</span></p><p><span style="font-family: Verdana;">      - Intel(R) TXT Feature (if available)       [Disabled]           [Enabled]</span></p><p><span style="font-family: Verdana;">    - UEFI BIOS Update Option</span></p><p><span style="font-family: Verdana;">      - Secure RollBack Prevention                [Disabled]           [Enabled]</span></p><p><span style="font-family: Verdana;">    - Virtualization</span></p><p><span style="font-family: Verdana;">      - Kernel DMA Protection                       [Disabled]           [Enabled]</span></p><p><span style="font-family: Verdana;">      - Intel(R) Virtualization Technology       [Disabled]           [Enabled]</span></p><p><span style="font-family: Verdana;">      - Intel(R) VT-d Feature                        [Disabled]           [Enabled]</span></p><p><span style="font-family: Verdana;">    - Secure Boot</span></p><p><span style="font-family: Verdana;">      - Secure Boot                                     [Disabled]           [Enabled]</span></p><p><br></p><p><span style="font-family: Verdana;">  (Caution)</span></p><p><span style="font-family: Verdana;">  If both the Secure Boot option is Enabled and UEFI Secure Boot in the Main</span></p><p><span style="font-family: Verdana;">  menu of ThinkPad Setup is shown as Off, restoring Factory Keys is needed. Do</span></p><p><span style="font-family: Verdana;">  the following to restore Factory Keys.</span></p><p><br></p><p><span style="font-family: Verdana;">  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad</span></p><p><span style="font-family: Verdana;">     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.</span></p><p><span style="font-family: Verdana;">  2. Select Security, then select Secure Boot.</span></p><p><span style="font-family: Verdana;">  3. Select Restore Factory Keys, and press Enter.</span></p><p><span style="font-family: Verdana;">  4. Select Yes to restore Factory keys.</span></p><p><span style="font-family: Verdana;">  5. Press the F10 key to save configuration and exit.</span></p><p><span style="font-family: Verdana;">  6. Select Yes.</span></p><p><span style="font-family: Verdana;">     The computer will be restarted automatically.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Determining Which Version Is Installed <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana;">  There are two ways to check the UEFI BIOS version and BIOS ID.</span></p><p><br></p><p><br></p><p><span style="font-family: Verdana;"> [Checking on Windows]</span></p><p><br></p><p><span style="font-family: Verdana;">  1. Hold down the Windows logo key and press X to open a menu at the lower-left</span></p><p><span style="font-family: Verdana;">     area of the screen.</span></p><p><br></p><p><span style="font-family: Verdana;">  2. Select Control Panel from the menu.</span></p><p><span style="font-family: Verdana;">  3. Make sure &quot;View by Category&quot; is selected, and select System and Security,</span></p><p><span style="font-family: Verdana;">     select Administrative Tools, and then select System Information.</span></p><p><span style="font-family: Verdana;">     - or -</span></p><p><span style="font-family: Verdana;">  2. Select Run from the menu.</span></p><p><span style="font-family: Verdana;">  3. Type msinfo32, and press Enter.</span></p><p><br></p><p><span style="font-family: Verdana;">  4. On the System Information window, make sure System Summary is selected in</span></p><p><span style="font-family: Verdana;">     the left side of the window.</span></p><p><span style="font-family: Verdana;">  5. Locate the BIOS version/date line in the right side of the window.</span></p><p><span style="font-family: Verdana;">     &quot;LENOVO BIOS ID (BIOS version), date&quot; will be shown.</span></p><p><br></p><p><span style="font-family: Verdana;">  If you are prompted for an administrator password or confirmation, type your</span></p><p><span style="font-family: Verdana;">  password, or click Continue.</span></p><p><br></p><p><br></p><p><span style="font-family: Verdana;"> [Checking on ThinkPad Setup]</span></p><p><br></p><p><span style="font-family: Verdana;">  1. Turn on the computer to start Windows.</span></p><p><span style="font-family: Verdana;">  2. Hold down the Windows logo key.</span></p><p><span style="font-family: Verdana;">  3. Select Power from the menu.</span></p><p><span style="font-family: Verdana;">  4. Select Reboot to restart the computer.</span></p><p><span style="font-family: Verdana;">  5. While the &quot;To interrupt normal startup, press Enter&quot; message is displayed</span></p><p><span style="font-family: Verdana;">     at the lower-left area or lower-center of the screen, press the F1 key.</span></p><p><span style="font-family: Verdana;">     The ThinkPad Setup menu will be displayed. If a password prompt appears,</span></p><p><span style="font-family: Verdana;">     type the correct password.</span></p><p><span style="font-family: Verdana;">  6. Locate the UEFI BIOS Version line and Embedded Controller Version line.</span></p><p><span style="font-family: Verdana;">     &quot;UEFI BIOS version (BIOS ID)&quot; will be shown on the UEFI BIOS Version line.</span></p><p><span style="font-family: Verdana;">  7. Turn off the computer.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Determining Operating System Version <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana;">1. Hold down the Windows logo key and press R to open the &quot;Run&quot; dialog box.</span></p><p><span style="font-family: Verdana;">2. Type in &quot;winver&quot; and press Enter to open the &quot;About Windows&quot; dialog box.</span></p><p><span style="font-family: Verdana;">   Windows Version information will be indicated in this dialog box.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Installation Instructions / How To Use This Software <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana;">Notes:</span></p><p><span style="font-family: Verdana;">- If your computer runs satisfactorily now, it may not be necessary to update</span></p><p><span style="font-family: Verdana;">  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the</span></p><p><span style="font-family: Verdana;">  Version Information section.</span></p><p><span style="font-family: Verdana;">- You need an AC adapter and a charged battery pack.</span></p><p><span style="font-family: Verdana;">- Remove the Power-on password prior to updating the UEFI BIOS in the remote</span></p><p><span style="font-family: Verdana;">  deployment environments.</span></p><p><br></p><p><span style="font-family: Verdana;">Attention:</span></p><p><span style="font-family: Verdana;">  Do not turn off or suspend the computer until the update has been completed.</span></p><p><span style="font-family: Verdana;">  IF YOU DO THAT WHILE THE UPDATE IS STILL IN PROGRESS, THE SYSTEM BOARD MAY</span></p><p><span style="font-family: Verdana;">  HAVE TO BE REPLACED.</span></p><p><br></p><p><br></p><p><span style="font-family: Verdana;">Manual Update</span></p><p><br></p><p><span style="font-family: Verdana;">  This section assumes to use Microsoft Edge and Windows Explorer.</span></p><p><br></p><p><span style="font-family: Verdana;">  Downloading file</span></p><p><span style="font-family: Verdana;">  1. Click once on the underlined file name. Once this is done, some pop-up</span></p><p><span style="font-family: Verdana;">     windows will appear.</span></p><p><span style="font-family: Verdana;">  2. Follow the instructions on the screen.</span></p><p><span style="font-family: Verdana;">  3. In the window to choose &quot;Save&quot; or &quot;Save as&quot;, click &quot;Save&quot;.</span></p><p><span style="font-family: Verdana;">     Once the download has completed, there may or may not be a message stating</span></p><p><span style="font-family: Verdana;">     that the download completed successfully.</span></p><p><br></p><p><span style="font-family: Verdana;">  Extracting file</span></p><p><span style="font-family: Verdana;">  4. Make sure to be logged on with an administrator account on the target</span></p><p><span style="font-family: Verdana;">     computer.</span></p><p><span style="font-family: Verdana;">  5. Make sure the AC adapter is firmly connected to the target computer.</span></p><p><span style="font-family: Verdana;">  6. Open a Windows Explorer and select &quot;Downloads&quot; from &quot;Quick access&quot;.</span></p><p><span style="font-family: Verdana;">  7. Locate the file that was downloaded and double-click it.</span></p><p><span style="font-family: Verdana;">  8. Follow the instructions on the screen.</span></p><p><span style="font-family: Verdana;">  9. In the Select Destination Location window, click Next. If you would like to</span></p><p><span style="font-family: Verdana;">     select a different folder, click Browse.</span></p><p><span style="font-family: Verdana;"> 10. In the Ready to Install window, click Install. All the necessary files will</span></p><p><span style="font-family: Verdana;">     be extracted to the folder selected in the step 9.</span></p><p><br></p><p><span style="font-family: Verdana;">  Updating the UEFI BIOS</span></p><p><span style="font-family: Verdana;"> 11. Make sure the checkbox next to &quot;Install ..... now&quot; is checked and click</span></p><p><span style="font-family: Verdana;">     Finish.</span></p><p><span style="font-family: Verdana;"> 12. Follow the instructions on the screen.</span></p><p><span style="font-family: Verdana;"> 13. Select &#39;Update ThinkPad BIOS&#39; and follow the instructions on the screen.</span></p><p><span style="font-family: Verdana;"> 14. The program shows a message &#39;System program update is continued by BIOS at</span></p><p><span style="font-family: Verdana;">     the next reboot&#39;.</span></p><p><span style="font-family: Verdana;"> 15. Click OK.</span></p><p><span style="font-family: Verdana;">     The computer will be restarted automatically and the EFI BIOS will be</span></p><p><span style="font-family: Verdana;">     updated.</span></p><p><br></p><p><span style="font-family: Verdana;">  Finally delete the file saved in the step 3.</span></p><p><br></p><p><br></p><p><span style="font-family: Verdana;">Unattended Update</span></p><p><br></p><p><span style="font-family: Verdana;">  This is for system administrators&#39; use only.</span></p><p><br></p><p><span style="font-family: Verdana;">  1. Refer to the Manual Update section, and download and extract the file.</span></p><p><span style="font-family: Verdana;">  2. In the step 11 of the Installing files section, uncheck the checkbox next</span></p><p><span style="font-family: Verdana;">     to &quot;Install ..... now&quot;, and then click Finish to cancel installation.</span></p><p><span style="font-family: Verdana;">  3. At the command line, execute WINUPTP.EXE with the -s option.</span></p><p><span style="font-family: Verdana;">     Example: [Path where the files were extracted]\WINUPTP -s</span></p><p><span style="font-family: Verdana;">  4. Restart or fully shut down the computer.</span></p><p><span style="font-family: Verdana;">     Note:</span></p><p><span style="font-family: Verdana;">     Make sure to restart or fully shut down the computer to complete the BIOS</span></p><p><span style="font-family: Verdana;">     update. If hybrid shutdown is made after the BIOS update on Windows 10,</span></p><p><span style="font-family: Verdana;">     the update will not be done correctly.</span></p><p><span style="font-family: Verdana;">     Full shutdown can be done with the following command at the command line on</span></p><p><span style="font-family: Verdana;">     Windows 10.</span></p><p><span style="font-family: Verdana;">       Shutdown /s /t 0</span></p><p><br></p><p><span style="font-family: Verdana;">  To view the update result, refer to the WINUPTP.log file created at the same</span></p><p><span style="font-family: Verdana;">  directory of the package.</span></p> <br/>
+              <p><span style="font-family: Verdana;">Manual Uninstall</span></p><p><span style="font-family: Verdana; font-size: 11pt;">  Not Applicable.</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Version Information <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana;">The following versions of UEFI BIOS and ECP (Embedded Controller Program) have</span></p><p><span style="font-family: Verdana;">been released to date.</span></p><p><br></p><table style="width: initial;"><tbody><tr><td style="width: 110px;"><p data-cellwidth="110px" style="text-align: center;"><span style="font-family: Verdana;">Package ID</span></p></td><td style="width: 186px;"><p data-cellwidth="186px" style="text-align: center;"><span style="font-family: Verdana;">UEFI BIOS (BIOS ID)</span></p></td><td style="width: 161px;"><p data-cellwidth="161px" style="text-align: center;"><span style="font-family: Verdana;">ECP (ECP ID)</span></p></td><td style="width: 61px;"><p data-cellwidth="61px" style="text-align: center;"><span style="font-family: Verdana;">Rev.</span></p></td><td style="width: 116px;"><p data-cellwidth="116px" style="text-align: center;"><span style="font-family: Verdana;">Issue Date</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ21W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.59(N35ET59W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.44 (N35HT44W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2024/09/02</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ20W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.58(N35ET58W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.44(N35HT44W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2024/05/31</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ19W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.57(N35ET57W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.44(N35HT44W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2024/03/25</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ18W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.56(N35ET56W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.44(N35HT44W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2023/11/30</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ17W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.54(N35ET54W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.43(N35HT43W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2023/10/18</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ16W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.54(N35ET54W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.42(N35HT42W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2023/07/19</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ15W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.53(N35ET53W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.42(N35HT42W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2023/04/26</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ14W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.51(N35ET51W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.42(N35HT42W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2023/02/27</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ13W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.51(N35ET51W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.41(N35HT41W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2023/01/11</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ12W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.5(N35ET50W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.41(N35HT41W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2022/09/29</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ11W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.49(N35ET49W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.41(N35HT41W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2022/09/19</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ10W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.48(N35ET48W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.40(N35HT40W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2022/08/22</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ09W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.47(N35ET47W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.39(N35HT39W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2022/06/02</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ08W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.44(N35ET44W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.38(N35HT38W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2022/03/02</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ07W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.43(N35ET43W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.37(N35HT37W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2022/01/13</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ06W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.41(N35ET41W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.35(N35HT35W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/11/24</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ06W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.41(N35ET41W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.35(N35HT35W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/09/06</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ05W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.39(N35ET39W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.35(N35HT35W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/09/01</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ04W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.34(N35ET34W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.33(N35HT33W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/06/07</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ03W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.33(N35ET33W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.32(N35HT32W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/05/26</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ02W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.08(N35ET23W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.06(N35HT18W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/04/14</span></p></td></tr><tr><td style="height: 13.9pt; width: 110px;"><p data-cellwidth="110px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">N35UJ01W</span></p></td><td style="height: 13.9pt; width: 186px;"><p data-cellwidth="186px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.07(N35ET22W)</span></p></td><td style="height: 13.9pt; width: 161px;"><p data-cellwidth="161px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1.05(N35HT17W)</span></p></td><td style="height: 13.9pt; width: 61px;"><p data-cellwidth="61px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">1</span></p></td><td style="height: 13.9pt; width: 116px;"><p data-cellwidth="116px" data-cellheight="13.9pt" style="text-align: center;"><span style="font-family: Verdana;">2021/04/13</span></p></td></tr></tbody></table><p><br></p><p><span style="font-family: Verdana;">  Note: Revision number (Rev.) is for administrative purpose of this README</span></p><p><span style="font-family: Verdana;">        document and is not related to software version. There is no need to</span></p><p><span style="font-family: Verdana;">        upgrade this software when the revision number changes.</span></p><p><br></p><p><span style="font-family: Verdana;">  To check the version of UEFI BIOS and Embedded Controller Program, refer to</span></p><p><span style="font-family: Verdana;">  the Determining which version is installed section.</span></p><p><br></p><p><br></p><p><span style="font-family: Verdana;">Summary of Changes</span></p><p><br></p><p><span style="font-family: Verdana;">  Where: &lt;   &gt;        Package ID</span></p><p><span style="font-family: Verdana;">         UEFI:        UEFI BIOS version</span></p><p><span style="font-family: Verdana;">         ECP:         Embedded Controller Program version</span></p><p><span style="font-family: Verdana;">         [Important]  Important update</span></p><p><span style="font-family: Verdana;">         (New)        New function or enhancement</span></p><p><span style="font-family: Verdana;">         (Fix)        Correction to existing function</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ21W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.59 / ECP: 1.44</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.35.000.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ20W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.58 / ECP: 1.44</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.33.000.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ19W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.57 / ECP: 1.44</span></p><p><span style="font-family: Verdana;"> - [Important] Enhancement to address security vulnerability, CVE-2023-32282, CVE-2023-23583.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where system might take a minute to boot when user attached Docking/Monitor </span></p><p><span style="font-family: Verdana;">         with Realtek USB Ethernet device.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ18W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.56 / ECP: 1.44</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - [Important] Enhancement to address security vulnerability, CVE-2023-5058</span></p><p><span style="font-family: Verdana;"> - (New) Updated the CPU microcode.</span></p><p><span style="font-family: Verdana;">         (Note) Above update will show &quot;BIOS Self Healing backup progressing&quot; </span></p><p><span style="font-family: Verdana;">                message and bar on screen during BIOS update process. </span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.32.000.</span></p><p><span style="font-family: Verdana;"> - (Fix) Thermal improvement for FAN control.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where network overflow might happen at Ethernet connection on dock when</span></p><p><span style="font-family: Verdana;">         system was abnormally shutdown.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ17W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.54 / ECP: 1.43</span></p><p><span style="font-family: Verdana;"> - (New) Thermal improvement for T14s system.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ16W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.54 / ECP: 1.42</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - [Important] Enhancement to address security vulnerability:</span></p><p><span style="font-family: Verdana;">               CVE-2023-31100, CVE-2022-4304, CVE-2022-0778, CVE-2022-40982, </span></p><p><span style="font-family: Verdana;">               CVE-2022-37343, CVE-2022-44611, CVE-2022-27879, CVE-2022-38083, </span></p><p><span style="font-family: Verdana;">               CVE-2022-43505, CVE-2022-36763, CVE-2022-36764, CVE-2022-36765, </span></p><p><span style="font-family: Verdana;">               CVE-2022-27635, CVE-2022-40964, CVE-2022-36351, CVE-2022-38076.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the CPU microcode.</span></p><p><span style="font-family: Verdana;">         (Note) Above update will show &quot;BIOS Self Healing backup progressing&quot; </span></p><p><span style="font-family: Verdana;">                message and bar on screen during BIOS update process. </span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.30.000.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where system enter restart loop after ME capsule update failed.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ15W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.53 / ECP: 1.42</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.28.000.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where WmiOpcodePasswordAdmin results were not consistent when </span></p><p><span style="font-family: Verdana;">         perform multiple times.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where all the application windows on external monitors moved to </span></p><p><span style="font-family: Verdana;">         ThinkPad LCD after resume from sleep.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where Error Event ID 6008 may occur, if system power off and power on</span></p><p><span style="font-family: Verdana;">         with 40AN dock connected.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ14W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.51 / ECP: 1.42</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where some type external monitors may flick after connected to </span></p><p><span style="font-family: Verdana;">         system via type-C cable.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ13W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.51 / ECP: 1.41</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.27.000.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where CPU low frequency occur after resume from sleep.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ12W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.50 / ECP: 1.41</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.26.000.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where plugging and unplugging the docking station can cause a</span></p><p><span style="font-family: Verdana;">         Yellow Bang for USB 2.0 devices and can also cause a system hang at reboot.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where unexpected 2nd power on by wake on Lan, after system shutdown</span></p><p><span style="font-family: Verdana;">         by BitLocker timeout, when system connected Lan cable with USB-C Mini dock.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ11W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.49 / ECP: 1.41</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where ethernet connection of the Lenovo USB-C to Ethernet Adapter</span></p><p><span style="font-family: Verdana;">         might be disconnected sometimes.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ10W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.48 / ECP: 1.40</span></p><p><span style="font-family: Verdana;"> - [Important] Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - [Important] Enhancement to address security vulnerability:</span></p><p><span style="font-family: Verdana;">               CVE-2021-33122, CVE-2021-33123, CVE-2021-33124, CVE-2021-33103</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.25.000.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the E-Labeling applcation to version 5.1.0.39.</span></p><p><span style="font-family: Verdana;"> - (New) Updated Synaptics fingerprint EFI driver to version 6.0.29.1136.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where touch panel might not work on Linux after resume, if &quot;Linux S3&quot;</span></p><p><span style="font-family: Verdana;">         is set on &quot;Sleep State&quot; in BIOS Setup.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ09W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.47 / ECP: 1.39</span></p><p><span style="font-family: Verdana;"> - (New) Updated the Diagnostics module to version 04.21.000.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where extra reboot may occur after select PXE boot in first boot.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where Power LED on the docking station did not synchronize with Power LED</span></p><p><span style="font-family: Verdana;">         on system with BIOS 1.43.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ08W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.44 / ECP: 1.38</span></p><p><span style="font-family: Verdana;"> - [Important] Fixed an issue where system may be damaged when 2 AC adapters with different</span></p><p><span style="font-family: Verdana;">               capacity such as 45W and 65W, or docking stations are connected to both Type-C</span></p><p><span style="font-family: Verdana;">               port, and disconnected and connected again alternately.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the E-Labeling applcation to version 5.0.0.30.</span></p><p><span style="font-family: Verdana;"> - (New) Supported 5.15-5.35 GHz band in Indonesia.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ07W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.43 / ECP: 1.37</span></p><p><span style="font-family: Verdana;"> - [Important] Update includes a security fix.</span></p><p><span style="font-family: Verdana;"> - (New) Changed power LED Sleep mode behavior when system is going to Modern Standby.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where device firmware update via Windows Update failed when OPAL management</span></p><p><span style="font-family: Verdana;">         software is installed.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where unlock message isn&#39;t correct after sign out in Windows,after check</span></p><p><span style="font-family: Verdana;">         &quot;Require user to press Ctrl+Alt+Delete&quot;.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ06W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.41 / ECP: 1.35</span></p><p><span style="font-family: Verdana;"> - (New) Updated the E-Labeling applcation to version 5.0.0.27.</span></p><p><span style="font-family: Verdana;"> - (New) Supported the systems that without LAN chip.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ05W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.39 / ECP: 1.35</span></p><p><span style="font-family: Verdana;"> - (New) Updated includes security fixes.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the E-Labeling applcation to version 5.0.0.15.</span></p><p><span style="font-family: Verdana;"> - (New) Updated BIOS flash driver v1.0.5.4.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where SSD may not be detectd in old Windows PE.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where no MAC address is shown under MAC selection for AX201 WLAN in BIOS setup.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where PXE boot lists two Intel UEFI WLAN Driver-IPv4 for AX210 WLAN.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ04W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.34 / ECP: 1.33</span></p><p><span style="font-family: Verdana;"> - (New) Updated the CPU microcode.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where 1802 POST Error Code may happen.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where F10 in BIOS setup menu cannot exit from wifi config</span></p><p><span style="font-family: Verdana;">         access related pages.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where Hdd tampr not working in S3 resume.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ03W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.33 / ECP: 1.32</span></p><p><span style="font-family: Verdana;"> - (New) Modified help message for Discard Changes in ThinkPad setup menu-&gt;Restart page.</span></p><p><span style="font-family: Verdana;"> - (New) Modified help message for MAC Address Pass Through in ThinkPad setup menu-&gt;Config-&gt;Network page.</span></p><p><span style="font-family: Verdana;"> - (New) Modified ThinkPad setup menu option &quot;Human Presece Sensing&quot; to &quot;Intelligent Security&quot; in ThinkPad setup menu-&gt;Security.</span></p><p><span style="font-family: Verdana;">   (Note) If your system don&#39;t have &quot;Human Presece Sensing&quot; device.</span></p><p><span style="font-family: Verdana;">          &quot;Intelligent Security&quot; option would not show in ThinkPad setup menu.</span></p><p><span style="font-family: Verdana;"> - (New) Updated the CPU microcode.</span></p><p><span style="font-family: Verdana;">   (Note) Above update will show &quot;Self-Healing BIOS  backup progressing ... xx %&quot;</span></p><p><span style="font-family: Verdana;">          massage on screen during BIOS update process.</span></p><p><span style="font-family: Verdana;"> - (New) Upgraded Regulatory Information.</span></p><p><span style="font-family: Verdana;"> - (New) Support Intel Wi-Fi 6 AX201 WLAN card.</span></p><p><span style="font-family: Verdana;"> - (New) Support HDD OPAL/Pryite password for ThinkShield Secure Wipe.</span></p><p><span style="font-family: Verdana;"> - (New) Enhanced mouse and scroll bar to be smooth in ThinkPad setup menu.</span></p><p><span style="font-family: Verdana;"> - (New) Enhanced the battery charging efficiency.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where USB type-C might not detect after BIOS update was finished.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where system was halt in BIOS Wifi certification enrollment page.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where IR camera might not work when sign in with Windows Hello.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where system might hang at POST when Thunderbolt4 Dock is attached.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where system might not work properly when Thunderbolt4 Dock is attached.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where system would be recovered from Host if OnPremise process was corruption.</span></p><p><span style="font-family: Verdana;"> - (Fix) Fixed an issue where BIOS date &amp; time not correct in SmartAssetTag information page.</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ02W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.08 / ECP: 1.06</span></p><p><span style="font-family: Verdana;"> - (New) Added the detection for the EM05 WWAN card on E-Labeling interface</span></p><p><span style="font-family: Verdana;"> - (New) Fine tune P sensor sensitivity</span></p><p><br></p><p><span style="font-family: Verdana;">&lt;N35UJ01W&gt;</span></p><p><span style="font-family: Verdana;"> UEFI: 1.07 / ECP: 1.05</span></p><p><span style="font-family: Verdana;">- (New) Initial release for ThinkPad T14s Gen 2 (Type 20WM, 20WN),</span></p><p><span style="font-family: Verdana;">                            ThinkPad X13 Gen 2  (Type 20WK, 20WL).</span></p>
+          </div>
+      </div>
+      
+      <button class="collapsible" type="button" data-toggle="collapse" 
+      data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+      Trademarks <i class="gg-chevron"></i>
+      </button>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <p><span style="font-family: Verdana;">* Lenovo, ThinkPad and ThinkVantage are registered trademarks of Lenovo.</span></p><p><br></p><p><span style="font-family: Verdana;">* Microsoft and Windows are registered trademarks of Microsoft Corporation.</span></p><p><span style="font-family: Verdana;">* Microsoft Edge is a trademark of Microsoft Corporation.</span></p><p><br></p><p><span style="font-family: Verdana;">Other company, product, and service names may be registered trademarks,</span></p><p><span style="font-family: Verdana;">trademarks or service marks of others.</span></p>
+          </div>
+      </div>
+
+    </div>
+    </div><script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    function showMoreModels() {
+      document.getElementById('remainingItems').style.display = 'block';
+      document.getElementById('viewMore').style.display = 'none';
+      
+    }
+    function showLessModels() {
+      document.getElementById('remainingItems').style.display = 'none';
+      document.getElementById('viewMore').style.display = 'block';
+      
+    }
+    </script>
+    
+    </body>
+    </html>
+    

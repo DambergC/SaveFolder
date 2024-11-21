@@ -1,0 +1,337 @@
+Flash BIOS update - Flash from Operating System version
+for ThinkCentre M70q, M80q, M90q, ThinkStation P340 Tiny
+Version M2WKT5AA
+Installation README
+
+This package updates the basic input/output system (BIOS) on
+all ThinkCentre M70q, M80q, M90q, ThinkStation P340 Tiny systems.
+
+BIOS is programming that controls low-level hardware operations,
+including interactions with diskette drives, hard disk drives,
+and the keyboard. The BIOS is stored on a chip.  Your computer
+uses flash BIOS, which can be updated through a program on a 
+flash diskette so that you do not have to replace the BIOS
+chip to update the BIOS.
+
+Do not write protect the flash diskette as this may cause the
+flash process to hang.
+
+Print this file so that you can refer to it during the installation.
+
+Downloading the package
+=======================
+1. Click the file link to download the file from the web page.
+2. When prompted, select a drive and directory in which to save the 
+   downloaded file.
+
+Extracting the package
+======================
+1. Click Start, select Find or Search, then click All files and folders.
+2. Type m2wjy5ausa.exe in the search field, then click Find Now or 
+   Search Everywhere. This will locate the file you just downloaded.
+3. Double-click the m2wjy5ausa.exe icon.
+4. Read the license agreement
+5. Click I accept the terms in the license agreement.
+6. Click Next.
+7. Ensure that "Save files in folder" is set to
+   C:\SWTOOLS\FLASH\M2WJY5AUSA
+8. Click Next.
+9. Click Finish.
+
+Installing the package
+======================
+Please print out these instructions or write them down before
+starting this flash update utility.                          
+                                                             
+This flash under operating system (64-bit) utility provides
+the ability to update the system BIOS from a Windows application. 
+                                                             
+The utility may be downloaded from the internet and unpacked into 
+the default path: "C:\SWTOOLS\FLASH\xxxJYnnUSA", where "nn"  
+represents the two-digit BIOS level. Please follow steps in  
+section 2 to launch the Windows based flash application to update 
+your system BIOS.                                            
+
+1.  Please make note of any settings you have changed in the BIOS 
+    Setup utility. They may have to be re-entered after updating  
+    the BIOS.                                                
+                                                             
+2.  Click on the Start button and type cmd.exe, Right-click on    
+    the cmd.exe application and select run as administrator to    
+    open the Command Prompt with Administrator privilege.    
+                                                             
+3.  In the "Command Prompt" window, change to the directory where the
+    above files were extracted.  The command to go to the location is
+    "cd C:\SWTOOLS\FLASH\xxxJYnnUSA", where "nn" represents the two  
+    digit flash level.                                       
+                                                             
+4.  Enter the command "flash64.cmd" and press the Enter key to start
+    the flashing process.                                    
+                                                             
+5.  You may first see a confirmation prompt "Proceed with BIOS    
+    update now?". Click "Yes" to continue.                   
+                                                             
+6.  You will see the prompt "Would you like to update the Serial  
+    Number?". Input "n" and press Enter.                     
+                                                             
+7.  Then you will see the prompt "Would you like to update the    
+    Machine Type and Model?". Input "n" and press Enter again.    
+    Then the BIOS update process will start.                 
+                                                             
+8.  The update may take up to 2 minutes. Do not power off or restart 
+    the system during this procedure! After the Windows update    
+    process ends, the system will automatically reboot to continue
+    the flash process.                                       
+                                                             
+9.  After the system reboots, the BIOS update process will continue  
+    with a simple graphic UI. When the BIOS update process ends,  
+    the system will reboot automatically.                    
+                                                             
+10.  The BIOS update process ends with above nine steps.     
+                                                             
+Notes:                                                       
+      - You may see a POST error "0162: Setup data integrity check
+    failure" after step 9.Press F1 to enter BIOS Setup Utility,   
+    and then press F10 to save your settings 
+
+Summary of Changes
+==================
+General Information:
+
+        M2WJ9xxUSA is Flash CD ROM image.
+        M2WJTxxUSA is Flash in UEFI Shell zip package.
+        M2WJYxxUSA is Flash in Windows utility.
+        NOTE: All changes carry forward.  That is, if a change is added in 01, it is also in 02, 03 etc.
+
+This file will be updated from the beginning with first Production BIOS release
+
+CHANGES for M2WKT5AA / WU Version 1.0.0.90
+  - Enhancement to address security vulnerability LEN-124703,LEN-123566.
+  - Enhancement to address security vulnerability CVE-2022-38087,CVE-2022-33894,CVE-2023-25494,CVE-2022-36763,CVE-2022-36764,CVE-2022-36765,CVE-2022-40982,CVE-2022-36392,CVE-2022-38102,CVE-2022-29871,CVE-2022-37343,CVE-2022-44611,CVE-2022-27879,CVE-2022-38083,CVE-2022-43505.
+  - Improve Error 0x81 message when flashing same/older BIOS ROM.
+  - Correct a problem with a warm boot BIOS update using the SCCM parameter.
+
+CHANGES for M2WKT59A / WU Version 1.0.0.89
+  - Enhancement to address security vulnerability LEN-94533,LEN-99954,LEN-105119,LEN-99942,LEN-99938,LEN-99939,LEN-99940,LEN-107838,LEN-107837,LEN-115197.
+  - Enhancement to address security vulnerability CVE-2022-36348,CVE-2022-36794,CVE-2021-38578.
+
+CHANGES for M2WKT58A
+  - Enhancement to address security vulnerability.
+  - Update CPU Microcode.
+
+CHANGES for M2WKT57A
+  - Enhancement to address security vulnerability.
+  - Update UEFI Diagnostics to v4.25.
+
+CHANGES for M2WKT55A
+  - Enhancement to address security vulnerability.
+  - Update CPU Microcode.
+
+CHANGES for M2WKT54A
+  - Fix some Wake Up On Alarm issue.
+
+CHANGES for M2WKT53A
+  - Fix BIOS Setup issue.
+
+CHANGES for M2WKT52A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT51A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT50A
+  - Enhancement to address security vulnerability.
+  - Enhance Secure Wipe support.
+  - Update UEFI Diagnostics to v4.20.
+  - Update BIOS SETUP layout.
+  - Add Nvidia T1000 graphics card support for P340 Tiny.  
+
+CHANGES for M2WKT4FA
+  - Maintenance release.
+
+CHANGES for M2WKT4EA
+  - Enhancement to address security vulnerability.
+  - Update UEFI Diagnostics to v4.19.
+
+CHANGES for M2WKT4DA
+  - Maintenance release.
+
+CHANGES for M2WKT4CA
+  - Update CPU Microcode.
+
+CHANGES for M2WKT4AA
+  - Security improvement of Startup Device Menu.
+  - Fix BIOS Setup issue.
+
+CHANGES for M2WKT49A
+  - Security improvement of Startup Device Menu.
+
+CHANGES for M2WKT48A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT46A
+  - Enhance iAMT support.
+  - Fix WMI issues.
+
+CHANGES for M2WKT45A
+  - Enhancement to address security vulnerability.
+
+CHANGES for M2WKT44A
+  - Enhance BIOS Setup support.
+  
+CHANGES for M2WKT43A
+  - Fix BIOS Setup issue.
+  - Fix system shutdown may be slow issue.
+  - Optimized IPV6 disable function.
+
+CHANGES for M2WKT41A
+  - Fix BIOS update issue.
+  - Enhance Secure Wipe support.
+
+CHANGES for M2WKT40A
+  - Enhance iAMT support.
+  - Fix some Type C issue for P340tiny.
+
+CHANGES for M2WKT3FA
+  - Enhance BIOS Setup support.
+  - Enhance WMI support.
+
+CHANGES for M2WKT3EA
+  - Enhance BIOS Setup support.
+
+CHANGES for M2WKT3DA
+  - Add Secure Wipe support.
+  - Enhance SOL support.
+
+CHANGES for M2WKT3CA
+  - Add Secure Wipe support.
+  - Enhance SOL support.
+
+CHANGES for M2WKT3AA
+  - Update CPU Microcode.
+
+CHANGES for M2WKT39A
+  - Enhance BIOS Setup support.
+  - Enhance ME firmware Windows Firmware Update support.
+
+CHANGES for M2WKT38A
+  - Enhancement to address security vulnerability.
+  - Enhance Windows Firmware Update support.
+
+CHANGES for M2WKT37A
+  - Enhance Smart USB Protection support.
+
+CHANGES for M2WKT36A
+  - Fix some BIOS flash issue.
+  - Fix TXT issue.
+
+CHANGES for M2WKT35A
+  - Fix some BIOS flash issue.
+  - Enhance Thunderbolt support.
+
+CHANGES for M2WKT34A
+  - Enhance BIOS Setup support.
+  - Enhance Thudnerbolt support.
+  - Fix WMI issues.
+
+CHANGES for M2WKT33A
+  - Fix some SETUP issues.
+
+CHANGES for M2WKT32A
+  - Enhance BIOS Setup support.
+
+CHANGES for M2WKT31A
+  - Update BIOS SETUP layout.
+
+CHANGES for M2WKT30A
+  - Fix Setup layout issue.
+
+CHANGES for M2WKT2FA
+  - Enhance LVFS support.
+  - Fix some BIOS update issue.
+
+CHANGES for M2WKT2EA
+  - Enhance LVFS support.
+  - Enhance HDD password support.
+  - Enhance Modern Standby support.
+
+CHANGES for M2WKT2DA
+  - Enhance BIOS Setup support.
+  - Enhance Windows Modern Standby support for M90q.
+  - Enhance Intel(R)Thunderbolt Support for P340 tiny.
+
+CHANGES for M2WKT2CA
+  - Enhance Intel(R) Optane with Intel(R) RST support.
+
+CHANGES for M2WKT2AA
+  - Enhance BIOS Setup support.
+  - Enhance WMI support.
+  - Enhance Optane memory support.
+  - Enhance password support.
+
+CHANGES for M2WKT29A
+  - Enhance BIOS Setup support.
+  - Enhance WMI support.
+
+CHANGES for M2WKT28A
+  - Enhance Modern Standby support for some M90q models.
+
+CHANGES for M2WKT26A
+  - Fix some SETUP issues.
+
+CHANGES for M2WKT25A
+  - Enhance TxT support. 
+  - Add Firmware TPM support.
+
+CHANGES for M2WKT1EA
+  - Fix some SMBIOS issue. 
+
+CHANGES for M2WKT1DA
+  - Add support for M730q. 
+
+CHANGES for M2WKT1CA
+  - Optimize power parameters for P340 tiny.
+
+CHANGES for M2WKT1BA
+  - Fix system may fail to resume from hibernation issue.
+
+CHANGES for M2WKT1AA
+  - Update UEFI DIAG.
+
+CHANGES for M2WKT18A
+  - Update SETUP layout.
+
+CHANGES for M2WKT15A
+  - Fix some SETUP issues.
+
+CHANGES for M2WKT13A
+  - Fix some SETUP issues.
+  - Enhance SCCM support.
+  - Enhance WMI support.
+  - Enhance DPTF support.
+
+CHANGES for M2WKT12A
+  - Update SETUP layout.
+
+CHANGES for M2WKT11A
+  - Initial Production BIOS release.
+
+Trademarks
+==========
+ThinkCentre is a trademark of the Lenovo Corporation in the
+United States, other countries, or both.
+
+Microsoft and Windows are trademarks of Microsoft Corporation in
+the United States, other countries, or both.
+
+Other company, product, and service names may be trademarks or
+service marks of others.
+
+THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+LENOVO DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF FITNESS
+FOR A PARTICULAR PURPOSE AND MERCHANTABILITY WITH RESPECT TO THE
+INFORMATION IN THIS DOCUMENT.  BY FURNISHING THIS DOCUMENT, LENOVO
+GRANTS NO LICENSES TO ANY PATENTS OR COPYRIGHTS.
+
+(C) Copyright Lenovo Corporation 2023, all rights reserved.

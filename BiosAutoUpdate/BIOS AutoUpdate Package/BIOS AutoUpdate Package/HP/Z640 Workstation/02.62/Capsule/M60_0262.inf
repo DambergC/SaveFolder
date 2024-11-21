@@ -1,0 +1,55 @@
+[Version]
+Signature   = "$WINDOWS NT$"
+Provider    = %Provider%
+Class       = Firmware
+ClassGuid   = {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+DriverVer   = 01/04/2024,02.62.0.0
+CatalogFile = M60_0262.cat
+PnpLockdown = 1
+
+[Manufacturer]
+%MfgName% = Firmware,NTx86,NTamd64,NTarm
+
+[Firmware.NTx86]
+%DeviceDesc% = Firmware_Install,UEFI\RES_{99B4F553-7B35-44EA-A203-520CD254DC52}
+
+[Firmware.NTamd64]
+%DeviceDesc% = Firmware_Install,UEFI\RES_{99B4F553-7B35-44EA-A203-520CD254DC52}
+
+[Firmware.NTarm]
+%DeviceDesc% = Firmware_Install,UEFI\RES_{99B4F553-7B35-44EA-A203-520CD254DC52}
+
+[Firmware_Install.NT]
+CopyFiles = Firmware_CopyFiles
+
+[Firmware_CopyFiles]
+M60_0262.bin
+
+[Firmware_Install.NT.Hw]
+AddReg = Firmware_AddReg
+
+[Firmware_AddReg]
+HKR,,FirmwareId,,{99B4F553-7B35-44EA-A203-520CD254DC52}
+HKR,,FirmwareVersion,%REG_DWORD%,0x0002003E
+HKR,,FirmwareFilename,,{99B4F553-7B35-44EA-A203-520CD254DC52}\M60_0262.bin
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+M60_0262.bin = 1
+
+[DestinationDirs]
+DefaultDestDir = %DIRID_WINDOWS%,Firmware\{99B4F553-7B35-44EA-A203-520CD254DC52}
+
+[Strings]
+;localizable
+Provider     = "HP Inc."
+MfgName      = "HP Inc."
+DeviceDesc   = "HP M60 System Firmware 02.62"
+DiskName     = "Firmware Update"
+
+;non-localizable
+DIRID_WINDOWS = 10
+REG_DWORD     = 0x00010001
+
