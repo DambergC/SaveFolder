@@ -1,0 +1,27 @@
+$WebServiceAD = "http://$WebServer/deploymentwebservice/ad.asmx?WDSL"
+$WebServiceSCCM = "http://$WebServer/deploymentwebservice/sccm.asmx?WDSL"
+
+[AD Operations used]
+$TestAD = $test.GetADSiteNames()									OSDeployment-PreFlightCheck.ps1, OSDeployment-GetInfoFromWebService.ps1
+$OUCheckFolders = $ADWeb.GetOUs("$OUPathParent", "0")							OSDeployment-PreFlightCheck.ps1
+$result = $ADWeb.AddComputerToGroup("$Group", "$ComputerName")						OSDeployment-AddGroups.ps1, OSDeployment-CleanUpOldObjects.ps1
+$result = $ADWeb.DeleteComputerForced("$ComputerNameOld")						OSDeployment-CleanUpOldObjects.ps1, OSDeployment-RemoveComputerFromDomain.ps1
+$groups = $ADWeb.GetComputerGroupsByName("$ComputerName")						OSDeployment-GetInfoFromWebService.ps1
+$ComputerExistInAD = $ADWeb.DoesComputerExist("$ComputerName")						OSDeployment-GetInfoFromWebService.ps1
+$OUPath = $ADWeb.GetComputerParentPath("$ComputerName")							OSDeployment-GetInfoFromWebService.ps1
+$OSVersionFromAD = $ADWeb.GetComputerAttribute("$ComputerName", "$AD_Attribute")			OSDeployment-GetInfoFromWebService.ps1
+$ComputerMove = $ADWeb.MoveComputerToOU("$ComputerName", "$NewLocation")				OSDeployment-MoveComputer.ps1
+$LAPSpassword = $ADWeb.GetComputerAttribute("$ComputerName", "ms-Mcs-AdmPwd")				OSDeployment-ResetLAPSpassword.ps1
+$Result = $ADWeb.SetComputerAttribute("$ComputerName", "ms-Mcs-AdmPwdExpirationTime", "0")		OSDeployment-ResetLAPSpassword.ps1
+$OUCheckFolders = $ADWeb.GetOUs("$OSDDomainOUNameConverted", "0")					OSDeployment-SetComputerName.ps1
+$Computers = $ADWeb.SearchComputers("$NameArray")							OSDeployment-SetComputerName.ps1
+
+
+[SCCM Operations used]
+$TestSCCM = $test.GetOSDCollections("$SMSTSAssignedSiteCode")						OSDeployment-PreFlightCheck.ps1, OSDeployment-GetInfoFromWebService.ps1
+$result = $SCCMWeb.IsComputerKnown("$MacAddress", "", "$SMSTSAssignedSiteCode")				OSDeployment-CleanUpOldObjects.ps1
+$result = $SCCMWeb.DeleteComputer("$MacAddress", "", "$SMSTSAssignedSiteCode")				OSDeployment-CleanUpOldObjects.ps1
+$ComputerNameFromSCCM = $SCCMWeb.GetComputerName("$MacAddress", "$UUID", "$SMSTSAssignedSiteCode")	OSDeployment-GetInfoFromWebService.ps1
+$ComputerExistInSCCM = $SCCMWeb.IsComputerKnown("$MacAddress", "$UUID", "$SMSTSAssignedSiteCode")	OSDeployment-GetInfoFromWebService.ps1
+
+

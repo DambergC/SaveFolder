@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResultCodes>
+<ResultCode Code="0" Description="SUCCESS" ResultType="SUCCESS"/>
+<ResultCode Code="1" Description="Attempt to read write-only parameter." ResultType="Failure"/>
+<ResultCode Code="2" Description="Clear SEL cannot be accompanied with any other option." ResultType="Failure"/>
+<ResultCode Code="3" Description="racreset cannot be accompanied with any other option." ResultType="Failure"/>
+<ResultCode Code="4" Description="Cannot execute command. Command, or request parameter(s), not supported in present state." ResultType="Failure"/>
+<ResultCode Code="5" Description="Invalid sub net mask." ResultType="Failure"/>
+<ResultCode Code="6" Description="Load defaults cannot be accompanied with any other option." ResultType="Failure"/>
+<ResultCode Code="7" Description="Parameter out of range. One or more parameters in the data field of the Request are out of range." ResultType="Failure"/>
+<ResultCode Code="8" Description="Attempt to write read-only parameter." ResultType="Failure"/>
+<ResultCode Code="9" Description="Option requires an argument." ResultType="Failure"/>
+<ResultCode Code="10" Description="The Asset Tag for this system is not available." ResultType="Failure"/>
+<ResultCode Code="11" Description="The Asset Tag cannot be more than characters long." ResultType="Failure"/>
+<ResultCode Code="12" Description="The required BIOS interfaces cannot be found on this system." ResultType="Failure"/>
+<ResultCode Code="13" Description="The BIOS version information is not available." ResultType="Failure"/>
+<ResultCode Code="14" Description="There was a problem getting the state byte." ResultType="Failure"/>
+<ResultCode Code="15" Description="The state byte is not available on this system." ResultType="Failure"/>
+<ResultCode Code="16" Description="There was a problem setting the state byte." ResultType="Failure"/>
+<ResultCode Code="17" Description="The state byte must be a value between 0 and 255 decimal." ResultType="Failure"/>
+<ResultCode Code="18" Description="The CPU information is not available." ResultType="Failure"/>
+<ResultCode Code="19" Description="The dependent option required for this subcommand is missing in the command line." ResultType="Failure"/>
+<ResultCode Code="20" Description="Duplicate sub command has been entered." ResultType="Failure"/>
+<ResultCode Code="21" Description="The script file does contain not a valid DTK environment script signature." ResultType="Failure"/>
+<ResultCode Code="22" Description="The format of the environment variable is incorrect." ResultType="Failure"/>
+<ResultCode Code="23" Description="The --envar/-s option can only be used for a single option." ResultType="Failure"/>
+<ResultCode Code="24" Description="The --envar/-s option can only be used for report operations." ResultType="Failure"/>
+<ResultCode Code="25" Description="There was an error opening the file." ResultType="Failure"/>
+<ResultCode Code="26" Description="File does not have write permission." ResultType="Failure"/>
+<ResultCode Code="27" Description="The file contains invalid option." ResultType="Failure"/>
+<ResultCode Code="28" Description="There can only be one section in the input file." ResultType="Failure"/>
+<ResultCode Code="29" Description="Bad ini file, the required section cannot be found." ResultType="Failure"/>
+<ResultCode Code="30" Description="Report operations and set operations must be separate." ResultType="Failure"/>
+<ResultCode Code="31" Description="Help is not available for the option." ResultType="Failure"/>
+<ResultCode Code="32" Description="The -x (--hex) option can only be used with -b or -r." ResultType="Failure"/>
+<ResultCode Code="33" Description="Input file not found." ResultType="Failure"/>
+<ResultCode Code="34" Description="Input file cannot be read." ResultType="Failure"/>
+<ResultCode Code="35" Description="Invalid argument for the provided option." ResultType="Failure"/>
+<ResultCode Code="36" Description="The machine ID was not found in the file." ResultType="Failure"/>
+<ResultCode Code="37" Description="The system memory information is not available." ResultType="Failure"/>
+<ResultCode Code="38" Description="The output file could not be opened. Please make sure the path exists and the media is not write protected." ResultType="Failure"/>
+<ResultCode Code="39" Description="Could not write to output file, disk may be full." ResultType="Failure"/>
+<ResultCode Code="40" Description="The old password must be provided to set a new password using --ValSysPwd." ResultType="Failure"/>
+<ResultCode Code="41" Description="The old password must be provided to set a new password using --ValSetupPwd." ResultType="Failure"/>
+<ResultCode Code="42" Description="The option is not available or cannot be configured through this tool." ResultType="Failure"/>
+<ResultCode Code="43" Description="There was an error setting the option." ResultType="Failure"/>
+<ResultCode Code="44" Description="The -n (--namefile) option can only be used with --pci." ResultType="Failure"/>
+<ResultCode Code="45" Description="The set operation requires sub commands." ResultType="Failure"/>
+<ResultCode Code="46" Description="The service tag for this system is not available." ResultType="Failure"/>
+<ResultCode Code="47" Description="The system ID value is not available." ResultType="Failure"/>
+<ResultCode Code="48" Description="The system information string is not available." ResultType="Failure"/>
+<ResultCode Code="49" Description="A system error has occured." ResultType="Failure"/>
+<ResultCode Code="50" Description="Usage error." ResultType="Failure"/>
+<ResultCode Code="51" Description="The uuid information is not present on this system." ResultType="Failure"/>
+<ResultCode Code="52" Description="The manufacturing/first-power-on date information is not present on this system." ResultType="Failure"/>
+<ResultCode Code="53" Description="Version cannot be accompanied with any other option." ResultType="Failure"/>
+<ResultCode Code="54" Description="Cannot start /etc/omreg.cfg file. Please ensure /etc/omreg.cfg file is present and is valid for your environment. You can copy this file from the DTK iso." ResultType="Failure"/>
+<ResultCode Code="55" Description="HAPI Driver Load Error." ResultType="Failure"/>
+<ResultCode Code="56" Description="Password is not required for retrieving the TPM options." ResultType="Failure"/>
+<ResultCode Code="57" Description="There was an error setting the TPM option." ResultType="Failure"/>
+<ResultCode Code="58" Description="The setup password provided is incorrect. Please try again." ResultType="Failure"/>
+<ResultCode Code="59" Description="Unsupported device. Re-try with supported device" ResultType="Failure"/>
+<ResultCode Code="60" Description="Password not changed, new password does not meet criteria." ResultType="Failure"/>
+<ResultCode Code="61" Description="Error in Validation." ResultType="Failure"/>
+<ResultCode Code="62" Description="Error in Setting the Value." ResultType="Failure"/>
+<ResultCode Code="63" Description="The password length should not exceed the maximum value." ResultType="Failure"/>
+<ResultCode Code="64" Description="This is not a Dell machine. DCC supports only Dell machines." ResultType="Failure"/>
+<ResultCode Code="65" Description="Setup Password is required to change the setting. Use --ValSetupPwd to provide password." ResultType="Failure"/>
+<ResultCode Code="66" Description="System Password is required to change the setting. Use --ValSysPwd to provide password." ResultType="Failure"/>
+<ResultCode Code="67" Description="The system password provided is incorrect. Please try again." ResultType="Failure"/>
+<ResultCode Code="68" Description="The Sequence list must be a comma-separated list of valid unique device names (ex: hdd,cdrom)." ResultType="Failure"/>
+<ResultCode Code="69" Description="The system revision information is not available for this system." ResultType="Failure"/>
+<ResultCode Code="70" Description="The completion code information is not available for this system." ResultType="Failure"/>
+<ResultCode Code="71" Description="Please use 64-bit version of this application." ResultType="Failure"/>
+<ResultCode Code="72" Description="cannot be modified when TPM is OFF." ResultType="Failure"/>
+<ResultCode Code="73" Description="adddevice option not supported by this machine's BIOS" ResultType="Failure"/>
+<ResultCode Code="74" Description="usb device already present in this machine." ResultType="Failure"/>
+<ResultCode Code="75" Description="Unable to store BIOS information." ResultType="Failure"/>
+<ResultCode Code="76" Description="Duplicate entry found in the input list. Operation Aborted." ResultType="Failure"/>
+<ResultCode Code="77" Description="Typo found in the input list. Operation Aborted." ResultType="Failure"/>
+<ResultCode Code="78" Description="Asset tag can have only printable ASCII characters." ResultType="Failure"/>
+<ResultCode Code="79" Description="Multiple inputs will not be accepted." ResultType="Failure"/>
+<ResultCode Code="80" Description="Invalid Hex format." ResultType="Failure"/>
+<ResultCode Code="81" Description="Hex value range should be 0x0 to 0xffff." ResultType="Failure"/>
+<ResultCode Code="82" Description="Only positive numeric values are acceptable." ResultType="Failure"/>
+<ResultCode Code="83" Description="Length cannot exceed two characters." ResultType="Failure"/>
+<ResultCode Code="84" Description="Range for autoon hour value should be 0 to 23(24 hour format)." ResultType="Failure"/>
+<ResultCode Code="85" Description="Range for autoon minute value should be 0 to 59." ResultType="Failure"/>
+<ResultCode Code="86" Description="This option Not supported on UEFI Bios." ResultType="Failure"/>
+<ResultCode Code="87" Description="Unable to Set Bootorder." ResultType="Failure"/>
+<ResultCode Code="88" Description="Invalid Arguments. Unable to Set Bootorder." ResultType="Failure"/>
+<ResultCode Code="89" Description="The provided command should not combine with other suboptions." ResultType="Failure"/>
+<ResultCode Code="90" Description="The property ownership tag for this system is not available." ResultType="Failure"/>
+<ResultCode Code="91" Description="The property ownership tag cannot be more than 80 characters for non portable machines." ResultType="Failure"/>
+<ResultCode Code="92" Description="The property ownership tag is limited to 48 characters for portable systems." ResultType="Failure"/>
+<ResultCode Code="93" Description="Property ownership tag can have only printable ASCII characters." ResultType="Failure"/>
+<ResultCode Code="94" Description="Error in Setting the Value. Note : In some machines, If Hdd password or System password is set, you can't set Setup password." ResultType="Failure"/>
+<ResultCode Code="95" Description="'admin/root' privileges required to execute this application." ResultType="Failure"/>
+<ResultCode Code="96" Description="The option related BIOS information is not available in this machine." ResultType="Failure"/>
+<ResultCode Code="97" Description="Improper Output from Bios. Please try again." ResultType="Failure"/>
+<ResultCode Code="98" Description=";Error in Bootorder." ResultType="Failure"/>
+<ResultCode Code="99" Description="Not Applicable." ResultType="Failure"/>
+<ResultCode Code="100" Description=";Uefi bootlisttype is not supported in this Machine." ResultType="Failure"/>
+<ResultCode Code="101" Description="Unable to get information specific to machine." ResultType="Failure"/>
+<ResultCode Code="102" Description="The input file is invalid." ResultType="Failure"/>
+<ResultCode Code="103" Description="No Status Present." ResultType="Failure"/>
+<ResultCode Code="104" Description="File Do not have configurable Options." ResultType="Failure"/>
+<ResultCode Code="105" Description="Please provide the days to enable." ResultType="Failure"/>
+<ResultCode Code="106" Description="Password is not Installed. Please try again without providing --Val" ResultType="Failure"/>
+<ResultCode Code="107" Description="Please provide the old password to set the new password using --ValOwnerPwd." ResultType="Failure"/>
+<ResultCode Code="108" Description="The owner password is incorrect. Please try again." ResultType="Failure"/>
+<ResultCode Code="109" Description="Error in setting the value. Note : Setup or system password might be set on the system. Clear the password(s) and try again." ResultType="Failure"/>
+<ResultCode Code="110" Description="Owner password is not supported in file operations." ResultType="Failure"/>
+<ResultCode Code="111" Description="Password operation is not supported on the system." ResultType="Failure"/>
+<ResultCode Code="112" Description="The owner of the system has enabled the Owner Access feature. To set the Bios configuration, create setup or system password." ResultType="Failure"/>
+<ResultCode Code="113" Description="Either the system hardware or the BIOS version does not support the option. To resolve the BIOS version issue, upgrade the BIOS to the latest version." ResultType="Failure"/>
+<ResultCode Code="114" Description="Unable to get password information." ResultType="Failure"/>
+<ResultCode Code="115" Description="Please provide the start and stop values. Example: Custom:start-end." ResultType="Failure"/>
+<ResultCode Code="116" Description="The start and stop values should be in the range." ResultType="Failure"/>
+<ResultCode Code="117" Description="The stop value should be greater than the start value by 5 percentage." ResultType="Failure"/>
+<ResultCode Code="118" Description="The option is not supported in this machine." ResultType="Failure"/>
+<ResultCode Code="119" Description="Unable to set. Note: To set this Option Legacy Option rom(LegacyOrom) should be enable and SecureBoot should be disable." ResultType="Failure"/>
+<ResultCode Code="120" Description="Unable to set. Note: To set this Option bootmode(activebootlist) should be uefi and legacy option rom (LegacyOrom) should be disable." ResultType="Failure"/>
+<ResultCode Code="121" Description="Unable to set. Note: To enable this Option SecureBoot should be disable. To disable this Option SecureBoot should be disable and bootmode(ActiveBootList) should be uefi." ResultType="Failure"/>
+<ResultCode Code="122" Description="The allowed value for the option in the system are in between." ResultType="Failure"/>
+<ResultCode Code="123" Description="The option is not enabled." ResultType="Failure"/>
+<ResultCode Code="124" Description="Invalid argument! The possible values are: 0, 1-15, and 255." ResultType="Failure"/>
+<ResultCode Code="125" Description="Invalid argument. The arguments must be set in such a way that [Start time] less than or equal [End time] less than or equal [Charge Start time]." ResultType="Failure"/>
+<ResultCode Code="126" Description="Unable to set the Non critical Threshold values." ResultType="Failure"/>
+<ResultCode Code="127" Description="Cannot set the passed value as it is not within the range. The value should be less than or equal to 'Upper Threshold Critical' and greater than or equal to 'Minimum value'" ResultType="Failure"/>
+<ResultCode Code="128" Description="Error in Setting the Value. Note: To set TPM - 1. Admin Password must be set , 2. TPM must not be owned and 3. TPM must be deactivated." ResultType="Failure"/>
+<ResultCode Code="129" Description="Invalid format! Enter the value in the 'R,G,B' format." ResultType="Failure"/>
+<ResultCode Code="130" Description="Invalid value! Expected values are 'White', 'Red', 'Green', 'Blue', 'CustomColor1', 'CustomColor2' and 'None'" ResultType="Failure"/>
+<ResultCode Code="131" Description="Invalid value! Expected values are 'White', 'Red', 'Green', 'Blue', 'CustomColor1' and 'CustomColor2'" ResultType="Failure"/>
+<ResultCode Code="132" Description="Invalid format! Enter only one value." ResultType="Failure"/>
+<ResultCode Code="133" Description="Invalid format! No other value is allowed with 'none'" ResultType="Failure"/>
+<ResultCode Code="134" Description="Invalid format! Duplicate entry found in the input list:" ResultType="Failure"/>
+<ResultCode Code="135" Description="Invalid operation! Set operation for attribute is not allowed using file mode" ResultType="Failure"/>
+<ResultCode Code="136" Description="Invalid format! String for attribute should contain maximum 4 characters. Supported characters are 0-9, A-F and a-f." ResultType="Failure"/>
+<ResultCode Code="137" Description="Invalid format! String for attribute should contain maximum 8 characters. Supported characters are 0-9, A-F and a-f." ResultType="Failure"/>
+<ResultCode Code="138" Description="Invalid set operation! attribute is read-only attribute." ResultType="Failure"/>
+<ResultCode Code="139" Description="The option is not disabled." ResultType="Failure"/>
+<ResultCode Code="140" Description="This system does not have a WMI-ACPI compliant BIOS. Update the BIOS with a compatible version, if available." ResultType="Failure"/>
+<ResultCode Code="141" Description="Couldn't get WMI-ACPI Buffer Size!!" ResultType="Failure"/>
+<ResultCode Code="142" Description="Unable to get BIOS tables or Unknown type encountered!!." ResultType="Failure"/>
+<ResultCode Code="143" Description="The dependent file is not loaded from the appropriate path, repair or reinstall to fix the issue." ResultType="Failure"/>
+<ResultCode Code="144" Description="cannot be modified when the current value is set to PermanentlyDisabled." ResultType="Failure"/>
+<ResultCode Code="145" Description="Legacy option is not supported on this machine." ResultType="Failure"/>
+<ResultCode Code="146" Description="Importing ini file is failing for some features. For more information, check log." ResultType="Failure"/>
+<ResultCode Code="147" Description="This value is not supported on the system. For more information, enter help cctk -h in CLI." ResultType="Failure"/>
+<ResultCode Code="148" Description="The old password must be provided to set a new password using --ValHddPwd." ResultType="Failure"/>
+</ResultCodes>
