@@ -1,15 +1,28 @@
-﻿#install-packageprovider -name nuget -minimumversion 2.8.5.201 -force -Verbose
+param (
+    [int]$MonitorIndex = 0,
+    [string]$FontFamilyName = 'Arial',
+    [int]$FontSize = 40,
+    [string]$OutputDirectory = "$PSScriptRoot\Output",
+    [string]$BackgroundImage = "$PSScriptRoot\files\Background.jpg"
+)
 
-#Install-Module PowerBGInfo -Force -Verbose -SkipPublisherCheck
+# Ensure output directory exists
+if (!(Test-Path -Path $OutputDirectory)) {
+    New-Item -ItemType Directory -Path $OutputDirectory -Force
+}
 
+# Validate background image path
+if (!(Test-Path -Path $BackgroundImage)) {
+    Write-Error "Background image not found at $BackgroundImage"
+    exit
+}
 
-New-BGInfo -MonitorIndex 0 {
-    # Lets add computer name, but lets use builtin values for that
-    New-BGInfoValue -BuiltinValue HostName -Name "Systemname:" -Color white -FontSize 80 -FontFamilyName 'Arial'
-    # Lets add user name, but lets use builtin values for that
-    New-BGInfoValue -BuiltinValue FullUserName -Name "Loggedonuser:" -Color White -FontSize 40 -FontFamilyName 'Arial'
-    New-BGInfoValue -Name "Last reboot:" -Value "TTTT" -Color White -FontSize 40 -FontFamilyName 'Arial'
-    
+# Dynamic value for last reboot
+$lastReboot = (Get-CimInstance -ClassName Win32_OperatingSystem).LastBootUpTime
 
-
-} -FilePath $PSScriptRoot\files\Background.jpg -ConfigurationDirectory $PSScriptRoot\Output -PositionX 300 -PositionY 600 -WallpaperFit Fill
+# Create BGInfo configuration
+New-BGInfo -MonitorIndex $MonitorIndex {
+    New-BGInfoValue -BuiltinValue HostName -Name "Systemname:" -Color white -FontSize 80 -FontFamilyName $FontFamilyName
+    New-BGInfoValue -BuiltinValue FullUserName -Name "Loggedonuser:" -Color white -FontSize $FontSize -FontFamilyName $FontFamilyName
+    New-BGInfoValue -Name "Last reboot:" -Value $lastReboot -Color white -FontSize $FontSize -FontFamilyName $FontFamilyName
+} -FilePath $BackgroundImage -ConfigurationDirectory $OutputDirectory -PositionX 300 -PositionY 600 -WallpaperFit Fill
