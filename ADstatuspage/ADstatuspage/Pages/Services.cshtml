@@ -1,0 +1,91 @@
+@page
+@model ServicesModel
+@{
+    ViewData["Title"] = "AD Services Status";
+}
+
+<h1>Active Directory Services Status</h1>
+
+<div class="mb-3">
+    <a href="/" class="btn btn-secondary">← Back to Dashboard</a>
+</div>
+
+@if (Model.ServicesStatus.Any())
+{
+    @foreach (var dcServices in Model.ServicesStatus)
+    {
+        <div class="card mb-3">
+            <div class="card-header status-card status-@(dcServices.OverallStatus.ToLower())">
+                <h5 class="mb-0">
+                    @dcServices.DomainController
+                    <span class="badge bg-@GetStatusColor(dcServices.OverallStatus) float-end">
+                        @dcServices.OverallStatus
+                    </span>
+                </h5>
+            </div>
+            <div class="card-body">
+                @if (dcServices.Services.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Service Name</th>
+                                    <th>Display Name</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var service in dcServices.Services)
+                                {
+                                    <tr>
+                                        <td><code>@service.ServiceName</code></td>
+                                        <td>@service.DisplayName</td>
+                                        <td>
+                                            <span class="badge bg-@(service.IsRunning ? "success" : "danger")">
+                                                @service.Status
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else if (dcServices.OverallStatus == "Timeout")
+                {
+                    <div class="alert alert-warning">
+                        <i class="bi bi-clock"></i> Query timeout - unable to retrieve service status
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info">
+                        No service information available.
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="alert alert-warning">
+        No service status information available.
+    </div>
+}
+
+@functions {
+    string GetStatusColor(string status)
+    {
+        return status.ToLower() switch
+        {
+            "up" => "success",
+            "degraded" => "warning",
+            "down" => "danger",
+            "timeout" => "warning",
+            "error" => "danger",
+            _ => "secondary"
+        };
+    }
+}

@@ -1,0 +1,87 @@
+@page
+@model ReplicationModel
+@{
+    ViewData["Title"] = "Replication Status";
+}
+
+<h1>Replication Status</h1>
+
+<div class="mb-3">
+    <a href="/" class="btn btn-secondary">← Back to Dashboard</a>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <div class="card status-card status-@(Model.ReplicationSummary.Status.ToLower())">
+            <div class="card-body">
+                <h5 class="card-title">Overall Replication Status</h5>
+                <h3 class="status-text">@Model.ReplicationSummary.Status</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Total Partners</h6>
+                <h3>@Model.ReplicationSummary.TotalPartners</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Failures</h6>
+                <h3 class="@(Model.ReplicationSummary.FailureCount > 0 ? "text-danger" : "text-success")">
+                    @Model.ReplicationSummary.FailureCount
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Max Latency</h6>
+                <h3>@Model.ReplicationSummary.MaxLatencySeconds.ToString("F2")s</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Avg Latency</h6>
+                <h3>@Model.ReplicationSummary.AvgLatencySeconds.ToString("F2")s</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.ReplicationSummary.RecentFailures.Any())
+{
+    <div class="card mt-3">
+        <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Recent Failures</h5>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                @foreach (var failure in Model.ReplicationSummary.RecentFailures)
+                {
+                    <li class="mb-2">
+                        <i class="bi bi-exclamation-triangle-fill text-danger"></i> @failure
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-success mt-3">
+        <strong>✓</strong> No replication failures detected.
+    </div>
+}

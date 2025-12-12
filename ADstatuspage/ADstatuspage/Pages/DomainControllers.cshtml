@@ -1,0 +1,77 @@
+@page
+@model DomainControllersModel
+@{
+    ViewData["Title"] = "Domain Controllers";
+}
+
+<h1>Domain Controllers</h1>
+
+<div class="mb-3">
+    <a href="/" class="btn btn-secondary">← Back to Dashboard</a>
+</div>
+
+@if (Model.DomainControllers.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Site</th>
+                    <th>Operating System</th>
+                    <th>Ping</th>
+                    <th>LDAP (389)</th>
+                    <th>LDAPS (636)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var dc in Model.DomainControllers)
+                {
+                    <tr>
+                        <td>@dc.Name</td>
+                        <td>@dc.Site</td>
+                        <td>@dc.OperatingSystem</td>
+                        <td>
+                            <span class="badge bg-@(dc.IsPingable ? "success" : "danger")">
+                                @(dc.IsPingable ? "✓" : "✗")
+                            </span>
+                        </td>
+                        <td>
+                            <span class="badge bg-@(dc.IsLdapReachable ? "success" : "danger")">
+                                @(dc.IsLdapReachable ? "✓" : "✗")
+                            </span>
+                        </td>
+                        <td>
+                            <span class="badge bg-@(dc.IsLdapsReachable ? "success" : "warning")">
+                                @(dc.IsLdapsReachable ? "✓" : "✗")
+                            </span>
+                        </td>
+                        <td>
+                            <span class="badge bg-@GetStatusColor(dc.Status)">@dc.Status</span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        No domain controllers found or an error occurred.
+    </div>
+}
+
+@functions {
+    string GetStatusColor(string status)
+    {
+        return status.ToLower() switch
+        {
+            "up" => "success",
+            "degraded" => "warning",
+            "down" => "danger",
+            _ => "secondary"
+        };
+    }
+}

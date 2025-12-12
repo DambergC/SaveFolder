@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "AD Status Dashboard";
+}
+
+<div class="dashboard">
+    <h1 class="mb-4">Active Directory Status Dashboard</h1>
+    
+    <div class="alert alert-info">
+        <strong>Last Updated:</strong> @(Model.OverallHealth?.Timestamp.ToString("yyyy-MM-dd HH:mm:ss") ?? "N/A")
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-3">
+            <div class="card status-card status-@(Model.OverallHealth?.Status?.ToLower() ?? "unknown")">
+                <div class="card-body">
+                    <h5 class="card-title">Overall Status</h5>
+                    <h2 class="status-text">@(Model.OverallHealth?.Status ?? "Unknown")</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card status-card status-@(Model.OverallHealth?.DomainControllersStatus?.ToLower() ?? "unknown")">
+                <div class="card-body">
+                    <h5 class="card-title">Domain Controllers</h5>
+                    <p class="status-text">@(Model.OverallHealth?.DomainControllersStatus ?? "Unknown")</p>
+                    <a href="/DomainControllers" class="btn btn-sm btn-outline-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card status-card status-@(Model.OverallHealth?.ReplicationStatus?.ToLower() ?? "unknown")">
+                <div class="card-body">
+                    <h5 class="card-title">Replication</h5>
+                    <p class="status-text">@(Model.OverallHealth?.ReplicationStatus ?? "Unknown")</p>
+                    <a href="/Replication" class="btn btn-sm btn-outline-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card status-card status-@(Model.OverallHealth?.DnsStatus?.ToLower() ?? "unknown")">
+                <div class="card-body">
+                    <h5 class="card-title">DNS</h5>
+                    <p class="status-text">@(Model.OverallHealth?.DnsStatus ?? "Unknown")</p>
+                    <a href="/Dns" class="btn btn-sm btn-outline-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card status-card status-@(Model.OverallHealth?.ServicesStatus?.ToLower() ?? "unknown")">
+                <div class="card-body">
+                    <h5 class="card-title">Services</h5>
+                    <p class="status-text">@(Model.OverallHealth?.ServicesStatus ?? "Unknown")</p>
+                    <a href="/Services" class="btn btn-sm btn-outline-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
