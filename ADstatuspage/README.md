@@ -9,7 +9,7 @@ An ASP.NET Core (.NET 8) Razor Pages application that provides real-time monitor
 - **DNS Health Checks**: Test DNS resolution for critical AD records and forwarder functionality
 - **Service Monitoring**: Check critical AD services (NTDS, DNS, DFSR) across domain controllers
 - **Windows Authentication**: Secure access using Kerberos/NTLM authentication
-- **In-Memory Caching**: Short-lived (30-60 second) caching to reduce AD query load
+- **In-Memory Caching**: Short-lived (60 second) caching to reduce AD query load
 - **LocalDB Logging**: Minimal logging via Entity Framework Core for health check tracking
 
 ## Prerequisites
@@ -199,7 +199,7 @@ The application pool identity must have:
 
 ### Cache Configuration
 
-Default cache expiration is 60 seconds. To modify, edit `ADHealthService.cs`:
+Default cache expiration is 60 seconds. To modify, edit the `CacheExpirationSeconds` constant in `ADstatuspage/Services/ADHealthService.cs`:
 
 ```csharp
 private const int CacheExpirationSeconds = 60; // Change as needed
